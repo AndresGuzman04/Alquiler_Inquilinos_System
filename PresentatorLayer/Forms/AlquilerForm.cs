@@ -16,10 +16,10 @@ using System.Runtime.CompilerServices;
 
 namespace PresentatorLayer.Forms
 {
-    public partial class AlquilerForm : Form
+    public partial class LoginForm : Form
     {
         private bool isEditMode = false;
-        public AlquilerForm()
+        public LoginForm()
         {
             InitializeComponent();
             Loads();

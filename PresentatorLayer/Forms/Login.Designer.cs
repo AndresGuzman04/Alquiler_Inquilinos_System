@@ -34,6 +34,7 @@
             usernamelabel = new Label();
             passwordtextBox = new TextBox();
             loginbutton = new Button();
+            cancelbutton = new Button();
             SuspendLayout();
             // 
             // titulolabel
@@ -80,6 +81,7 @@
             // 
             passwordtextBox.Location = new Point(136, 156);
             passwordtextBox.Name = "passwordtextBox";
+            passwordtextBox.PasswordChar = '*';
             passwordtextBox.Size = new Size(227, 27);
             passwordtextBox.TabIndex = 4;
             // 
@@ -87,12 +89,25 @@
             // 
             loginbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             loginbutton.ForeColor = SystemColors.InfoText;
-            loginbutton.Location = new Point(178, 268);
+            loginbutton.Location = new Point(68, 269);
             loginbutton.Name = "loginbutton";
             loginbutton.Size = new Size(100, 43);
             loginbutton.TabIndex = 5;
             loginbutton.Text = "Enter";
             loginbutton.UseVisualStyleBackColor = true;
+            loginbutton.Click += loginbutton_Click;
+            // 
+            // cancelbutton
+            // 
+            cancelbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            cancelbutton.ForeColor = SystemColors.InfoText;
+            cancelbutton.Location = new Point(215, 269);
+            cancelbutton.Name = "cancelbutton";
+            cancelbutton.Size = new Size(100, 43);
+            cancelbutton.TabIndex = 6;
+            cancelbutton.Text = "Cancel";
+            cancelbutton.UseVisualStyleBackColor = true;
+            cancelbutton.Click += cancelbutton_Click;
             // 
             // Login
             // 
@@ -100,6 +115,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(419, 360);
+            Controls.Add(cancelbutton);
             Controls.Add(loginbutton);
             Controls.Add(passwordtextBox);
             Controls.Add(usernamelabel);
@@ -107,7 +123,7 @@
             Controls.Add(usernametextBox);
             Controls.Add(titulolabel);
             ForeColor = SystemColors.Control;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
@@ -123,5 +139,6 @@
         private Label usernamelabel;
         private TextBox passwordtextBox;
         private Button loginbutton;
+        private Button cancelbutton;
     }
 }

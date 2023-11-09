@@ -21,5 +21,29 @@ namespace PresentatorLayer.Forms
         {
 
         }
+
+        private void cancelbutton_Click(object sender, EventArgs e)
+        {
+            usernametextBox.Clear();
+            passwordtextBox.Clear();
+        }
+
+        private void loginbutton_Click(object sender, EventArgs e)
+        {
+            if(usernametextBox.Text == "Bolo" &&  passwordtextBox.Text == "Guasalo")
+            {
+                LoginForm formAlquiler = new LoginForm();
+                this.Hide();
+                formAlquiler.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Credenciales incorrectas");
+                usernametextBox.Clear();
+                passwordtextBox.Clear();
+
+            }
+        }
     }
 }
