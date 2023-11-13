@@ -37,9 +37,16 @@ namespace PresentatorLayer.Forms
                 formAlquiler.Show();
 
             }
+            else if(usernametextBox.Text != "Bolo")
+            {
+                MessageBox.Show("El nombre de usuario e incorrecto");
+                usernametextBox.Clear();
+                passwordtextBox.Clear();
+
+            }
             else
             {
-                MessageBox.Show("Credenciales incorrectas");
+                MessageBox.Show("Contraseña incorrecta");
                 usernametextBox.Clear();
                 passwordtextBox.Clear();
 
