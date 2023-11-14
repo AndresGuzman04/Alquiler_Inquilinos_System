@@ -28,117 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            titulolabel = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             usernametextBox = new TextBox();
-            passwordlabel = new Label();
-            usernamelabel = new Label();
             passwordtextBox = new TextBox();
             loginbutton = new Button();
-            cancelbutton = new Button();
+            panel1 = new Panel();
+            pictureBox2 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            linkLabel1 = new LinkLabel();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // titulolabel
-            // 
-            titulolabel.AutoSize = true;
-            titulolabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            titulolabel.ForeColor = SystemColors.InfoText;
-            titulolabel.Location = new Point(178, 20);
-            titulolabel.Name = "titulolabel";
-            titulolabel.Size = new Size(83, 31);
-            titulolabel.TabIndex = 0;
-            titulolabel.Text = "LOGIN";
             // 
             // usernametextBox
             // 
-            usernametextBox.Location = new Point(136, 88);
+            usernametextBox.BackColor = SystemColors.InactiveCaptionText;
+            usernametextBox.BorderStyle = BorderStyle.None;
+            usernametextBox.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            usernametextBox.ForeColor = Color.Gray;
+            usernametextBox.Location = new Point(295, 98);
             usernametextBox.Name = "usernametextBox";
-            usernametextBox.Size = new Size(227, 27);
+            usernametextBox.Size = new Size(445, 28);
             usernametextBox.TabIndex = 1;
-            // 
-            // passwordlabel
-            // 
-            passwordlabel.AutoSize = true;
-            passwordlabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            passwordlabel.ForeColor = SystemColors.InfoText;
-            passwordlabel.Location = new Point(12, 156);
-            passwordlabel.Name = "passwordlabel";
-            passwordlabel.Size = new Size(101, 28);
-            passwordlabel.TabIndex = 2;
-            passwordlabel.Text = "Password";
-            // 
-            // usernamelabel
-            // 
-            usernamelabel.AutoSize = true;
-            usernamelabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            usernamelabel.ForeColor = SystemColors.InfoText;
-            usernamelabel.Location = new Point(12, 84);
-            usernamelabel.Name = "usernamelabel";
-            usernamelabel.Size = new Size(106, 28);
-            usernamelabel.TabIndex = 3;
-            usernamelabel.Text = "Username";
+            usernametextBox.Text = "USUARIO";
+            usernametextBox.Enter += usernametextBox_Enter;
+            usernametextBox.Leave += usernametextBox_Leave;
             // 
             // passwordtextBox
             // 
-            passwordtextBox.Location = new Point(136, 156);
+            passwordtextBox.BackColor = SystemColors.InactiveCaptionText;
+            passwordtextBox.BorderStyle = BorderStyle.None;
+            passwordtextBox.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            passwordtextBox.ForeColor = Color.Gray;
+            passwordtextBox.Location = new Point(295, 188);
             passwordtextBox.Name = "passwordtextBox";
-            passwordtextBox.PasswordChar = '*';
-            passwordtextBox.Size = new Size(227, 27);
-            passwordtextBox.TabIndex = 4;
+            passwordtextBox.Size = new Size(445, 28);
+            passwordtextBox.TabIndex = 2;
+            passwordtextBox.Text = "CONTRASEÑA";
+            passwordtextBox.Enter += passwordtextBox_Enter;
+            passwordtextBox.Leave += passwordtextBox_Leave;
             // 
             // loginbutton
             // 
-            loginbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            loginbutton.ForeColor = SystemColors.InfoText;
-            loginbutton.Location = new Point(68, 269);
+            loginbutton.BackColor = SystemColors.MenuText;
+            loginbutton.FlatAppearance.BorderSize = 0;
+            loginbutton.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            loginbutton.FlatAppearance.MouseOverBackColor = Color.DimGray;
+            loginbutton.FlatStyle = FlatStyle.Flat;
+            loginbutton.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            loginbutton.ForeColor = Color.Gray;
+            loginbutton.Location = new Point(295, 285);
             loginbutton.Name = "loginbutton";
-            loginbutton.Size = new Size(100, 43);
-            loginbutton.TabIndex = 5;
-            loginbutton.Text = "Enter";
-            loginbutton.UseVisualStyleBackColor = true;
+            loginbutton.Size = new Size(445, 47);
+            loginbutton.TabIndex = 3;
+            loginbutton.Text = "ACCEDER";
+            loginbutton.UseVisualStyleBackColor = false;
             loginbutton.Click += loginbutton_Click;
             // 
-            // cancelbutton
+            // panel1
             // 
-            cancelbutton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            cancelbutton.ForeColor = SystemColors.InfoText;
-            cancelbutton.Location = new Point(215, 269);
-            cancelbutton.Name = "cancelbutton";
-            cancelbutton.Size = new Size(100, 43);
-            cancelbutton.TabIndex = 6;
-            cancelbutton.Text = "Cancel";
-            cancelbutton.UseVisualStyleBackColor = true;
-            cancelbutton.Click += cancelbutton_Click;
+            panel1.BackColor = Color.SkyBlue;
+            panel1.Controls.Add(pictureBox2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 504);
+            panel1.TabIndex = 6;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(257, 504);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft JhengHei", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(470, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(87, 29);
+            label1.TabIndex = 7;
+            label1.Text = "LOGIN";
+            // 
+            // label2
+            // 
+            label2.BackColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(295, 130);
+            label2.Name = "label2";
+            label2.Size = new Size(445, 1);
+            label2.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.BackColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(295, 218);
+            label3.Name = "label3";
+            label3.Size = new Size(445, 1);
+            label3.TabIndex = 9;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.SteelBlue;
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.DimGray;
+            linkLabel1.Location = new Point(475, 387);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(82, 20);
+            linkLabel1.TabIndex = 0;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Registrarse";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(781, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(25, 25);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveBorder;
-            ClientSize = new Size(419, 360);
-            Controls.Add(cancelbutton);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(806, 504);
+            Controls.Add(pictureBox1);
+            Controls.Add(linkLabel1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(panel1);
             Controls.Add(loginbutton);
             Controls.Add(passwordtextBox);
-            Controls.Add(usernamelabel);
-            Controls.Add(passwordlabel);
             Controls.Add(usernametextBox);
-            Controls.Add(titulolabel);
             ForeColor = SystemColors.Control;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Login";
+            Opacity = 0.85D;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label titulolabel;
         private TextBox usernametextBox;
-        private Label passwordlabel;
-        private Label usernamelabel;
         private TextBox passwordtextBox;
         private Button loginbutton;
-        private Button cancelbutton;
+        private Panel panel1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private LinkLabel linkLabel1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
