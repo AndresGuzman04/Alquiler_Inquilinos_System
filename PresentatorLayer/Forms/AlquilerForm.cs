@@ -202,7 +202,7 @@ namespace PresentatorLayer.Forms
 
             mantenimiento.propiedadId = (int)propiedadComboBox.SelectedValue;
 
-            MantenimientoValidator mantenimientoValidator = new MantenimientoValidator();
+            mantenimientoValidator mantenimientoValidator = new mantenimientoValidator();
             ValidationResult result = mantenimientoValidator.Validate(mantenimiento);
 
 
@@ -466,7 +466,7 @@ namespace PresentatorLayer.Forms
             inquilino.Telefono = telefonoTextbox.Text;
             inquilino.Direccion = direccionTextBox.Text;
 
-            InquilinosValidator inquilinoValidator = new InquilinosValidator();
+            inquilinosValidator inquilinoValidator = new inquilinosValidator();
             ValidationResult result = inquilinoValidator.Validate(inquilino);
 
 
