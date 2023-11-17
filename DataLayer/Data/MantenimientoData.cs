@@ -20,7 +20,9 @@ namespace DataLayer.Data
         public DataTable GetAllMantenimientos()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT * FROM Mantenimiento";
+            _sqlCommand.CommandText =   "SELECT Mantenimiento.MantenimientoID AS ID, Mantenimiento.FechaMantenimiento AS Fecha," +
+                " Mantenimiento.Descripcion, Mantenimiento.Costo, Propiedades.Nombre AS Propiedad" +
+                " FROM Mantenimiento INNER JOIN Propiedades ON Propiedades.PropiedadID = Mantenimiento.PropiedadID;";
             _sqlCommand.CommandType = CommandType.Text;
 
             _readerRows = _sqlCommand.ExecuteReader();

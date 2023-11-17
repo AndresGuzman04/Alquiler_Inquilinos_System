@@ -20,7 +20,11 @@ namespace DataLayer.Data
         public DataTable GetAllContratos()
         {
             _sqlcommand.Connection = _connection.OpenConnection();
-            _sqlcommand.CommandText = "SELECT * FROM Contratos";
+            _sqlcommand.CommandText =   "SELECT Contratos.ContratoID AS ID, Contratos.FechaInicio AS Inicio, " +
+                                        "Contratos.FechaFin AS Fin, Contratos.MontoMensual AS MontoMes, " +
+                                        "Propiedades.Nombre AS Propiedad, Inquilinos.Nombre AS Inquilino " +
+                                        "FROM Contratos INNER JOIN Inquilinos ON Inquilinos.InquilinoID = Contratos.InquilinoID " +
+                                        "INNER JOIN Propiedades ON Propiedades.PropiedadID = Contratos.PropiedadID;";
             _sqlcommand.CommandType = CommandType.Text;
 
 

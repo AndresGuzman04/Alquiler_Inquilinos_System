@@ -14,7 +14,9 @@ namespace DataLayer.Data
         public DataTable GetAllPropiedad()
         {
             _cmd.Connection = _connection.OpenConnection();
-            _cmd.CommandText = "SELECT * FROM Propiedades";
+            _cmd.CommandText = "SELECT Propiedades.PropiedadID AS ID, Propiedades.Nombre," +
+                " Propiedades.Direccion, Propiedades.TipoPropiedad AS Tipo, Propiedades.PrecioMensual" +
+                " FROM Propiedades;";
             _cmd.CommandType = CommandType.Text;
             _reader = _cmd.ExecuteReader();
             PropiedadTable.Load(_reader);
