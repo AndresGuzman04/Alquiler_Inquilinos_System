@@ -32,6 +32,7 @@ namespace PresentatorLayer.Validaciones
                 .Matches(@"^\d+$").WithMessage("El pago mensual debe contener solo números");
         }
     }
+
 }
 
     
