@@ -17,6 +17,7 @@ namespace PresentatorLayer.Forms
         public Login()
         {
             InitializeComponent();
+            this.AcceptButton = loginbutton;
         }
 
         private void Login_Load(object sender, EventArgs e)
