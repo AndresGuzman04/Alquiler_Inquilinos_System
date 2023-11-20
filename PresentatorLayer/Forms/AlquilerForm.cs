@@ -93,8 +93,6 @@ namespace PresentatorLayer.Forms
         {
             PagoBusiness pagoBusiness = new PagoBusiness();
             pagosDataGridView.DataSource = pagoBusiness.GetPagos();
-
-
         }
         private void LoadPropiedadData()
         {
@@ -102,7 +100,6 @@ namespace PresentatorLayer.Forms
 
             dgvPropiedades.DataSource = propiedadBusiness.GetPropiedad();
         }
-
         private void LoadPropiedadComboBox()
         {
 
@@ -138,7 +135,6 @@ namespace PresentatorLayer.Forms
             contratoComboBox.ValueMember = "ContratoID";
 
         }
-
         public void LoadIquilinos()
         {
             InquilinoBusiness inquilinoBussiness = new InquilinoBusiness();
@@ -187,8 +183,6 @@ namespace PresentatorLayer.Forms
         {
             montomensualtextBox.Clear();
         }
-
-
         private void guardarMantenimientoButton_Click(object sender, EventArgs e)
         {
 

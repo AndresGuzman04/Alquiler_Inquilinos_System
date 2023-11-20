@@ -39,6 +39,7 @@ namespace PresentatorLayer.Forms
                 this.Hide();
                 formAlquiler.Show();
 
+
             }
 
 

@@ -29,7 +29,7 @@ namespace DataLayer.Data
 
 
             _readerRows = _sqlcommand.ExecuteReader();
-            contratosTable.Load(_readerRows);
+              contratosTable.Load(_readerRows);
 
             _connection.CloseConnection();
 

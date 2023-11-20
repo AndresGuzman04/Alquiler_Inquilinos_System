@@ -51,7 +51,7 @@
             usernametextBox.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             usernametextBox.ForeColor = Color.Gray;
             usernametextBox.Location = new Point(369, 122);
-            usernametextBox.Margin = new Padding(4, 4, 4, 4);
+            usernametextBox.Margin = new Padding(4);
             usernametextBox.Name = "usernametextBox";
             usernametextBox.Size = new Size(556, 34);
             usernametextBox.TabIndex = 1;
@@ -65,8 +65,8 @@
             passwordtextBox.BorderStyle = BorderStyle.None;
             passwordtextBox.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             passwordtextBox.ForeColor = Color.Gray;
-            passwordtextBox.Location = new Point(369, 235);
-            passwordtextBox.Margin = new Padding(4, 4, 4, 4);
+            passwordtextBox.Location = new Point(369, 206);
+            passwordtextBox.Margin = new Padding(4);
             passwordtextBox.Name = "passwordtextBox";
             passwordtextBox.Size = new Size(556, 34);
             passwordtextBox.TabIndex = 2;
@@ -84,7 +84,7 @@
             loginbutton.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             loginbutton.ForeColor = Color.Gray;
             loginbutton.Location = new Point(369, 356);
-            loginbutton.Margin = new Padding(4, 4, 4, 4);
+            loginbutton.Margin = new Padding(4);
             loginbutton.Name = "loginbutton";
             loginbutton.Size = new Size(556, 59);
             loginbutton.TabIndex = 3;
@@ -98,7 +98,7 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(312, 630);
             panel1.TabIndex = 6;
@@ -107,7 +107,7 @@
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(321, 630);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -160,7 +160,7 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(976, 0);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(31, 31);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
