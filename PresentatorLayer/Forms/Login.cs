@@ -35,9 +35,9 @@ namespace PresentatorLayer.Forms
         {
             if (usernametextBox.Text == "Univo" && passwordtextBox.Text == "2023")
             {
-                LoginForm formAlquiler = new LoginForm();
+                MenuForm menuForm = new MenuForm();
                 this.Hide();
-                formAlquiler.Show();
+                menuForm.Show();
 
 
             }

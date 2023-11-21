@@ -29,76 +29,214 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
-            panel1 = new Panel();
+            leftpanel = new Panel();
+            pagosmenubutton = new Button();
+            mantenimientomenubutton = new Button();
+            propiedadmenubutton = new Button();
+            contratosmenubutton = new Button();
+            inquilinosmenubutton = new Button();
+            logopictureBox = new PictureBox();
             panel3 = new Panel();
-            label3 = new Label();
-            pictureBox1 = new PictureBox();
+            titulomenulabel = new Label();
+            contenidopanel = new Panel();
+            closepictureBox = new PictureBox();
+            linelabel = new Label();
+            leftpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logopictureBox).BeginInit();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)closepictureBox).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // leftpanel
             // 
-            panel1.BackColor = Color.SkyBlue;
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(254, 584);
-            panel1.TabIndex = 0;
+            leftpanel.BackColor = Color.SkyBlue;
+            leftpanel.Controls.Add(pagosmenubutton);
+            leftpanel.Controls.Add(mantenimientomenubutton);
+            leftpanel.Controls.Add(propiedadmenubutton);
+            leftpanel.Controls.Add(contratosmenubutton);
+            leftpanel.Controls.Add(inquilinosmenubutton);
+            leftpanel.Controls.Add(logopictureBox);
+            leftpanel.Dock = DockStyle.Left;
+            leftpanel.Location = new Point(0, 0);
+            leftpanel.Margin = new Padding(2);
+            leftpanel.Name = "leftpanel";
+            leftpanel.Size = new Size(203, 467);
+            leftpanel.TabIndex = 0;
+            // 
+            // pagosmenubutton
+            // 
+            pagosmenubutton.Dock = DockStyle.Top;
+            pagosmenubutton.FlatAppearance.BorderSize = 0;
+            pagosmenubutton.FlatStyle = FlatStyle.Flat;
+            pagosmenubutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            pagosmenubutton.Location = new Point(0, 296);
+            pagosmenubutton.Name = "pagosmenubutton";
+            pagosmenubutton.Padding = new Padding(10, 0, 0, 0);
+            pagosmenubutton.Size = new Size(203, 37);
+            pagosmenubutton.TabIndex = 4;
+            pagosmenubutton.Text = "PAGOS";
+            pagosmenubutton.TextAlign = ContentAlignment.MiddleLeft;
+            pagosmenubutton.UseVisualStyleBackColor = true;
+            // 
+            // mantenimientomenubutton
+            // 
+            mantenimientomenubutton.Dock = DockStyle.Top;
+            mantenimientomenubutton.FlatAppearance.BorderSize = 0;
+            mantenimientomenubutton.FlatStyle = FlatStyle.Flat;
+            mantenimientomenubutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            mantenimientomenubutton.Location = new Point(0, 259);
+            mantenimientomenubutton.Name = "mantenimientomenubutton";
+            mantenimientomenubutton.Padding = new Padding(10, 0, 0, 0);
+            mantenimientomenubutton.Size = new Size(203, 37);
+            mantenimientomenubutton.TabIndex = 3;
+            mantenimientomenubutton.Text = "MANTENIMIENTO";
+            mantenimientomenubutton.TextAlign = ContentAlignment.MiddleLeft;
+            mantenimientomenubutton.UseVisualStyleBackColor = true;
+            // 
+            // propiedadmenubutton
+            // 
+            propiedadmenubutton.Dock = DockStyle.Top;
+            propiedadmenubutton.FlatAppearance.BorderSize = 0;
+            propiedadmenubutton.FlatStyle = FlatStyle.Flat;
+            propiedadmenubutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            propiedadmenubutton.Location = new Point(0, 222);
+            propiedadmenubutton.Name = "propiedadmenubutton";
+            propiedadmenubutton.Padding = new Padding(10, 0, 0, 0);
+            propiedadmenubutton.Size = new Size(203, 37);
+            propiedadmenubutton.TabIndex = 2;
+            propiedadmenubutton.Text = "PROPIEDAD";
+            propiedadmenubutton.TextAlign = ContentAlignment.MiddleLeft;
+            propiedadmenubutton.UseVisualStyleBackColor = true;
+            // 
+            // contratosmenubutton
+            // 
+            contratosmenubutton.Dock = DockStyle.Top;
+            contratosmenubutton.FlatAppearance.BorderSize = 0;
+            contratosmenubutton.FlatStyle = FlatStyle.Flat;
+            contratosmenubutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            contratosmenubutton.Location = new Point(0, 185);
+            contratosmenubutton.Name = "contratosmenubutton";
+            contratosmenubutton.Padding = new Padding(10, 0, 0, 0);
+            contratosmenubutton.Size = new Size(203, 37);
+            contratosmenubutton.TabIndex = 1;
+            contratosmenubutton.Text = "CONTRATOS";
+            contratosmenubutton.TextAlign = ContentAlignment.MiddleLeft;
+            contratosmenubutton.UseVisualStyleBackColor = true;
+            // 
+            // inquilinosmenubutton
+            // 
+            inquilinosmenubutton.Dock = DockStyle.Top;
+            inquilinosmenubutton.FlatAppearance.BorderSize = 0;
+            inquilinosmenubutton.FlatStyle = FlatStyle.Flat;
+            inquilinosmenubutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            inquilinosmenubutton.Location = new Point(0, 148);
+            inquilinosmenubutton.Name = "inquilinosmenubutton";
+            inquilinosmenubutton.Padding = new Padding(10, 0, 0, 0);
+            inquilinosmenubutton.Size = new Size(203, 37);
+            inquilinosmenubutton.TabIndex = 0;
+            inquilinosmenubutton.Text = "INQUILINOS";
+            inquilinosmenubutton.TextAlign = ContentAlignment.MiddleLeft;
+            inquilinosmenubutton.UseVisualStyleBackColor = true;
+            // 
+            // logopictureBox
+            // 
+            logopictureBox.Dock = DockStyle.Top;
+            logopictureBox.Image = (Image)resources.GetObject("logopictureBox.Image");
+            logopictureBox.Location = new Point(0, 0);
+            logopictureBox.Name = "logopictureBox";
+            logopictureBox.Size = new Size(203, 148);
+            logopictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            logopictureBox.TabIndex = 0;
+            logopictureBox.TabStop = false;
             // 
             // panel3
             // 
             panel3.BackColor = SystemColors.WindowText;
-            panel3.Controls.Add(pictureBox1);
-            panel3.Controls.Add(label3);
+            panel3.Controls.Add(titulomenulabel);
+            panel3.Controls.Add(contenidopanel);
+            panel3.Controls.Add(closepictureBox);
+            panel3.Controls.Add(linelabel);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(254, 0);
+            panel3.Location = new Point(203, 0);
+            panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(911, 584);
+            panel3.Size = new Size(729, 467);
             panel3.TabIndex = 2;
             // 
-            // label3
+            // titulomenulabel
             // 
-            label3.BackColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(0, 43);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(911, 2);
-            label3.TabIndex = 10;
+            titulomenulabel.AutoSize = true;
+            titulomenulabel.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point);
+            titulomenulabel.ForeColor = SystemColors.ButtonHighlight;
+            titulomenulabel.Location = new Point(188, 4);
+            titulomenulabel.Name = "titulomenulabel";
+            titulomenulabel.Size = new Size(363, 30);
+            titulomenulabel.TabIndex = 12;
+            titulomenulabel.Text = "ADMINISTRACION ALQUILERES";
             // 
-            // pictureBox1
+            // contenidopanel
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(881, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(27, 27);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            contenidopanel.BackColor = SystemColors.WindowText;
+            contenidopanel.Dock = DockStyle.Bottom;
+            contenidopanel.Location = new Point(0, 39);
+            contenidopanel.Name = "contenidopanel";
+            contenidopanel.Size = new Size(729, 428);
+            contenidopanel.TabIndex = 11;
+            // 
+            // closepictureBox
+            // 
+            closepictureBox.Image = (Image)resources.GetObject("closepictureBox.Image");
+            closepictureBox.Location = new Point(705, 2);
+            closepictureBox.Margin = new Padding(2);
+            closepictureBox.Name = "closepictureBox";
+            closepictureBox.Size = new Size(22, 22);
+            closepictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            closepictureBox.TabIndex = 0;
+            closepictureBox.TabStop = false;
+            closepictureBox.Click += pictureBox1_Click;
+            // 
+            // linelabel
+            // 
+            linelabel.BackColor = SystemColors.ButtonHighlight;
+            linelabel.Location = new Point(0, 34);
+            linelabel.Name = "linelabel";
+            linelabel.Size = new Size(729, 2);
+            linelabel.TabIndex = 10;
             // 
             // MenuForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1165, 584);
+            ClientSize = new Size(932, 467);
             Controls.Add(panel3);
-            Controls.Add(panel1);
+            Controls.Add(leftpanel);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "MenuForm";
             Opacity = 0.85D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MenuForm";
+            leftpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)logopictureBox).EndInit();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)closepictureBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel leftpanel;
         private Panel panel3;
-        private PictureBox pictureBox1;
-        private Label label3;
+        private PictureBox closepictureBox;
+        private Label linelabel;
+        private Panel contenidopanel;
+        private PictureBox logopictureBox;
+        private Label titulomenulabel;
+        private Button inquilinosmenubutton;
+        private Button pagosmenubutton;
+        private Button mantenimientomenubutton;
+        private Button propiedadmenubutton;
+        private Button contratosmenubutton;
     }
 }
