@@ -28,991 +28,995 @@
         /// </summary>
         private void InitializeComponent()
         {
-            encabezadoPanel = new Panel();
-            closeButton = new Button();
-            tituloLabel = new Label();
-            rentasControl = new TabControl();
-            Contratos = new TabPage();
-            label16 = new Label();
-            editarcontratosbutton = new Button();
-            eliminarcontratosbutton = new Button();
-            guardarcontratosbutton = new Button();
-            InquilinocomboBox = new ComboBox();
-            propiedadComBo = new ComboBox();
-            inquilinolabel = new Label();
-            prpiedadlabel = new Label();
-            fechafindateTimePicker = new DateTimePicker();
-            fechainiciodateTimePicker = new DateTimePicker();
-            label13 = new Label();
-            montomensualtextBox = new TextBox();
-            label14 = new Label();
-            label15 = new Label();
-            contratosdataGridView = new DataGridView();
-            Inquilinos = new TabPage();
-            label18 = new Label();
-            direccionTextBox = new TextBox();
-            direccionlabel = new Label();
-            editarInquilinoButton = new Button();
-            eliminarInquilinoButton = new Button();
-            telefonoTextbox = new TextBox();
-            emailTextBox = new TextBox();
-            emaillabel = new Label();
-            label17 = new Label();
-            guardarInquilinoButton = new Button();
-            nombreTextBox = new TextBox();
-            nombrelabel = new Label();
-            inquilinosdataGridView = new DataGridView();
-            Mantenimiento = new TabPage();
-            mantenimientoDateTimePicker = new DateTimePicker();
-            costoTextbox = new TextBox();
-            label9 = new Label();
-            propiedadComboBox = new ComboBox();
-            label4 = new Label();
-            label5 = new Label();
-            mantenimientoDataGridView = new DataGridView();
-            editarMantenimientoButton = new Button();
-            eliminarMantenimientoButton = new Button();
-            guardarMantenimientoButton = new Button();
-            descripcionTextBox = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            Pagos = new TabPage();
-            pagoDateTimePicker = new DateTimePicker();
-            contratoComboBox = new ComboBox();
-            label3 = new Label();
-            label6 = new Label();
-            pagosDataGridView = new DataGridView();
-            editarPagoButton = new Button();
-            eliminarPagoButton = new Button();
-            guardarPagoButton = new Button();
-            montoPagoTextBox = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            Propiedades = new TabPage();
-            labelPropiedad = new Label();
-            txtId = new TextBox();
-            label12 = new Label();
-            txtBuscar = new TextBox();
-            label11 = new Label();
-            btnEliminarPropiedad = new Button();
-            btnEditarPropiedad = new Button();
-            btnGuardarPropiedad = new Button();
-            labelPrecioMensual = new Label();
-            labelTipoPropiedad = new Label();
-            labelDireccion = new Label();
-            textBoxPrecioMensualPropiedad = new TextBox();
-            textBoxTipoPropiedadPropiedad = new TextBox();
-            textBoxDireccionPropiedad = new TextBox();
-            textboxNombrePropiedad = new TextBox();
-            label10 = new Label();
-            dgvPropiedades = new DataGridView();
-            encabezadoPanel.SuspendLayout();
-            rentasControl.SuspendLayout();
-            Contratos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)contratosdataGridView).BeginInit();
-            Inquilinos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)inquilinosdataGridView).BeginInit();
-            Mantenimiento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)mantenimientoDataGridView).BeginInit();
-            Pagos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pagosDataGridView).BeginInit();
-            Propiedades.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPropiedades).BeginInit();
-            SuspendLayout();
+            this.encabezadoPanel = new System.Windows.Forms.Panel();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.tituloLabel = new System.Windows.Forms.Label();
+            this.rentasControl = new System.Windows.Forms.TabControl();
+            this.Contratos = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
+            this.editarcontratosbutton = new System.Windows.Forms.Button();
+            this.eliminarcontratosbutton = new System.Windows.Forms.Button();
+            this.guardarcontratosbutton = new System.Windows.Forms.Button();
+            this.InquilinocomboBox = new System.Windows.Forms.ComboBox();
+            this.propiedadComBo = new System.Windows.Forms.ComboBox();
+            this.inquilinolabel = new System.Windows.Forms.Label();
+            this.prpiedadlabel = new System.Windows.Forms.Label();
+            this.fechafindateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.fechainiciodateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.montomensualtextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.contratosdataGridView = new System.Windows.Forms.DataGridView();
+            this.Inquilinos = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.direccionTextBox = new System.Windows.Forms.TextBox();
+            this.direccionlabel = new System.Windows.Forms.Label();
+            this.editarInquilinoButton = new System.Windows.Forms.Button();
+            this.eliminarInquilinoButton = new System.Windows.Forms.Button();
+            this.telefonoTextbox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.emaillabel = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.guardarInquilinoButton = new System.Windows.Forms.Button();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.nombrelabel = new System.Windows.Forms.Label();
+            this.inquilinosdataGridView = new System.Windows.Forms.DataGridView();
+            this.Mantenimiento = new System.Windows.Forms.TabPage();
+            this.mantenimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.costoTextbox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.propiedadComboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.mantenimientoDataGridView = new System.Windows.Forms.DataGridView();
+            this.editarMantenimientoButton = new System.Windows.Forms.Button();
+            this.eliminarMantenimientoButton = new System.Windows.Forms.Button();
+            this.guardarMantenimientoButton = new System.Windows.Forms.Button();
+            this.descripcionTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Pagos = new System.Windows.Forms.TabPage();
+            this.pagoDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.contratoComboBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pagosDataGridView = new System.Windows.Forms.DataGridView();
+            this.editarPagoButton = new System.Windows.Forms.Button();
+            this.eliminarPagoButton = new System.Windows.Forms.Button();
+            this.guardarPagoButton = new System.Windows.Forms.Button();
+            this.montoPagoTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Propiedades = new System.Windows.Forms.TabPage();
+            this.labelPropiedad = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnEliminarPropiedad = new System.Windows.Forms.Button();
+            this.btnEditarPropiedad = new System.Windows.Forms.Button();
+            this.btnGuardarPropiedad = new System.Windows.Forms.Button();
+            this.labelPrecioMensual = new System.Windows.Forms.Label();
+            this.labelTipoPropiedad = new System.Windows.Forms.Label();
+            this.labelDireccion = new System.Windows.Forms.Label();
+            this.textBoxPrecioMensualPropiedad = new System.Windows.Forms.TextBox();
+            this.textBoxTipoPropiedadPropiedad = new System.Windows.Forms.TextBox();
+            this.textBoxDireccionPropiedad = new System.Windows.Forms.TextBox();
+            this.textboxNombrePropiedad = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dgvPropiedades = new System.Windows.Forms.DataGridView();
+            this.encabezadoPanel.SuspendLayout();
+            this.rentasControl.SuspendLayout();
+            this.Contratos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contratosdataGridView)).BeginInit();
+            this.Inquilinos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inquilinosdataGridView)).BeginInit();
+            this.Mantenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mantenimientoDataGridView)).BeginInit();
+            this.Pagos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pagosDataGridView)).BeginInit();
+            this.Propiedades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropiedades)).BeginInit();
+            this.SuspendLayout();
             // 
             // encabezadoPanel
             // 
-            encabezadoPanel.BackColor = Color.Gray;
-            encabezadoPanel.Controls.Add(closeButton);
-            encabezadoPanel.Controls.Add(tituloLabel);
-            encabezadoPanel.Dock = DockStyle.Top;
-            encabezadoPanel.Location = new Point(0, 0);
-            encabezadoPanel.Name = "encabezadoPanel";
-            encabezadoPanel.Size = new Size(1100, 63);
-            encabezadoPanel.TabIndex = 0;
+            this.encabezadoPanel.BackColor = System.Drawing.Color.Gray;
+            this.encabezadoPanel.Controls.Add(this.closeButton);
+            this.encabezadoPanel.Controls.Add(this.tituloLabel);
+            this.encabezadoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.encabezadoPanel.Location = new System.Drawing.Point(0, 0);
+            this.encabezadoPanel.Name = "encabezadoPanel";
+            this.encabezadoPanel.Size = new System.Drawing.Size(1100, 63);
+            this.encabezadoPanel.TabIndex = 0;
             // 
             // closeButton
             // 
-            closeButton.BackColor = Color.IndianRed;
-            closeButton.Dock = DockStyle.Right;
-            closeButton.FlatAppearance.BorderColor = Color.White;
-            closeButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1030, 0);
-            closeButton.Name = "closeButton";
-            closeButton.Size = new Size(70, 63);
-            closeButton.TabIndex = 1;
-            closeButton.Text = "X";
-            closeButton.UseVisualStyleBackColor = false;
-            closeButton.Click += closeButton_Click;
+            this.closeButton.BackColor = System.Drawing.Color.IndianRed;
+            this.closeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.closeButton.ForeColor = System.Drawing.Color.White;
+            this.closeButton.Location = new System.Drawing.Point(1030, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(70, 63);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = false;
             // 
             // tituloLabel
             // 
-            tituloLabel.AutoSize = true;
-            tituloLabel.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tituloLabel.ForeColor = Color.White;
-            tituloLabel.Location = new Point(12, 9);
-            tituloLabel.Name = "tituloLabel";
-            tituloLabel.Size = new Size(407, 38);
-            tituloLabel.TabIndex = 0;
-            tituloLabel.Text = "Sistema de Rentas de Alquiler";
-            tituloLabel.TextAlign = ContentAlignment.MiddleCenter;
+            this.tituloLabel.AutoSize = true;
+            this.tituloLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tituloLabel.ForeColor = System.Drawing.Color.White;
+            this.tituloLabel.Location = new System.Drawing.Point(12, 9);
+            this.tituloLabel.Name = "tituloLabel";
+            this.tituloLabel.Size = new System.Drawing.Size(407, 38);
+            this.tituloLabel.TabIndex = 0;
+            this.tituloLabel.Text = "Sistema de Rentas de Alquiler";
+            this.tituloLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rentasControl
             // 
-            rentasControl.Controls.Add(Contratos);
-            rentasControl.Controls.Add(Inquilinos);
-            rentasControl.Controls.Add(Mantenimiento);
-            rentasControl.Controls.Add(Pagos);
-            rentasControl.Controls.Add(Propiedades);
-            rentasControl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rentasControl.Location = new Point(0, 69);
-            rentasControl.Name = "rentasControl";
-            rentasControl.SelectedIndex = 0;
-            rentasControl.Size = new Size(1100, 483);
-            rentasControl.TabIndex = 1;
+            this.rentasControl.Controls.Add(this.Contratos);
+            this.rentasControl.Controls.Add(this.Inquilinos);
+            this.rentasControl.Controls.Add(this.Mantenimiento);
+            this.rentasControl.Controls.Add(this.Pagos);
+            this.rentasControl.Controls.Add(this.Propiedades);
+            this.rentasControl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rentasControl.Location = new System.Drawing.Point(0, 69);
+            this.rentasControl.Name = "rentasControl";
+            this.rentasControl.SelectedIndex = 0;
+            this.rentasControl.Size = new System.Drawing.Size(1100, 483);
+            this.rentasControl.TabIndex = 1;
             // 
             // Contratos
             // 
-            Contratos.BackColor = Color.Silver;
-            Contratos.CausesValidation = false;
-            Contratos.Controls.Add(label16);
-            Contratos.Controls.Add(editarcontratosbutton);
-            Contratos.Controls.Add(eliminarcontratosbutton);
-            Contratos.Controls.Add(guardarcontratosbutton);
-            Contratos.Controls.Add(InquilinocomboBox);
-            Contratos.Controls.Add(propiedadComBo);
-            Contratos.Controls.Add(inquilinolabel);
-            Contratos.Controls.Add(prpiedadlabel);
-            Contratos.Controls.Add(fechafindateTimePicker);
-            Contratos.Controls.Add(fechainiciodateTimePicker);
-            Contratos.Controls.Add(label13);
-            Contratos.Controls.Add(montomensualtextBox);
-            Contratos.Controls.Add(label14);
-            Contratos.Controls.Add(label15);
-            Contratos.Controls.Add(contratosdataGridView);
-            Contratos.ForeColor = SystemColors.GrayText;
-            Contratos.Location = new Point(4, 37);
-            Contratos.Name = "Contratos";
-            Contratos.Size = new Size(1092, 442);
-            Contratos.TabIndex = 0;
-            Contratos.Text = "Contratos";
+            this.Contratos.BackColor = System.Drawing.Color.Silver;
+            this.Contratos.CausesValidation = false;
+            this.Contratos.Controls.Add(this.label16);
+            this.Contratos.Controls.Add(this.editarcontratosbutton);
+            this.Contratos.Controls.Add(this.eliminarcontratosbutton);
+            this.Contratos.Controls.Add(this.guardarcontratosbutton);
+            this.Contratos.Controls.Add(this.InquilinocomboBox);
+            this.Contratos.Controls.Add(this.propiedadComBo);
+            this.Contratos.Controls.Add(this.inquilinolabel);
+            this.Contratos.Controls.Add(this.prpiedadlabel);
+            this.Contratos.Controls.Add(this.fechafindateTimePicker);
+            this.Contratos.Controls.Add(this.fechainiciodateTimePicker);
+            this.Contratos.Controls.Add(this.label13);
+            this.Contratos.Controls.Add(this.montomensualtextBox);
+            this.Contratos.Controls.Add(this.label14);
+            this.Contratos.Controls.Add(this.label15);
+            this.Contratos.Controls.Add(this.contratosdataGridView);
+            this.Contratos.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.Contratos.Location = new System.Drawing.Point(4, 37);
+            this.Contratos.Name = "Contratos";
+            this.Contratos.Size = new System.Drawing.Size(1092, 442);
+            this.Contratos.TabIndex = 0;
+            this.Contratos.Text = "Contratos";
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.ForeColor = Color.DimGray;
-            label16.Location = new Point(13, 30);
-            label16.Margin = new Padding(4, 0, 4, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(186, 28);
-            label16.TabIndex = 59;
-            label16.Text = "Lista De Contratos";
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.DimGray;
+            this.label16.Location = new System.Drawing.Point(13, 30);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(186, 28);
+            this.label16.TabIndex = 59;
+            this.label16.Text = "Lista De Contratos";
             // 
             // editarcontratosbutton
             // 
-            editarcontratosbutton.ForeColor = Color.DimGray;
-            editarcontratosbutton.Location = new Point(751, 358);
-            editarcontratosbutton.Margin = new Padding(4);
-            editarcontratosbutton.Name = "editarcontratosbutton";
-            editarcontratosbutton.Size = new Size(143, 41);
-            editarcontratosbutton.TabIndex = 56;
-            editarcontratosbutton.Text = "Editar";
-            editarcontratosbutton.UseVisualStyleBackColor = true;
+            this.editarcontratosbutton.ForeColor = System.Drawing.Color.DimGray;
+            this.editarcontratosbutton.Location = new System.Drawing.Point(751, 358);
+            this.editarcontratosbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.editarcontratosbutton.Name = "editarcontratosbutton";
+            this.editarcontratosbutton.Size = new System.Drawing.Size(143, 41);
+            this.editarcontratosbutton.TabIndex = 56;
+            this.editarcontratosbutton.Text = "Editar";
+            this.editarcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // eliminarcontratosbutton
             // 
-            eliminarcontratosbutton.ForeColor = Color.DimGray;
-            eliminarcontratosbutton.Location = new Point(902, 358);
-            eliminarcontratosbutton.Margin = new Padding(4);
-            eliminarcontratosbutton.Name = "eliminarcontratosbutton";
-            eliminarcontratosbutton.Size = new Size(143, 41);
-            eliminarcontratosbutton.TabIndex = 58;
-            eliminarcontratosbutton.Text = "Eliminar";
-            eliminarcontratosbutton.UseVisualStyleBackColor = true;
+            this.eliminarcontratosbutton.ForeColor = System.Drawing.Color.DimGray;
+            this.eliminarcontratosbutton.Location = new System.Drawing.Point(902, 358);
+            this.eliminarcontratosbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.eliminarcontratosbutton.Name = "eliminarcontratosbutton";
+            this.eliminarcontratosbutton.Size = new System.Drawing.Size(143, 41);
+            this.eliminarcontratosbutton.TabIndex = 58;
+            this.eliminarcontratosbutton.Text = "Eliminar";
+            this.eliminarcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // guardarcontratosbutton
             // 
-            guardarcontratosbutton.ForeColor = Color.DimGray;
-            guardarcontratosbutton.Location = new Point(600, 358);
-            guardarcontratosbutton.Margin = new Padding(4);
-            guardarcontratosbutton.Name = "guardarcontratosbutton";
-            guardarcontratosbutton.Size = new Size(143, 41);
-            guardarcontratosbutton.TabIndex = 57;
-            guardarcontratosbutton.Text = "Guardar";
-            guardarcontratosbutton.UseVisualStyleBackColor = true;
-            guardarcontratosbutton.Click += guardarcontratosbutton_Click;
+            this.guardarcontratosbutton.ForeColor = System.Drawing.Color.DimGray;
+            this.guardarcontratosbutton.Location = new System.Drawing.Point(600, 358);
+            this.guardarcontratosbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.guardarcontratosbutton.Name = "guardarcontratosbutton";
+            this.guardarcontratosbutton.Size = new System.Drawing.Size(143, 41);
+            this.guardarcontratosbutton.TabIndex = 57;
+            this.guardarcontratosbutton.Text = "Guardar";
+            this.guardarcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // InquilinocomboBox
             // 
-            InquilinocomboBox.FormattingEnabled = true;
-            InquilinocomboBox.Location = new Point(567, 242);
-            InquilinocomboBox.Name = "InquilinocomboBox";
-            InquilinocomboBox.Size = new Size(250, 36);
-            InquilinocomboBox.TabIndex = 55;
+            this.InquilinocomboBox.FormattingEnabled = true;
+            this.InquilinocomboBox.Location = new System.Drawing.Point(567, 242);
+            this.InquilinocomboBox.Name = "InquilinocomboBox";
+            this.InquilinocomboBox.Size = new System.Drawing.Size(250, 36);
+            this.InquilinocomboBox.TabIndex = 55;
             // 
             // propiedadComBo
             // 
-            propiedadComBo.FormattingEnabled = true;
-            propiedadComBo.Location = new Point(823, 153);
-            propiedadComBo.Name = "propiedadComBo";
-            propiedadComBo.Size = new Size(250, 36);
-            propiedadComBo.TabIndex = 54;
+            this.propiedadComBo.FormattingEnabled = true;
+            this.propiedadComBo.Location = new System.Drawing.Point(823, 153);
+            this.propiedadComBo.Name = "propiedadComBo";
+            this.propiedadComBo.Size = new System.Drawing.Size(250, 36);
+            this.propiedadComBo.TabIndex = 54;
             // 
             // inquilinolabel
             // 
-            inquilinolabel.AutoSize = true;
-            inquilinolabel.ForeColor = SystemColors.ControlDarkDark;
-            inquilinolabel.Location = new Point(567, 211);
-            inquilinolabel.Name = "inquilinolabel";
-            inquilinolabel.Size = new Size(101, 28);
-            inquilinolabel.TabIndex = 53;
-            inquilinolabel.Text = "Inquilino:";
+            this.inquilinolabel.AutoSize = true;
+            this.inquilinolabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.inquilinolabel.Location = new System.Drawing.Point(567, 211);
+            this.inquilinolabel.Name = "inquilinolabel";
+            this.inquilinolabel.Size = new System.Drawing.Size(101, 28);
+            this.inquilinolabel.TabIndex = 53;
+            this.inquilinolabel.Text = "Inquilino:";
             // 
             // prpiedadlabel
             // 
-            prpiedadlabel.AutoSize = true;
-            prpiedadlabel.ForeColor = SystemColors.ControlDarkDark;
-            prpiedadlabel.Location = new Point(823, 124);
-            prpiedadlabel.Name = "prpiedadlabel";
-            prpiedadlabel.Size = new Size(108, 28);
-            prpiedadlabel.TabIndex = 52;
-            prpiedadlabel.Text = "Propiedad";
+            this.prpiedadlabel.AutoSize = true;
+            this.prpiedadlabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.prpiedadlabel.Location = new System.Drawing.Point(823, 124);
+            this.prpiedadlabel.Name = "prpiedadlabel";
+            this.prpiedadlabel.Size = new System.Drawing.Size(108, 28);
+            this.prpiedadlabel.TabIndex = 52;
+            this.prpiedadlabel.Text = "Propiedad";
             // 
             // fechafindateTimePicker
             // 
-            fechafindateTimePicker.Location = new Point(823, 78);
-            fechafindateTimePicker.Name = "fechafindateTimePicker";
-            fechafindateTimePicker.Size = new Size(250, 34);
-            fechafindateTimePicker.TabIndex = 51;
+            this.fechafindateTimePicker.Location = new System.Drawing.Point(823, 78);
+            this.fechafindateTimePicker.Name = "fechafindateTimePicker";
+            this.fechafindateTimePicker.Size = new System.Drawing.Size(250, 34);
+            this.fechafindateTimePicker.TabIndex = 51;
             // 
             // fechainiciodateTimePicker
             // 
-            fechainiciodateTimePicker.Location = new Point(567, 78);
-            fechainiciodateTimePicker.Name = "fechainiciodateTimePicker";
-            fechainiciodateTimePicker.Size = new Size(250, 34);
-            fechainiciodateTimePicker.TabIndex = 50;
+            this.fechainiciodateTimePicker.Location = new System.Drawing.Point(567, 78);
+            this.fechainiciodateTimePicker.Name = "fechainiciodateTimePicker";
+            this.fechainiciodateTimePicker.Size = new System.Drawing.Size(250, 34);
+            this.fechainiciodateTimePicker.TabIndex = 50;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.ForeColor = SystemColors.ControlDarkDark;
-            label13.Location = new Point(823, 44);
-            label13.Name = "label13";
-            label13.Size = new Size(100, 28);
-            label13.TabIndex = 47;
-            label13.Text = "Fecha Fin";
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label13.Location = new System.Drawing.Point(823, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 28);
+            this.label13.TabIndex = 47;
+            this.label13.Text = "Fecha Fin";
             // 
             // montomensualtextBox
             // 
-            montomensualtextBox.Location = new Point(567, 155);
-            montomensualtextBox.Name = "montomensualtextBox";
-            montomensualtextBox.Size = new Size(250, 34);
-            montomensualtextBox.TabIndex = 49;
+            this.montomensualtextBox.Location = new System.Drawing.Point(567, 155);
+            this.montomensualtextBox.Name = "montomensualtextBox";
+            this.montomensualtextBox.Size = new System.Drawing.Size(250, 34);
+            this.montomensualtextBox.TabIndex = 49;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.ForeColor = SystemColors.ControlDarkDark;
-            label14.Location = new Point(567, 124);
-            label14.Name = "label14";
-            label14.Size = new Size(161, 28);
-            label14.TabIndex = 48;
-            label14.Text = "Monto Mensual";
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(567, 124);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(161, 28);
+            this.label14.TabIndex = 48;
+            this.label14.Text = "Monto Mensual";
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.BackColor = Color.Silver;
-            label15.ForeColor = SystemColors.ControlDarkDark;
-            label15.Location = new Point(567, 44);
-            label15.Name = "label15";
-            label15.Size = new Size(124, 28);
-            label15.TabIndex = 46;
-            label15.Text = "Fecha Inicio";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Silver;
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(567, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 28);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Fecha Inicio";
             // 
             // contratosdataGridView
             // 
-            contratosdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            contratosdataGridView.Location = new Point(13, 61);
-            contratosdataGridView.Name = "contratosdataGridView";
-            contratosdataGridView.RowHeadersWidth = 51;
-            contratosdataGridView.RowTemplate.Height = 29;
-            contratosdataGridView.Size = new Size(548, 338);
-            contratosdataGridView.TabIndex = 45;
+            this.contratosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.contratosdataGridView.Location = new System.Drawing.Point(13, 61);
+            this.contratosdataGridView.Name = "contratosdataGridView";
+            this.contratosdataGridView.RowHeadersWidth = 51;
+            this.contratosdataGridView.RowTemplate.Height = 29;
+            this.contratosdataGridView.Size = new System.Drawing.Size(548, 338);
+            this.contratosdataGridView.TabIndex = 45;
             // 
             // Inquilinos
             // 
-            Inquilinos.BackColor = Color.Silver;
-            Inquilinos.Controls.Add(label18);
-            Inquilinos.Controls.Add(direccionTextBox);
-            Inquilinos.Controls.Add(direccionlabel);
-            Inquilinos.Controls.Add(editarInquilinoButton);
-            Inquilinos.Controls.Add(eliminarInquilinoButton);
-            Inquilinos.Controls.Add(telefonoTextbox);
-            Inquilinos.Controls.Add(emailTextBox);
-            Inquilinos.Controls.Add(emaillabel);
-            Inquilinos.Controls.Add(label17);
-            Inquilinos.Controls.Add(guardarInquilinoButton);
-            Inquilinos.Controls.Add(nombreTextBox);
-            Inquilinos.Controls.Add(nombrelabel);
-            Inquilinos.Controls.Add(inquilinosdataGridView);
-            Inquilinos.ForeColor = Color.Gray;
-            Inquilinos.Location = new Point(4, 37);
-            Inquilinos.Name = "Inquilinos";
-            Inquilinos.Size = new Size(1092, 442);
-            Inquilinos.TabIndex = 1;
-            Inquilinos.Text = "Inquilinos";
+            this.Inquilinos.BackColor = System.Drawing.Color.Silver;
+            this.Inquilinos.Controls.Add(this.label18);
+            this.Inquilinos.Controls.Add(this.direccionTextBox);
+            this.Inquilinos.Controls.Add(this.direccionlabel);
+            this.Inquilinos.Controls.Add(this.editarInquilinoButton);
+            this.Inquilinos.Controls.Add(this.eliminarInquilinoButton);
+            this.Inquilinos.Controls.Add(this.telefonoTextbox);
+            this.Inquilinos.Controls.Add(this.emailTextBox);
+            this.Inquilinos.Controls.Add(this.emaillabel);
+            this.Inquilinos.Controls.Add(this.label17);
+            this.Inquilinos.Controls.Add(this.guardarInquilinoButton);
+            this.Inquilinos.Controls.Add(this.nombreTextBox);
+            this.Inquilinos.Controls.Add(this.nombrelabel);
+            this.Inquilinos.Controls.Add(this.inquilinosdataGridView);
+            this.Inquilinos.ForeColor = System.Drawing.Color.Gray;
+            this.Inquilinos.Location = new System.Drawing.Point(4, 37);
+            this.Inquilinos.Name = "Inquilinos";
+            this.Inquilinos.Size = new System.Drawing.Size(1092, 442);
+            this.Inquilinos.TabIndex = 1;
+            this.Inquilinos.Text = "Inquilinos";
             // 
             // label18
             // 
-            label18.AutoSize = true;
-            label18.ForeColor = Color.DimGray;
-            label18.Location = new Point(19, 28);
-            label18.Margin = new Padding(4, 0, 4, 0);
-            label18.Name = "label18";
-            label18.Size = new Size(187, 28);
-            label18.TabIndex = 60;
-            label18.Text = "Lista De Inquilinos";
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.Color.DimGray;
+            this.label18.Location = new System.Drawing.Point(19, 28);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(187, 28);
+            this.label18.TabIndex = 60;
+            this.label18.Text = "Lista De Inquilinos";
             // 
             // direccionTextBox
             // 
-            direccionTextBox.Location = new Point(602, 213);
-            direccionTextBox.Name = "direccionTextBox";
-            direccionTextBox.Size = new Size(214, 34);
-            direccionTextBox.TabIndex = 23;
+            this.direccionTextBox.Location = new System.Drawing.Point(602, 213);
+            this.direccionTextBox.Name = "direccionTextBox";
+            this.direccionTextBox.Size = new System.Drawing.Size(214, 34);
+            this.direccionTextBox.TabIndex = 23;
             // 
             // direccionlabel
             // 
-            direccionlabel.AutoSize = true;
-            direccionlabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            direccionlabel.ForeColor = SystemColors.ControlDarkDark;
-            direccionlabel.Location = new Point(602, 165);
-            direccionlabel.Name = "direccionlabel";
-            direccionlabel.Size = new Size(116, 31);
-            direccionlabel.TabIndex = 22;
-            direccionlabel.Text = "Direccion";
+            this.direccionlabel.AutoSize = true;
+            this.direccionlabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.direccionlabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.direccionlabel.Location = new System.Drawing.Point(602, 165);
+            this.direccionlabel.Name = "direccionlabel";
+            this.direccionlabel.Size = new System.Drawing.Size(116, 31);
+            this.direccionlabel.TabIndex = 22;
+            this.direccionlabel.Text = "Direccion";
             // 
             // editarInquilinoButton
             // 
-            editarInquilinoButton.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            editarInquilinoButton.ForeColor = SystemColors.ControlDarkDark;
-            editarInquilinoButton.Location = new Point(623, 369);
-            editarInquilinoButton.Name = "editarInquilinoButton";
-            editarInquilinoButton.Size = new Size(118, 41);
-            editarInquilinoButton.TabIndex = 21;
-            editarInquilinoButton.Text = "Editar";
-            editarInquilinoButton.UseVisualStyleBackColor = true;
-            editarInquilinoButton.Click += editarInquilinoButton_Click;
+            this.editarInquilinoButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.editarInquilinoButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.editarInquilinoButton.Location = new System.Drawing.Point(623, 369);
+            this.editarInquilinoButton.Name = "editarInquilinoButton";
+            this.editarInquilinoButton.Size = new System.Drawing.Size(118, 41);
+            this.editarInquilinoButton.TabIndex = 21;
+            this.editarInquilinoButton.Text = "Editar";
+            this.editarInquilinoButton.UseVisualStyleBackColor = true;
             // 
             // eliminarInquilinoButton
             // 
-            eliminarInquilinoButton.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            eliminarInquilinoButton.ForeColor = SystemColors.ControlDarkDark;
-            eliminarInquilinoButton.Location = new Point(923, 369);
-            eliminarInquilinoButton.Name = "eliminarInquilinoButton";
-            eliminarInquilinoButton.Size = new Size(119, 41);
-            eliminarInquilinoButton.TabIndex = 20;
-            eliminarInquilinoButton.Text = "Eliminar";
-            eliminarInquilinoButton.UseVisualStyleBackColor = true;
-            eliminarInquilinoButton.Click += eliminarInquilinoButton_Click;
+            this.eliminarInquilinoButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.eliminarInquilinoButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.eliminarInquilinoButton.Location = new System.Drawing.Point(923, 369);
+            this.eliminarInquilinoButton.Name = "eliminarInquilinoButton";
+            this.eliminarInquilinoButton.Size = new System.Drawing.Size(119, 41);
+            this.eliminarInquilinoButton.TabIndex = 20;
+            this.eliminarInquilinoButton.Text = "Eliminar";
+            this.eliminarInquilinoButton.UseVisualStyleBackColor = true;
             // 
             // telefonoTextbox
             // 
-            telefonoTextbox.Location = new Point(845, 213);
-            telefonoTextbox.Name = "telefonoTextbox";
-            telefonoTextbox.Size = new Size(214, 34);
-            telefonoTextbox.TabIndex = 19;
+            this.telefonoTextbox.Location = new System.Drawing.Point(845, 213);
+            this.telefonoTextbox.Name = "telefonoTextbox";
+            this.telefonoTextbox.Size = new System.Drawing.Size(214, 34);
+            this.telefonoTextbox.TabIndex = 19;
             // 
             // emailTextBox
             // 
-            emailTextBox.Location = new Point(845, 104);
-            emailTextBox.Name = "emailTextBox";
-            emailTextBox.Size = new Size(214, 34);
-            emailTextBox.TabIndex = 18;
+            this.emailTextBox.Location = new System.Drawing.Point(845, 104);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(214, 34);
+            this.emailTextBox.TabIndex = 18;
             // 
             // emaillabel
             // 
-            emaillabel.AutoSize = true;
-            emaillabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            emaillabel.ForeColor = SystemColors.ControlDarkDark;
-            emaillabel.Location = new Point(845, 179);
-            emaillabel.Name = "emaillabel";
-            emaillabel.Size = new Size(107, 31);
-            emaillabel.TabIndex = 17;
-            emaillabel.Text = "Telefono";
+            this.emaillabel.AutoSize = true;
+            this.emaillabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.emaillabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.emaillabel.Location = new System.Drawing.Point(845, 179);
+            this.emaillabel.Name = "emaillabel";
+            this.emaillabel.Size = new System.Drawing.Size(107, 31);
+            this.emaillabel.TabIndex = 17;
+            this.emaillabel.Text = "Telefono";
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.ForeColor = SystemColors.ControlDarkDark;
-            label17.Location = new Point(845, 59);
-            label17.Name = "label17";
-            label17.Size = new Size(73, 31);
-            label17.TabIndex = 16;
-            label17.Text = "Email";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label17.Location = new System.Drawing.Point(845, 59);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 31);
+            this.label17.TabIndex = 16;
+            this.label17.Text = "Email";
             // 
             // guardarInquilinoButton
             // 
-            guardarInquilinoButton.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guardarInquilinoButton.ForeColor = SystemColors.ControlDarkDark;
-            guardarInquilinoButton.Location = new Point(775, 369);
-            guardarInquilinoButton.Name = "guardarInquilinoButton";
-            guardarInquilinoButton.Size = new Size(119, 41);
-            guardarInquilinoButton.TabIndex = 15;
-            guardarInquilinoButton.Text = "Guardar";
-            guardarInquilinoButton.UseVisualStyleBackColor = true;
-            guardarInquilinoButton.Click += guardarInquilinoButton_Click;
+            this.guardarInquilinoButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guardarInquilinoButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guardarInquilinoButton.Location = new System.Drawing.Point(775, 369);
+            this.guardarInquilinoButton.Name = "guardarInquilinoButton";
+            this.guardarInquilinoButton.Size = new System.Drawing.Size(119, 41);
+            this.guardarInquilinoButton.TabIndex = 15;
+            this.guardarInquilinoButton.Text = "Guardar";
+            this.guardarInquilinoButton.UseVisualStyleBackColor = true;
             // 
             // nombreTextBox
             // 
-            nombreTextBox.Location = new Point(602, 104);
-            nombreTextBox.Name = "nombreTextBox";
-            nombreTextBox.Size = new Size(214, 34);
-            nombreTextBox.TabIndex = 14;
+            this.nombreTextBox.Location = new System.Drawing.Point(602, 104);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(214, 34);
+            this.nombreTextBox.TabIndex = 14;
             // 
             // nombrelabel
             // 
-            nombrelabel.AutoSize = true;
-            nombrelabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            nombrelabel.ForeColor = SystemColors.ControlDarkDark;
-            nombrelabel.Location = new Point(602, 59);
-            nombrelabel.Name = "nombrelabel";
-            nombrelabel.Size = new Size(102, 31);
-            nombrelabel.TabIndex = 13;
-            nombrelabel.Text = "Nombre";
+            this.nombrelabel.AutoSize = true;
+            this.nombrelabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nombrelabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.nombrelabel.Location = new System.Drawing.Point(602, 59);
+            this.nombrelabel.Name = "nombrelabel";
+            this.nombrelabel.Size = new System.Drawing.Size(102, 31);
+            this.nombrelabel.TabIndex = 13;
+            this.nombrelabel.Text = "Nombre";
             // 
             // inquilinosdataGridView
             // 
-            inquilinosdataGridView.BackgroundColor = SystemColors.AppWorkspace;
-            inquilinosdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            inquilinosdataGridView.Location = new Point(19, 59);
-            inquilinosdataGridView.Name = "inquilinosdataGridView";
-            inquilinosdataGridView.RowHeadersWidth = 51;
-            inquilinosdataGridView.RowTemplate.Height = 29;
-            inquilinosdataGridView.Size = new Size(577, 351);
-            inquilinosdataGridView.TabIndex = 12;
+            this.inquilinosdataGridView.BackgroundColor = System.Drawing.SystemColors.AppWorkspace;
+            this.inquilinosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inquilinosdataGridView.Location = new System.Drawing.Point(19, 59);
+            this.inquilinosdataGridView.Name = "inquilinosdataGridView";
+            this.inquilinosdataGridView.RowHeadersWidth = 51;
+            this.inquilinosdataGridView.RowTemplate.Height = 29;
+            this.inquilinosdataGridView.Size = new System.Drawing.Size(577, 351);
+            this.inquilinosdataGridView.TabIndex = 12;
             // 
             // Mantenimiento
             // 
-            Mantenimiento.BackColor = Color.Silver;
-            Mantenimiento.Controls.Add(mantenimientoDateTimePicker);
-            Mantenimiento.Controls.Add(costoTextbox);
-            Mantenimiento.Controls.Add(label9);
-            Mantenimiento.Controls.Add(propiedadComboBox);
-            Mantenimiento.Controls.Add(label4);
-            Mantenimiento.Controls.Add(label5);
-            Mantenimiento.Controls.Add(mantenimientoDataGridView);
-            Mantenimiento.Controls.Add(editarMantenimientoButton);
-            Mantenimiento.Controls.Add(eliminarMantenimientoButton);
-            Mantenimiento.Controls.Add(guardarMantenimientoButton);
-            Mantenimiento.Controls.Add(descripcionTextBox);
-            Mantenimiento.Controls.Add(label7);
-            Mantenimiento.Controls.Add(label8);
-            Mantenimiento.ForeColor = Color.Gray;
-            Mantenimiento.Location = new Point(4, 37);
-            Mantenimiento.Name = "Mantenimiento";
-            Mantenimiento.Size = new Size(1092, 442);
-            Mantenimiento.TabIndex = 2;
-            Mantenimiento.Text = "Mantenimiento";
+            this.Mantenimiento.BackColor = System.Drawing.Color.Silver;
+            this.Mantenimiento.Controls.Add(this.mantenimientoDateTimePicker);
+            this.Mantenimiento.Controls.Add(this.costoTextbox);
+            this.Mantenimiento.Controls.Add(this.label9);
+            this.Mantenimiento.Controls.Add(this.propiedadComboBox);
+            this.Mantenimiento.Controls.Add(this.label4);
+            this.Mantenimiento.Controls.Add(this.label5);
+            this.Mantenimiento.Controls.Add(this.mantenimientoDataGridView);
+            this.Mantenimiento.Controls.Add(this.editarMantenimientoButton);
+            this.Mantenimiento.Controls.Add(this.eliminarMantenimientoButton);
+            this.Mantenimiento.Controls.Add(this.guardarMantenimientoButton);
+            this.Mantenimiento.Controls.Add(this.descripcionTextBox);
+            this.Mantenimiento.Controls.Add(this.label7);
+            this.Mantenimiento.Controls.Add(this.label8);
+            this.Mantenimiento.ForeColor = System.Drawing.Color.Gray;
+            this.Mantenimiento.Location = new System.Drawing.Point(4, 37);
+            this.Mantenimiento.Name = "Mantenimiento";
+            this.Mantenimiento.Size = new System.Drawing.Size(1092, 442);
+            this.Mantenimiento.TabIndex = 2;
+            this.Mantenimiento.Text = "Mantenimiento";
             // 
             // mantenimientoDateTimePicker
             // 
-            mantenimientoDateTimePicker.Location = new Point(635, 84);
-            mantenimientoDateTimePicker.Name = "mantenimientoDateTimePicker";
-            mantenimientoDateTimePicker.Size = new Size(445, 34);
-            mantenimientoDateTimePicker.TabIndex = 36;
+            this.mantenimientoDateTimePicker.Location = new System.Drawing.Point(635, 84);
+            this.mantenimientoDateTimePicker.Name = "mantenimientoDateTimePicker";
+            this.mantenimientoDateTimePicker.Size = new System.Drawing.Size(445, 34);
+            this.mantenimientoDateTimePicker.TabIndex = 36;
             // 
             // costoTextbox
             // 
-            costoTextbox.Location = new Point(635, 302);
-            costoTextbox.Margin = new Padding(4);
-            costoTextbox.Name = "costoTextbox";
-            costoTextbox.Size = new Size(186, 34);
-            costoTextbox.TabIndex = 35;
+            this.costoTextbox.Location = new System.Drawing.Point(635, 302);
+            this.costoTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.costoTextbox.Name = "costoTextbox";
+            this.costoTextbox.Size = new System.Drawing.Size(186, 34);
+            this.costoTextbox.TabIndex = 35;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.DimGray;
-            label9.Location = new Point(635, 270);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(70, 28);
-            label9.TabIndex = 34;
-            label9.Text = "Costo:";
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.DimGray;
+            this.label9.Location = new System.Drawing.Point(635, 270);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 28);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Costo:";
             // 
             // propiedadComboBox
             // 
-            propiedadComboBox.FormattingEnabled = true;
-            propiedadComboBox.Location = new Point(894, 302);
-            propiedadComboBox.Name = "propiedadComboBox";
-            propiedadComboBox.Size = new Size(186, 36);
-            propiedadComboBox.TabIndex = 33;
+            this.propiedadComboBox.FormattingEnabled = true;
+            this.propiedadComboBox.Location = new System.Drawing.Point(894, 302);
+            this.propiedadComboBox.Name = "propiedadComboBox";
+            this.propiedadComboBox.Size = new System.Drawing.Size(186, 36);
+            this.propiedadComboBox.TabIndex = 33;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.DimGray;
-            label4.Location = new Point(894, 271);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(113, 28);
-            label4.TabIndex = 32;
-            label4.Text = "Propiedad:";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
+            this.label4.Location = new System.Drawing.Point(894, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 28);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Propiedad:";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.DimGray;
-            label5.Location = new Point(9, 20);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(249, 28);
-            label5.TabIndex = 31;
-            label5.Text = "Lista De Mantenimientos";
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
+            this.label5.Location = new System.Drawing.Point(9, 20);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(249, 28);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Lista De Mantenimientos";
             // 
             // mantenimientoDataGridView
             // 
-            mantenimientoDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            mantenimientoDataGridView.Location = new Point(9, 52);
-            mantenimientoDataGridView.Margin = new Padding(4);
-            mantenimientoDataGridView.Name = "mantenimientoDataGridView";
-            mantenimientoDataGridView.RowHeadersWidth = 51;
-            mantenimientoDataGridView.RowTemplate.Height = 29;
-            mantenimientoDataGridView.Size = new Size(603, 365);
-            mantenimientoDataGridView.TabIndex = 27;
+            this.mantenimientoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mantenimientoDataGridView.Location = new System.Drawing.Point(9, 52);
+            this.mantenimientoDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.mantenimientoDataGridView.Name = "mantenimientoDataGridView";
+            this.mantenimientoDataGridView.RowHeadersWidth = 51;
+            this.mantenimientoDataGridView.RowTemplate.Height = 29;
+            this.mantenimientoDataGridView.Size = new System.Drawing.Size(603, 365);
+            this.mantenimientoDataGridView.TabIndex = 27;
             // 
             // editarMantenimientoButton
             // 
-            editarMantenimientoButton.ForeColor = Color.DimGray;
-            editarMantenimientoButton.Location = new Point(786, 376);
-            editarMantenimientoButton.Margin = new Padding(4);
-            editarMantenimientoButton.Name = "editarMantenimientoButton";
-            editarMantenimientoButton.Size = new Size(143, 41);
-            editarMantenimientoButton.TabIndex = 28;
-            editarMantenimientoButton.Text = "Editar";
-            editarMantenimientoButton.UseVisualStyleBackColor = true;
-            editarMantenimientoButton.Click += editarMantenimientoButton_Click;
+            this.editarMantenimientoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.editarMantenimientoButton.Location = new System.Drawing.Point(786, 376);
+            this.editarMantenimientoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.editarMantenimientoButton.Name = "editarMantenimientoButton";
+            this.editarMantenimientoButton.Size = new System.Drawing.Size(143, 41);
+            this.editarMantenimientoButton.TabIndex = 28;
+            this.editarMantenimientoButton.Text = "Editar";
+            this.editarMantenimientoButton.UseVisualStyleBackColor = true;
             // 
             // eliminarMantenimientoButton
             // 
-            eliminarMantenimientoButton.ForeColor = Color.DimGray;
-            eliminarMantenimientoButton.Location = new Point(937, 376);
-            eliminarMantenimientoButton.Margin = new Padding(4);
-            eliminarMantenimientoButton.Name = "eliminarMantenimientoButton";
-            eliminarMantenimientoButton.Size = new Size(143, 41);
-            eliminarMantenimientoButton.TabIndex = 30;
-            eliminarMantenimientoButton.Text = "Eliminar";
-            eliminarMantenimientoButton.UseVisualStyleBackColor = true;
-            eliminarMantenimientoButton.Click += eliminarMantenimientoButton_Click;
+            this.eliminarMantenimientoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.eliminarMantenimientoButton.Location = new System.Drawing.Point(937, 376);
+            this.eliminarMantenimientoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.eliminarMantenimientoButton.Name = "eliminarMantenimientoButton";
+            this.eliminarMantenimientoButton.Size = new System.Drawing.Size(143, 41);
+            this.eliminarMantenimientoButton.TabIndex = 30;
+            this.eliminarMantenimientoButton.Text = "Eliminar";
+            this.eliminarMantenimientoButton.UseVisualStyleBackColor = true;
             // 
             // guardarMantenimientoButton
             // 
-            guardarMantenimientoButton.ForeColor = Color.DimGray;
-            guardarMantenimientoButton.Location = new Point(635, 376);
-            guardarMantenimientoButton.Margin = new Padding(4);
-            guardarMantenimientoButton.Name = "guardarMantenimientoButton";
-            guardarMantenimientoButton.Size = new Size(143, 41);
-            guardarMantenimientoButton.TabIndex = 29;
-            guardarMantenimientoButton.Text = "Guardar";
-            guardarMantenimientoButton.UseVisualStyleBackColor = true;
-            guardarMantenimientoButton.Click += guardarMantenimientoButton_Click;
+            this.guardarMantenimientoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.guardarMantenimientoButton.Location = new System.Drawing.Point(635, 376);
+            this.guardarMantenimientoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.guardarMantenimientoButton.Name = "guardarMantenimientoButton";
+            this.guardarMantenimientoButton.Size = new System.Drawing.Size(143, 41);
+            this.guardarMantenimientoButton.TabIndex = 29;
+            this.guardarMantenimientoButton.Text = "Guardar";
+            this.guardarMantenimientoButton.UseVisualStyleBackColor = true;
             // 
             // descripcionTextBox
             // 
-            descripcionTextBox.Location = new Point(635, 194);
-            descripcionTextBox.Margin = new Padding(4);
-            descripcionTextBox.Name = "descripcionTextBox";
-            descripcionTextBox.Size = new Size(445, 34);
-            descripcionTextBox.TabIndex = 26;
+            this.descripcionTextBox.Location = new System.Drawing.Point(635, 194);
+            this.descripcionTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.descripcionTextBox.Name = "descripcionTextBox";
+            this.descripcionTextBox.Size = new System.Drawing.Size(445, 34);
+            this.descripcionTextBox.TabIndex = 26;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.DimGray;
-            label7.Location = new Point(635, 52);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(223, 28);
-            label7.TabIndex = 24;
-            label7.Text = "Fecha Mantenimiento:";
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.DimGray;
+            this.label7.Location = new System.Drawing.Point(635, 52);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(223, 28);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Fecha Mantenimiento:";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.DimGray;
-            label8.Location = new Point(635, 162);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(128, 28);
-            label8.TabIndex = 23;
-            label8.Text = "Descripcion:";
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
+            this.label8.Location = new System.Drawing.Point(635, 162);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 28);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Descripcion:";
             // 
             // Pagos
             // 
-            Pagos.BackColor = Color.Silver;
-            Pagos.Controls.Add(pagoDateTimePicker);
-            Pagos.Controls.Add(contratoComboBox);
-            Pagos.Controls.Add(label3);
-            Pagos.Controls.Add(label6);
-            Pagos.Controls.Add(pagosDataGridView);
-            Pagos.Controls.Add(editarPagoButton);
-            Pagos.Controls.Add(eliminarPagoButton);
-            Pagos.Controls.Add(guardarPagoButton);
-            Pagos.Controls.Add(montoPagoTextBox);
-            Pagos.Controls.Add(label1);
-            Pagos.Controls.Add(label2);
-            Pagos.ForeColor = Color.Gray;
-            Pagos.Location = new Point(4, 37);
-            Pagos.Name = "Pagos";
-            Pagos.Size = new Size(1092, 442);
-            Pagos.TabIndex = 3;
-            Pagos.Text = "Pagos";
+            this.Pagos.BackColor = System.Drawing.Color.Silver;
+            this.Pagos.Controls.Add(this.pagoDateTimePicker);
+            this.Pagos.Controls.Add(this.contratoComboBox);
+            this.Pagos.Controls.Add(this.label3);
+            this.Pagos.Controls.Add(this.label6);
+            this.Pagos.Controls.Add(this.pagosDataGridView);
+            this.Pagos.Controls.Add(this.editarPagoButton);
+            this.Pagos.Controls.Add(this.eliminarPagoButton);
+            this.Pagos.Controls.Add(this.guardarPagoButton);
+            this.Pagos.Controls.Add(this.montoPagoTextBox);
+            this.Pagos.Controls.Add(this.label1);
+            this.Pagos.Controls.Add(this.label2);
+            this.Pagos.ForeColor = System.Drawing.Color.Gray;
+            this.Pagos.Location = new System.Drawing.Point(4, 37);
+            this.Pagos.Name = "Pagos";
+            this.Pagos.Size = new System.Drawing.Size(1092, 442);
+            this.Pagos.TabIndex = 3;
+            this.Pagos.Text = "Pagos";
             // 
             // pagoDateTimePicker
             // 
-            pagoDateTimePicker.Location = new Point(635, 194);
-            pagoDateTimePicker.Name = "pagoDateTimePicker";
-            pagoDateTimePicker.Size = new Size(436, 34);
-            pagoDateTimePicker.TabIndex = 23;
+            this.pagoDateTimePicker.Location = new System.Drawing.Point(635, 194);
+            this.pagoDateTimePicker.Name = "pagoDateTimePicker";
+            this.pagoDateTimePicker.Size = new System.Drawing.Size(436, 34);
+            this.pagoDateTimePicker.TabIndex = 23;
             // 
             // contratoComboBox
             // 
-            contratoComboBox.FormattingEnabled = true;
-            contratoComboBox.Location = new Point(885, 84);
-            contratoComboBox.Name = "contratoComboBox";
-            contratoComboBox.Size = new Size(186, 36);
-            contratoComboBox.TabIndex = 22;
+            this.contratoComboBox.FormattingEnabled = true;
+            this.contratoComboBox.Location = new System.Drawing.Point(885, 84);
+            this.contratoComboBox.Name = "contratoComboBox";
+            this.contratoComboBox.Size = new System.Drawing.Size(186, 36);
+            this.contratoComboBox.TabIndex = 22;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.DimGray;
-            label3.Location = new Point(885, 53);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(100, 28);
-            label3.TabIndex = 20;
-            label3.Text = "Contrato:";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(885, 53);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 28);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Contrato:";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.DimGray;
-            label6.Location = new Point(9, 20);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(150, 28);
-            label6.TabIndex = 19;
-            label6.Text = "Lista De Pagos";
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.Location = new System.Drawing.Point(9, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(150, 28);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Lista De Pagos";
             // 
             // pagosDataGridView
             // 
-            pagosDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pagosDataGridView.Location = new Point(9, 52);
-            pagosDataGridView.Margin = new Padding(4);
-            pagosDataGridView.Name = "pagosDataGridView";
-            pagosDataGridView.RowHeadersWidth = 51;
-            pagosDataGridView.RowTemplate.Height = 29;
-            pagosDataGridView.Size = new Size(603, 365);
-            pagosDataGridView.TabIndex = 15;
+            this.pagosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pagosDataGridView.Location = new System.Drawing.Point(9, 52);
+            this.pagosDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.pagosDataGridView.Name = "pagosDataGridView";
+            this.pagosDataGridView.RowHeadersWidth = 51;
+            this.pagosDataGridView.RowTemplate.Height = 29;
+            this.pagosDataGridView.Size = new System.Drawing.Size(603, 365);
+            this.pagosDataGridView.TabIndex = 15;
             // 
             // editarPagoButton
             // 
-            editarPagoButton.ForeColor = Color.DimGray;
-            editarPagoButton.Location = new Point(786, 376);
-            editarPagoButton.Margin = new Padding(4);
-            editarPagoButton.Name = "editarPagoButton";
-            editarPagoButton.Size = new Size(143, 41);
-            editarPagoButton.TabIndex = 16;
-            editarPagoButton.Text = "Editar";
-            editarPagoButton.UseVisualStyleBackColor = true;
-            editarPagoButton.Click += editarPagoButton_Click;
+            this.editarPagoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.editarPagoButton.Location = new System.Drawing.Point(786, 376);
+            this.editarPagoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.editarPagoButton.Name = "editarPagoButton";
+            this.editarPagoButton.Size = new System.Drawing.Size(143, 41);
+            this.editarPagoButton.TabIndex = 16;
+            this.editarPagoButton.Text = "Editar";
+            this.editarPagoButton.UseVisualStyleBackColor = true;
             // 
             // eliminarPagoButton
             // 
-            eliminarPagoButton.ForeColor = Color.DimGray;
-            eliminarPagoButton.Location = new Point(937, 376);
-            eliminarPagoButton.Margin = new Padding(4);
-            eliminarPagoButton.Name = "eliminarPagoButton";
-            eliminarPagoButton.Size = new Size(143, 41);
-            eliminarPagoButton.TabIndex = 18;
-            eliminarPagoButton.Text = "Eliminar";
-            eliminarPagoButton.UseVisualStyleBackColor = true;
-            eliminarPagoButton.Click += eliminarPagoButton_Click;
+            this.eliminarPagoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.eliminarPagoButton.Location = new System.Drawing.Point(937, 376);
+            this.eliminarPagoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.eliminarPagoButton.Name = "eliminarPagoButton";
+            this.eliminarPagoButton.Size = new System.Drawing.Size(143, 41);
+            this.eliminarPagoButton.TabIndex = 18;
+            this.eliminarPagoButton.Text = "Eliminar";
+            this.eliminarPagoButton.UseVisualStyleBackColor = true;
             // 
             // guardarPagoButton
             // 
-            guardarPagoButton.ForeColor = Color.DimGray;
-            guardarPagoButton.Location = new Point(635, 376);
-            guardarPagoButton.Margin = new Padding(4);
-            guardarPagoButton.Name = "guardarPagoButton";
-            guardarPagoButton.Size = new Size(143, 41);
-            guardarPagoButton.TabIndex = 17;
-            guardarPagoButton.Text = "Guardar";
-            guardarPagoButton.UseVisualStyleBackColor = true;
-            guardarPagoButton.Click += guardarPagoButton_Click;
+            this.guardarPagoButton.ForeColor = System.Drawing.Color.DimGray;
+            this.guardarPagoButton.Location = new System.Drawing.Point(635, 376);
+            this.guardarPagoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.guardarPagoButton.Name = "guardarPagoButton";
+            this.guardarPagoButton.Size = new System.Drawing.Size(143, 41);
+            this.guardarPagoButton.TabIndex = 17;
+            this.guardarPagoButton.Text = "Guardar";
+            this.guardarPagoButton.UseVisualStyleBackColor = true;
             // 
             // montoPagoTextBox
             // 
-            montoPagoTextBox.Location = new Point(635, 84);
-            montoPagoTextBox.Margin = new Padding(4);
-            montoPagoTextBox.Name = "montoPagoTextBox";
-            montoPagoTextBox.Size = new Size(186, 34);
-            montoPagoTextBox.TabIndex = 13;
+            this.montoPagoTextBox.Location = new System.Drawing.Point(635, 84);
+            this.montoPagoTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.montoPagoTextBox.Name = "montoPagoTextBox";
+            this.montoPagoTextBox.Size = new System.Drawing.Size(186, 34);
+            this.montoPagoTextBox.TabIndex = 13;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(635, 52);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(161, 28);
-            label1.TabIndex = 12;
-            label1.Text = "Monto A Pagar:";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(635, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 28);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Monto A Pagar:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(635, 162);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(156, 28);
-            label2.TabIndex = 11;
-            label2.Text = "Fecha De Pago:";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(635, 162);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 28);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Fecha De Pago:";
             // 
             // Propiedades
             // 
-            Propiedades.BackColor = Color.Silver;
-            Propiedades.Controls.Add(labelPropiedad);
-            Propiedades.Controls.Add(txtId);
-            Propiedades.Controls.Add(label12);
-            Propiedades.Controls.Add(txtBuscar);
-            Propiedades.Controls.Add(label11);
-            Propiedades.Controls.Add(btnEliminarPropiedad);
-            Propiedades.Controls.Add(btnEditarPropiedad);
-            Propiedades.Controls.Add(btnGuardarPropiedad);
-            Propiedades.Controls.Add(labelPrecioMensual);
-            Propiedades.Controls.Add(labelTipoPropiedad);
-            Propiedades.Controls.Add(labelDireccion);
-            Propiedades.Controls.Add(textBoxPrecioMensualPropiedad);
-            Propiedades.Controls.Add(textBoxTipoPropiedadPropiedad);
-            Propiedades.Controls.Add(textBoxDireccionPropiedad);
-            Propiedades.Controls.Add(textboxNombrePropiedad);
-            Propiedades.Controls.Add(label10);
-            Propiedades.Controls.Add(dgvPropiedades);
-            Propiedades.ForeColor = Color.Gray;
-            Propiedades.Location = new Point(4, 37);
-            Propiedades.Name = "Propiedades";
-            Propiedades.Size = new Size(1092, 442);
-            Propiedades.TabIndex = 4;
-            Propiedades.Text = "Propiedades";
+            this.Propiedades.BackColor = System.Drawing.Color.Silver;
+            this.Propiedades.Controls.Add(this.labelPropiedad);
+            this.Propiedades.Controls.Add(this.txtId);
+            this.Propiedades.Controls.Add(this.label12);
+            this.Propiedades.Controls.Add(this.txtBuscar);
+            this.Propiedades.Controls.Add(this.label11);
+            this.Propiedades.Controls.Add(this.btnEliminarPropiedad);
+            this.Propiedades.Controls.Add(this.btnEditarPropiedad);
+            this.Propiedades.Controls.Add(this.btnGuardarPropiedad);
+            this.Propiedades.Controls.Add(this.labelPrecioMensual);
+            this.Propiedades.Controls.Add(this.labelTipoPropiedad);
+            this.Propiedades.Controls.Add(this.labelDireccion);
+            this.Propiedades.Controls.Add(this.textBoxPrecioMensualPropiedad);
+            this.Propiedades.Controls.Add(this.textBoxTipoPropiedadPropiedad);
+            this.Propiedades.Controls.Add(this.textBoxDireccionPropiedad);
+            this.Propiedades.Controls.Add(this.textboxNombrePropiedad);
+            this.Propiedades.Controls.Add(this.label10);
+            this.Propiedades.Controls.Add(this.dgvPropiedades);
+            this.Propiedades.ForeColor = System.Drawing.Color.Gray;
+            this.Propiedades.Location = new System.Drawing.Point(4, 37);
+            this.Propiedades.Name = "Propiedades";
+            this.Propiedades.Size = new System.Drawing.Size(1092, 442);
+            this.Propiedades.TabIndex = 4;
+            this.Propiedades.Text = "Propiedades";
             // 
             // labelPropiedad
             // 
-            labelPropiedad.AutoSize = true;
-            labelPropiedad.ForeColor = Color.DimGray;
-            labelPropiedad.Location = new Point(18, 26);
-            labelPropiedad.Margin = new Padding(4, 0, 4, 0);
-            labelPropiedad.Name = "labelPropiedad";
-            labelPropiedad.Size = new Size(178, 28);
-            labelPropiedad.TabIndex = 49;
-            labelPropiedad.Text = "Lista Propiedades";
+            this.labelPropiedad.AutoSize = true;
+            this.labelPropiedad.ForeColor = System.Drawing.Color.DimGray;
+            this.labelPropiedad.Location = new System.Drawing.Point(18, 26);
+            this.labelPropiedad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPropiedad.Name = "labelPropiedad";
+            this.labelPropiedad.Size = new System.Drawing.Size(178, 28);
+            this.labelPropiedad.TabIndex = 49;
+            this.labelPropiedad.Text = "Lista Propiedades";
+            this.labelPropiedad.Click += new System.EventHandler(this.labelPropiedad_Click);
             // 
             // txtId
             // 
-            txtId.Location = new Point(1001, 36);
-            txtId.Name = "txtId";
-            txtId.ReadOnly = true;
-            txtId.Size = new Size(33, 34);
-            txtId.TabIndex = 48;
+            this.txtId.Location = new System.Drawing.Point(1001, 36);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(33, 34);
+            this.txtId.TabIndex = 48;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(966, 36);
-            label12.Name = "label12";
-            label12.Size = new Size(35, 28);
-            label12.TabIndex = 47;
-            label12.Text = "Id:";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(966, 36);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(35, 28);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "Id:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(723, 36);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(218, 34);
-            txtBuscar.TabIndex = 46;
+            this.txtBuscar.Location = new System.Drawing.Point(723, 36);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(218, 34);
+            this.txtBuscar.TabIndex = 46;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged_1);
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(652, 39);
-            label11.Name = "label11";
-            label11.Size = new Size(81, 28);
-            label11.TabIndex = 45;
-            label11.Text = "Buscar:";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(652, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(81, 28);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Buscar:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btnEliminarPropiedad
             // 
-            btnEliminarPropiedad.ForeColor = Color.DimGray;
-            btnEliminarPropiedad.Location = new Point(931, 329);
-            btnEliminarPropiedad.Margin = new Padding(4);
-            btnEliminarPropiedad.Name = "btnEliminarPropiedad";
-            btnEliminarPropiedad.Size = new Size(143, 41);
-            btnEliminarPropiedad.TabIndex = 44;
-            btnEliminarPropiedad.Text = "Eliminar";
-            btnEliminarPropiedad.UseVisualStyleBackColor = true;
-            btnEliminarPropiedad.Click += btnEliminarPropiedad_Click_1;
+            this.btnEliminarPropiedad.ForeColor = System.Drawing.Color.DimGray;
+            this.btnEliminarPropiedad.Location = new System.Drawing.Point(931, 329);
+            this.btnEliminarPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarPropiedad.Name = "btnEliminarPropiedad";
+            this.btnEliminarPropiedad.Size = new System.Drawing.Size(143, 41);
+            this.btnEliminarPropiedad.TabIndex = 44;
+            this.btnEliminarPropiedad.Text = "Eliminar";
+            this.btnEliminarPropiedad.UseVisualStyleBackColor = true;
+            this.btnEliminarPropiedad.Click += new System.EventHandler(this.btnEliminarPropiedad_Click);
             // 
             // btnEditarPropiedad
             // 
-            btnEditarPropiedad.ForeColor = Color.DimGray;
-            btnEditarPropiedad.Location = new Point(780, 329);
-            btnEditarPropiedad.Margin = new Padding(4);
-            btnEditarPropiedad.Name = "btnEditarPropiedad";
-            btnEditarPropiedad.Size = new Size(143, 41);
-            btnEditarPropiedad.TabIndex = 43;
-            btnEditarPropiedad.Text = "Editar";
-            btnEditarPropiedad.UseVisualStyleBackColor = true;
-            btnEditarPropiedad.Click += btnEditarPropiedad_Click_1;
+            this.btnEditarPropiedad.ForeColor = System.Drawing.Color.DimGray;
+            this.btnEditarPropiedad.Location = new System.Drawing.Point(780, 329);
+            this.btnEditarPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarPropiedad.Name = "btnEditarPropiedad";
+            this.btnEditarPropiedad.Size = new System.Drawing.Size(143, 41);
+            this.btnEditarPropiedad.TabIndex = 43;
+            this.btnEditarPropiedad.Text = "Editar";
+            this.btnEditarPropiedad.UseVisualStyleBackColor = true;
+            this.btnEditarPropiedad.Click += new System.EventHandler(this.btnEditarPropiedad_Click);
             // 
             // btnGuardarPropiedad
             // 
-            btnGuardarPropiedad.ForeColor = Color.DimGray;
-            btnGuardarPropiedad.Location = new Point(629, 329);
-            btnGuardarPropiedad.Margin = new Padding(4);
-            btnGuardarPropiedad.Name = "btnGuardarPropiedad";
-            btnGuardarPropiedad.Size = new Size(143, 41);
-            btnGuardarPropiedad.TabIndex = 42;
-            btnGuardarPropiedad.Text = "Guardar";
-            btnGuardarPropiedad.UseVisualStyleBackColor = true;
-            btnGuardarPropiedad.Click += btnGuardarPropiedad_Click_1;
+            this.btnGuardarPropiedad.ForeColor = System.Drawing.Color.DimGray;
+            this.btnGuardarPropiedad.Location = new System.Drawing.Point(629, 329);
+            this.btnGuardarPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarPropiedad.Name = "btnGuardarPropiedad";
+            this.btnGuardarPropiedad.Size = new System.Drawing.Size(143, 41);
+            this.btnGuardarPropiedad.TabIndex = 42;
+            this.btnGuardarPropiedad.Text = "Guardar";
+            this.btnGuardarPropiedad.UseVisualStyleBackColor = true;
+            this.btnGuardarPropiedad.Click += new System.EventHandler(this.btnGuardarPropiedad_Click);
             // 
             // labelPrecioMensual
             // 
-            labelPrecioMensual.AutoSize = true;
-            labelPrecioMensual.ForeColor = Color.DimGray;
-            labelPrecioMensual.Location = new Point(893, 209);
-            labelPrecioMensual.Margin = new Padding(4, 0, 4, 0);
-            labelPrecioMensual.Name = "labelPrecioMensual";
-            labelPrecioMensual.Size = new Size(157, 28);
-            labelPrecioMensual.TabIndex = 41;
-            labelPrecioMensual.Text = "Precio Mensual";
+            this.labelPrecioMensual.AutoSize = true;
+            this.labelPrecioMensual.ForeColor = System.Drawing.Color.DimGray;
+            this.labelPrecioMensual.Location = new System.Drawing.Point(893, 209);
+            this.labelPrecioMensual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPrecioMensual.Name = "labelPrecioMensual";
+            this.labelPrecioMensual.Size = new System.Drawing.Size(157, 28);
+            this.labelPrecioMensual.TabIndex = 41;
+            this.labelPrecioMensual.Text = "Precio Mensual";
+            this.labelPrecioMensual.Click += new System.EventHandler(this.labelPrecioMensual_Click);
             // 
             // labelTipoPropiedad
             // 
-            labelTipoPropiedad.AutoSize = true;
-            labelTipoPropiedad.ForeColor = Color.DimGray;
-            labelTipoPropiedad.Location = new Point(668, 209);
-            labelTipoPropiedad.Margin = new Padding(4, 0, 4, 0);
-            labelTipoPropiedad.Name = "labelTipoPropiedad";
-            labelTipoPropiedad.Size = new Size(156, 28);
-            labelTipoPropiedad.TabIndex = 40;
-            labelTipoPropiedad.Text = "Tipo propiedad";
+            this.labelTipoPropiedad.AutoSize = true;
+            this.labelTipoPropiedad.ForeColor = System.Drawing.Color.DimGray;
+            this.labelTipoPropiedad.Location = new System.Drawing.Point(668, 209);
+            this.labelTipoPropiedad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTipoPropiedad.Name = "labelTipoPropiedad";
+            this.labelTipoPropiedad.Size = new System.Drawing.Size(156, 28);
+            this.labelTipoPropiedad.TabIndex = 40;
+            this.labelTipoPropiedad.Text = "Tipo propiedad";
+            this.labelTipoPropiedad.Click += new System.EventHandler(this.labelTipoPropiedad_Click);
             // 
             // labelDireccion
             // 
-            labelDireccion.AutoSize = true;
-            labelDireccion.ForeColor = Color.DimGray;
-            labelDireccion.Location = new Point(912, 95);
-            labelDireccion.Margin = new Padding(4, 0, 4, 0);
-            labelDireccion.Name = "labelDireccion";
-            labelDireccion.Size = new Size(102, 28);
-            labelDireccion.TabIndex = 39;
-            labelDireccion.Text = "Direccion";
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.ForeColor = System.Drawing.Color.DimGray;
+            this.labelDireccion.Location = new System.Drawing.Point(912, 95);
+            this.labelDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(102, 28);
+            this.labelDireccion.TabIndex = 39;
+            this.labelDireccion.Text = "Direccion";
+            this.labelDireccion.Click += new System.EventHandler(this.labelDireccion_Click);
             // 
             // textBoxPrecioMensualPropiedad
             // 
-            textBoxPrecioMensualPropiedad.Location = new Point(875, 247);
-            textBoxPrecioMensualPropiedad.Margin = new Padding(4);
-            textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
-            textBoxPrecioMensualPropiedad.Size = new Size(186, 34);
-            textBoxPrecioMensualPropiedad.TabIndex = 38;
+            this.textBoxPrecioMensualPropiedad.Location = new System.Drawing.Point(875, 247);
+            this.textBoxPrecioMensualPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
+            this.textBoxPrecioMensualPropiedad.Size = new System.Drawing.Size(186, 34);
+            this.textBoxPrecioMensualPropiedad.TabIndex = 38;
+            this.textBoxPrecioMensualPropiedad.TextChanged += new System.EventHandler(this.textBoxPrecioMensualPropiedad_TextChanged);
             // 
             // textBoxTipoPropiedadPropiedad
             // 
-            textBoxTipoPropiedadPropiedad.Location = new Point(652, 247);
-            textBoxTipoPropiedadPropiedad.Margin = new Padding(4);
-            textBoxTipoPropiedadPropiedad.Name = "textBoxTipoPropiedadPropiedad";
-            textBoxTipoPropiedadPropiedad.Size = new Size(186, 34);
-            textBoxTipoPropiedadPropiedad.TabIndex = 37;
+            this.textBoxTipoPropiedadPropiedad.Location = new System.Drawing.Point(652, 247);
+            this.textBoxTipoPropiedadPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTipoPropiedadPropiedad.Name = "textBoxTipoPropiedadPropiedad";
+            this.textBoxTipoPropiedadPropiedad.Size = new System.Drawing.Size(186, 34);
+            this.textBoxTipoPropiedadPropiedad.TabIndex = 37;
+            this.textBoxTipoPropiedadPropiedad.TextChanged += new System.EventHandler(this.textBoxTipoPropiedadPropiedad_TextChanged);
             // 
             // textBoxDireccionPropiedad
             // 
-            textBoxDireccionPropiedad.Location = new Point(875, 147);
-            textBoxDireccionPropiedad.Margin = new Padding(4);
-            textBoxDireccionPropiedad.Name = "textBoxDireccionPropiedad";
-            textBoxDireccionPropiedad.Size = new Size(186, 34);
-            textBoxDireccionPropiedad.TabIndex = 36;
+            this.textBoxDireccionPropiedad.Location = new System.Drawing.Point(875, 147);
+            this.textBoxDireccionPropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDireccionPropiedad.Name = "textBoxDireccionPropiedad";
+            this.textBoxDireccionPropiedad.Size = new System.Drawing.Size(186, 34);
+            this.textBoxDireccionPropiedad.TabIndex = 36;
+            this.textBoxDireccionPropiedad.TextChanged += new System.EventHandler(this.textBoxDireccionPropiedad_TextChanged);
             // 
             // textboxNombrePropiedad
             // 
-            textboxNombrePropiedad.Location = new Point(652, 147);
-            textboxNombrePropiedad.Margin = new Padding(4);
-            textboxNombrePropiedad.Name = "textboxNombrePropiedad";
-            textboxNombrePropiedad.Size = new Size(186, 34);
-            textboxNombrePropiedad.TabIndex = 35;
+            this.textboxNombrePropiedad.Location = new System.Drawing.Point(652, 147);
+            this.textboxNombrePropiedad.Margin = new System.Windows.Forms.Padding(4);
+            this.textboxNombrePropiedad.Name = "textboxNombrePropiedad";
+            this.textboxNombrePropiedad.Size = new System.Drawing.Size(186, 34);
+            this.textboxNombrePropiedad.TabIndex = 35;
+            this.textboxNombrePropiedad.TextChanged += new System.EventHandler(this.textboxNombrePropiedad_TextChanged);
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.DimGray;
-            label10.Location = new Point(699, 95);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(89, 28);
-            label10.TabIndex = 34;
-            label10.Text = "Nombre";
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(699, 95);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 28);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Nombre";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // dgvPropiedades
             // 
-            dgvPropiedades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPropiedades.Location = new Point(18, 51);
-            dgvPropiedades.Margin = new Padding(4);
-            dgvPropiedades.Name = "dgvPropiedades";
-            dgvPropiedades.RowHeadersWidth = 51;
-            dgvPropiedades.RowTemplate.Height = 29;
-            dgvPropiedades.Size = new Size(603, 365);
-            dgvPropiedades.TabIndex = 33;
+            this.dgvPropiedades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPropiedades.Location = new System.Drawing.Point(18, 51);
+            this.dgvPropiedades.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPropiedades.Name = "dgvPropiedades";
+            this.dgvPropiedades.RowHeadersWidth = 51;
+            this.dgvPropiedades.RowTemplate.Height = 29;
+            this.dgvPropiedades.Size = new System.Drawing.Size(603, 365);
+            this.dgvPropiedades.TabIndex = 33;
+            this.dgvPropiedades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPropiedades_CellContentClick);
             // 
-            // AlquilerForm
+            // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(12F, 28F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
-            ClientSize = new Size(1100, 547);
-            Controls.Add(rentasControl);
-            Controls.Add(encabezadoPanel);
-            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            ForeColor = Color.DimGray;
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
-            Name = "AlquilerForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Alquiler";
-            encabezadoPanel.ResumeLayout(false);
-            encabezadoPanel.PerformLayout();
-            rentasControl.ResumeLayout(false);
-            Contratos.ResumeLayout(false);
-            Contratos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)contratosdataGridView).EndInit();
-            Inquilinos.ResumeLayout(false);
-            Inquilinos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)inquilinosdataGridView).EndInit();
-            Mantenimiento.ResumeLayout(false);
-            Mantenimiento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)mantenimientoDataGridView).EndInit();
-            Pagos.ResumeLayout(false);
-            Pagos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pagosDataGridView).EndInit();
-            Propiedades.ResumeLayout(false);
-            Propiedades.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvPropiedades).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(1100, 547);
+            this.Controls.Add(this.rentasControl);
+            this.Controls.Add(this.encabezadoPanel);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.DimGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Alquiler";
+            this.encabezadoPanel.ResumeLayout(false);
+            this.encabezadoPanel.PerformLayout();
+            this.rentasControl.ResumeLayout(false);
+            this.Contratos.ResumeLayout(false);
+            this.Contratos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contratosdataGridView)).EndInit();
+            this.Inquilinos.ResumeLayout(false);
+            this.Inquilinos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inquilinosdataGridView)).EndInit();
+            this.Mantenimiento.ResumeLayout(false);
+            this.Mantenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mantenimientoDataGridView)).EndInit();
+            this.Pagos.ResumeLayout(false);
+            this.Pagos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pagosDataGridView)).EndInit();
+            this.Propiedades.ResumeLayout(false);
+            this.Propiedades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropiedades)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

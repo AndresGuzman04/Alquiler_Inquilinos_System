@@ -544,5 +544,90 @@ namespace PresentatorLayer.Forms
             LoadContratosData();
             ClearFormContratos();
         }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPropiedad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarPropiedad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditarPropiedad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarPropiedad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPrecioMensual_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTipoPropiedad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDireccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPrecioMensualPropiedad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTipoPropiedadPropiedad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxDireccionPropiedad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxNombrePropiedad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvPropiedades_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
