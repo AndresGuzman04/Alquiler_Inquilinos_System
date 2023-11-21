@@ -21,5 +21,19 @@ namespace PresentatorLayer.Forms
         {
             Application.Exit();
         }
+        private void OpenInquilinnosForm(Form inquilinoForm)
+        {
+            inquilinoForm.TopLevel = false;
+            inquilinoForm.Dock = DockStyle.Fill;
+            contenidopanel.Controls.Add(inquilinoForm);
+            contenidopanel.Tag = inquilinoForm;
+            inquilinoForm.BringToFront();
+            inquilinoForm.Show();
+        }
+
+        private void inquilinosmenubutton_Click(object sender, EventArgs e)
+        {
+            OpenInquilinnosForm(new inquilinosForm());
+        }
     }
 }

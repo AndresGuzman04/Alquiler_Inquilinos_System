@@ -137,6 +137,7 @@
             inquilinosmenubutton.Text = "INQUILINOS";
             inquilinosmenubutton.TextAlign = ContentAlignment.MiddleLeft;
             inquilinosmenubutton.UseVisualStyleBackColor = true;
+            inquilinosmenubutton.Click += inquilinosmenubutton_Click;
             // 
             // logopictureBox
             // 
