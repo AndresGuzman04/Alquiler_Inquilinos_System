@@ -20,6 +20,7 @@ namespace PresentatorLayer.Forms
         public inquilinosForm()
         {
             InitializeComponent();
+            LoadIquilinos();
         }
         private void ClearFormInquilino()
         {
