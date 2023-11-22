@@ -105,9 +105,6 @@ namespace PresentatorLayer.Forms
                 inquilino.Id = inquilinoId;
                 inquilinoBusiness.DeleteInquilino(inquilino);
                 LoadIquilinos();
-
-
-
             }
             else
             {
