@@ -111,5 +111,7 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show("Debes seleccionar una fila antes de elimniar");
             }
         }
+
+       
     }
 }
