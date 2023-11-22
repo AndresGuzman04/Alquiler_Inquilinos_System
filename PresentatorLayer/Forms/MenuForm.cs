@@ -21,6 +21,8 @@ namespace PresentatorLayer.Forms
         {
             Application.Exit();
         }
+
+        #region Inquilinos 
         private void OpenInquilinnosForm(Form inquilinoForm)
         {
             inquilinoForm.TopLevel = false;
@@ -35,5 +37,23 @@ namespace PresentatorLayer.Forms
         {
             OpenInquilinnosForm(new inquilinosForm());
         }
+        #endregion
+
+        #region Propiedades
+        private void OpenPropiedadesForm(Form PropiedadesForm)
+        {
+            PropiedadesForm.TopLevel = false;
+            PropiedadesForm.Dock = DockStyle.Fill;
+            contenidopanel.Controls.Add(PropiedadesForm);
+            contenidopanel.Tag = PropiedadesForm;
+            PropiedadesForm.BringToFront();
+            PropiedadesForm.Show();
+        }
+
+        private void propiedadmenubutton_Click(object sender, EventArgs e)
+        {
+            OpenPropiedadesForm(new PropiedadesForm());
+        }
+        #endregion
     }
 }
