@@ -37,11 +37,6 @@ namespace PresentatorLayer.Forms
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEliminarPropiedad_Click(object sender, EventArgs e)
         {
 
@@ -67,11 +62,6 @@ namespace PresentatorLayer.Forms
 
         }
 
-        private void labelDireccion_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBoxPrecioMensualPropiedad_TextChanged(object sender, EventArgs e)
         {
 
@@ -88,11 +78,6 @@ namespace PresentatorLayer.Forms
         }
 
         private void textboxNombrePropiedad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
         {
 
         }

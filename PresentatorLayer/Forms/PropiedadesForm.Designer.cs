@@ -28,235 +28,231 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelPropiedad = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnEliminarPropiedad = new System.Windows.Forms.Button();
-            this.btnEditarPropiedad = new System.Windows.Forms.Button();
-            this.btnGuardarPropiedad = new System.Windows.Forms.Button();
-            this.labelPrecioMensual = new System.Windows.Forms.Label();
-            this.labelTipoPropiedad = new System.Windows.Forms.Label();
-            this.labelDireccion = new System.Windows.Forms.Label();
-            this.textBoxPrecioMensualPropiedad = new System.Windows.Forms.TextBox();
-            this.textBoxTipoPropiedadPropiedad = new System.Windows.Forms.TextBox();
-            this.textBoxDireccionPropiedad = new System.Windows.Forms.TextBox();
-            this.textboxNombrePropiedad = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dgvPropiedades = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPropiedades)).BeginInit();
-            this.SuspendLayout();
+            labelPropiedad = new Label();
+            txtBuscar = new TextBox();
+            label11 = new Label();
+            btnEliminarPropiedad = new Button();
+            btnEditarPropiedad = new Button();
+            btnGuardarPropiedad = new Button();
+            labelPrecioMensual = new Label();
+            labelTipoPropiedad = new Label();
+            labelDireccion = new Label();
+            textBoxPrecioMensualPropiedad = new TextBox();
+            textBoxTipoPropiedadPropiedad = new TextBox();
+            textBoxDireccionPropiedad = new TextBox();
+            textboxNombrePropiedad = new TextBox();
+            label10 = new Label();
+            dgvPropiedades = new DataGridView();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvPropiedades).BeginInit();
+            SuspendLayout();
             // 
             // labelPropiedad
             // 
-            this.labelPropiedad.AutoSize = true;
-            this.labelPropiedad.ForeColor = System.Drawing.Color.DimGray;
-            this.labelPropiedad.Location = new System.Drawing.Point(-173, -5);
-            this.labelPropiedad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelPropiedad.Name = "labelPropiedad";
-            this.labelPropiedad.Size = new System.Drawing.Size(126, 20);
-            this.labelPropiedad.TabIndex = 66;
-            this.labelPropiedad.Text = "Lista Propiedades";
-            this.labelPropiedad.Click += new System.EventHandler(this.labelPropiedad_Click);
+            labelPropiedad.AutoSize = true;
+            labelPropiedad.ForeColor = Color.DimGray;
+            labelPropiedad.Location = new Point(-173, -5);
+            labelPropiedad.Margin = new Padding(4, 0, 4, 0);
+            labelPropiedad.Name = "labelPropiedad";
+            labelPropiedad.Size = new Size(126, 20);
+            labelPropiedad.TabIndex = 66;
+            labelPropiedad.Text = "Lista Propiedades";
+            labelPropiedad.Click += labelPropiedad_Click;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(444, 51);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(186, 27);
-            this.txtBuscar.TabIndex = 63;
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            txtBuscar.Location = new Point(444, 51);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(186, 27);
+            txtBuscar.TabIndex = 63;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(444, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 29);
-            this.label11.TabIndex = 62;
-            this.label11.Text = "Buscar:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            label11.AutoSize = true;
+            label11.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(444, 19);
+            label11.Name = "label11";
+            label11.Size = new Size(97, 30);
+            label11.TabIndex = 62;
+            label11.Text = "Buscar";
             // 
             // btnEliminarPropiedad
             // 
-            this.btnEliminarPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarPropiedad.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarPropiedad.Location = new System.Drawing.Point(248, 371);
-            this.btnEliminarPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminarPropiedad.Name = "btnEliminarPropiedad";
-            this.btnEliminarPropiedad.Size = new System.Drawing.Size(132, 44);
-            this.btnEliminarPropiedad.TabIndex = 61;
-            this.btnEliminarPropiedad.Text = "Eliminar";
-            this.btnEliminarPropiedad.UseVisualStyleBackColor = true;
-            this.btnEliminarPropiedad.Click += new System.EventHandler(this.btnEliminarPropiedad_Click);
+            btnEliminarPropiedad.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEliminarPropiedad.ForeColor = Color.Black;
+            btnEliminarPropiedad.Location = new Point(248, 371);
+            btnEliminarPropiedad.Margin = new Padding(4);
+            btnEliminarPropiedad.Name = "btnEliminarPropiedad";
+            btnEliminarPropiedad.Size = new Size(132, 44);
+            btnEliminarPropiedad.TabIndex = 61;
+            btnEliminarPropiedad.Text = "Eliminar";
+            btnEliminarPropiedad.UseVisualStyleBackColor = true;
+            btnEliminarPropiedad.Click += btnEliminarPropiedad_Click;
             // 
             // btnEditarPropiedad
             // 
-            this.btnEditarPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEditarPropiedad.ForeColor = System.Drawing.Color.Black;
-            this.btnEditarPropiedad.Location = new System.Drawing.Point(132, 371);
-            this.btnEditarPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditarPropiedad.Name = "btnEditarPropiedad";
-            this.btnEditarPropiedad.Size = new System.Drawing.Size(107, 44);
-            this.btnEditarPropiedad.TabIndex = 60;
-            this.btnEditarPropiedad.Text = "Editar";
-            this.btnEditarPropiedad.UseVisualStyleBackColor = true;
-            this.btnEditarPropiedad.Click += new System.EventHandler(this.btnEditarPropiedad_Click);
+            btnEditarPropiedad.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEditarPropiedad.ForeColor = Color.Black;
+            btnEditarPropiedad.Location = new Point(132, 371);
+            btnEditarPropiedad.Margin = new Padding(4);
+            btnEditarPropiedad.Name = "btnEditarPropiedad";
+            btnEditarPropiedad.Size = new Size(107, 44);
+            btnEditarPropiedad.TabIndex = 60;
+            btnEditarPropiedad.Text = "Editar";
+            btnEditarPropiedad.UseVisualStyleBackColor = true;
+            btnEditarPropiedad.Click += btnEditarPropiedad_Click;
             // 
             // btnGuardarPropiedad
             // 
-            this.btnGuardarPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarPropiedad.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardarPropiedad.Location = new System.Drawing.Point(4, 371);
-            this.btnGuardarPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardarPropiedad.Name = "btnGuardarPropiedad";
-            this.btnGuardarPropiedad.Size = new System.Drawing.Size(120, 44);
-            this.btnGuardarPropiedad.TabIndex = 59;
-            this.btnGuardarPropiedad.Text = "Guardar";
-            this.btnGuardarPropiedad.UseVisualStyleBackColor = true;
-            this.btnGuardarPropiedad.Click += new System.EventHandler(this.btnGuardarPropiedad_Click);
+            btnGuardarPropiedad.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGuardarPropiedad.ForeColor = Color.Black;
+            btnGuardarPropiedad.Location = new Point(4, 371);
+            btnGuardarPropiedad.Margin = new Padding(4);
+            btnGuardarPropiedad.Name = "btnGuardarPropiedad";
+            btnGuardarPropiedad.Size = new Size(120, 44);
+            btnGuardarPropiedad.TabIndex = 59;
+            btnGuardarPropiedad.Text = "Guardar";
+            btnGuardarPropiedad.UseVisualStyleBackColor = true;
+            btnGuardarPropiedad.Click += btnGuardarPropiedad_Click;
             // 
             // labelPrecioMensual
             // 
-            this.labelPrecioMensual.AutoSize = true;
-            this.labelPrecioMensual.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPrecioMensual.ForeColor = System.Drawing.Color.Black;
-            this.labelPrecioMensual.Location = new System.Drawing.Point(444, 298);
-            this.labelPrecioMensual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelPrecioMensual.Name = "labelPrecioMensual";
-            this.labelPrecioMensual.Size = new System.Drawing.Size(194, 29);
-            this.labelPrecioMensual.TabIndex = 58;
-            this.labelPrecioMensual.Text = "Precio Mensual";
-            this.labelPrecioMensual.Click += new System.EventHandler(this.labelPrecioMensual_Click);
+            labelPrecioMensual.AutoSize = true;
+            labelPrecioMensual.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            labelPrecioMensual.ForeColor = Color.Black;
+            labelPrecioMensual.Location = new Point(444, 298);
+            labelPrecioMensual.Margin = new Padding(4, 0, 4, 0);
+            labelPrecioMensual.Name = "labelPrecioMensual";
+            labelPrecioMensual.Size = new Size(194, 29);
+            labelPrecioMensual.TabIndex = 58;
+            labelPrecioMensual.Text = "Precio Mensual";
+            labelPrecioMensual.Click += labelPrecioMensual_Click;
             // 
             // labelTipoPropiedad
             // 
-            this.labelTipoPropiedad.AutoSize = true;
-            this.labelTipoPropiedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTipoPropiedad.ForeColor = System.Drawing.Color.Black;
-            this.labelTipoPropiedad.Location = new System.Drawing.Point(444, 220);
-            this.labelTipoPropiedad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelTipoPropiedad.Name = "labelTipoPropiedad";
-            this.labelTipoPropiedad.Size = new System.Drawing.Size(194, 29);
-            this.labelTipoPropiedad.TabIndex = 57;
-            this.labelTipoPropiedad.Text = "Tipo propiedad";
-            this.labelTipoPropiedad.Click += new System.EventHandler(this.labelTipoPropiedad_Click);
+            labelTipoPropiedad.AutoSize = true;
+            labelTipoPropiedad.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTipoPropiedad.ForeColor = Color.Black;
+            labelTipoPropiedad.Location = new Point(444, 220);
+            labelTipoPropiedad.Margin = new Padding(4, 0, 4, 0);
+            labelTipoPropiedad.Name = "labelTipoPropiedad";
+            labelTipoPropiedad.Size = new Size(194, 29);
+            labelTipoPropiedad.TabIndex = 57;
+            labelTipoPropiedad.Text = "Tipo propiedad";
+            labelTipoPropiedad.Click += labelTipoPropiedad_Click;
             // 
             // labelDireccion
             // 
-            this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDireccion.ForeColor = System.Drawing.Color.Black;
-            this.labelDireccion.Location = new System.Drawing.Point(444, 145);
-            this.labelDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDireccion.Name = "labelDireccion";
-            this.labelDireccion.Size = new System.Drawing.Size(124, 29);
-            this.labelDireccion.TabIndex = 56;
-            this.labelDireccion.Text = "Direccion";
-            this.labelDireccion.Click += new System.EventHandler(this.labelDireccion_Click);
+            labelDireccion.AutoSize = true;
+            labelDireccion.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            labelDireccion.ForeColor = Color.Black;
+            labelDireccion.Location = new Point(444, 145);
+            labelDireccion.Margin = new Padding(4, 0, 4, 0);
+            labelDireccion.Name = "labelDireccion";
+            labelDireccion.Size = new Size(139, 30);
+            labelDireccion.TabIndex = 56;
+            labelDireccion.Text = "Direccion";
             // 
             // textBoxPrecioMensualPropiedad
             // 
-            this.textBoxPrecioMensualPropiedad.Location = new System.Drawing.Point(444, 331);
-            this.textBoxPrecioMensualPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
-            this.textBoxPrecioMensualPropiedad.Size = new System.Drawing.Size(186, 27);
-            this.textBoxPrecioMensualPropiedad.TabIndex = 55;
-            this.textBoxPrecioMensualPropiedad.TextChanged += new System.EventHandler(this.textBoxPrecioMensualPropiedad_TextChanged);
+            textBoxPrecioMensualPropiedad.Location = new Point(444, 331);
+            textBoxPrecioMensualPropiedad.Margin = new Padding(4);
+            textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
+            textBoxPrecioMensualPropiedad.Size = new Size(186, 27);
+            textBoxPrecioMensualPropiedad.TabIndex = 55;
+            textBoxPrecioMensualPropiedad.TextChanged += textBoxPrecioMensualPropiedad_TextChanged;
             // 
             // textBoxTipoPropiedadPropiedad
             // 
-            this.textBoxTipoPropiedadPropiedad.Location = new System.Drawing.Point(444, 253);
-            this.textBoxTipoPropiedadPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTipoPropiedadPropiedad.Name = "textBoxTipoPropiedadPropiedad";
-            this.textBoxTipoPropiedadPropiedad.Size = new System.Drawing.Size(186, 27);
-            this.textBoxTipoPropiedadPropiedad.TabIndex = 54;
-            this.textBoxTipoPropiedadPropiedad.TextChanged += new System.EventHandler(this.textBoxTipoPropiedadPropiedad_TextChanged);
+            textBoxTipoPropiedadPropiedad.Location = new Point(444, 253);
+            textBoxTipoPropiedadPropiedad.Margin = new Padding(4);
+            textBoxTipoPropiedadPropiedad.Name = "textBoxTipoPropiedadPropiedad";
+            textBoxTipoPropiedadPropiedad.Size = new Size(186, 27);
+            textBoxTipoPropiedadPropiedad.TabIndex = 54;
+            textBoxTipoPropiedadPropiedad.TextChanged += textBoxTipoPropiedadPropiedad_TextChanged;
             // 
             // textBoxDireccionPropiedad
             // 
-            this.textBoxDireccionPropiedad.Location = new System.Drawing.Point(444, 178);
-            this.textBoxDireccionPropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxDireccionPropiedad.Name = "textBoxDireccionPropiedad";
-            this.textBoxDireccionPropiedad.Size = new System.Drawing.Size(186, 27);
-            this.textBoxDireccionPropiedad.TabIndex = 53;
-            this.textBoxDireccionPropiedad.TextChanged += new System.EventHandler(this.textBoxDireccionPropiedad_TextChanged);
+            textBoxDireccionPropiedad.Location = new Point(444, 178);
+            textBoxDireccionPropiedad.Margin = new Padding(4);
+            textBoxDireccionPropiedad.Name = "textBoxDireccionPropiedad";
+            textBoxDireccionPropiedad.Size = new Size(186, 27);
+            textBoxDireccionPropiedad.TabIndex = 53;
+            textBoxDireccionPropiedad.TextChanged += textBoxDireccionPropiedad_TextChanged;
             // 
             // textboxNombrePropiedad
             // 
-            this.textboxNombrePropiedad.Location = new System.Drawing.Point(444, 114);
-            this.textboxNombrePropiedad.Margin = new System.Windows.Forms.Padding(4);
-            this.textboxNombrePropiedad.Name = "textboxNombrePropiedad";
-            this.textboxNombrePropiedad.Size = new System.Drawing.Size(186, 27);
-            this.textboxNombrePropiedad.TabIndex = 52;
-            this.textboxNombrePropiedad.TextChanged += new System.EventHandler(this.textboxNombrePropiedad_TextChanged);
+            textboxNombrePropiedad.Location = new Point(444, 114);
+            textboxNombrePropiedad.Margin = new Padding(4);
+            textboxNombrePropiedad.Name = "textboxNombrePropiedad";
+            textboxNombrePropiedad.Size = new Size(186, 27);
+            textboxNombrePropiedad.TabIndex = 52;
+            textboxNombrePropiedad.TextChanged += textboxNombrePropiedad_TextChanged;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(444, 81);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 29);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Nombre";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            label10.AutoSize = true;
+            label10.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(444, 81);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(97, 30);
+            label10.TabIndex = 51;
+            label10.Text = "Nombre";
             // 
             // dgvPropiedades
             // 
-            this.dgvPropiedades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPropiedades.Location = new System.Drawing.Point(4, 38);
-            this.dgvPropiedades.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvPropiedades.Name = "dgvPropiedades";
-            this.dgvPropiedades.RowHeadersWidth = 51;
-            this.dgvPropiedades.RowTemplate.Height = 29;
-            this.dgvPropiedades.Size = new System.Drawing.Size(432, 302);
-            this.dgvPropiedades.TabIndex = 50;
-            this.dgvPropiedades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPropiedades_CellContentClick);
+            dgvPropiedades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPropiedades.Location = new Point(4, 38);
+            dgvPropiedades.Margin = new Padding(4);
+            dgvPropiedades.Name = "dgvPropiedades";
+            dgvPropiedades.RowHeadersWidth = 51;
+            dgvPropiedades.RowTemplate.Height = 29;
+            dgvPropiedades.Size = new Size(432, 302);
+            dgvPropiedades.TabIndex = 50;
+            dgvPropiedades.CellContentClick += dgvPropiedades_CellContentClick;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 29);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "Lista de propiedades";
+            label1.AutoSize = true;
+            label1.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 5);
+            label1.Name = "label1";
+            label1.Size = new Size(293, 30);
+            label1.TabIndex = 67;
+            label1.Text = "Lista de propiedades";
             // 
             // PropiedadesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(729, 428);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelPropiedad);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.btnEliminarPropiedad);
-            this.Controls.Add(this.btnEditarPropiedad);
-            this.Controls.Add(this.btnGuardarPropiedad);
-            this.Controls.Add(this.labelPrecioMensual);
-            this.Controls.Add(this.labelTipoPropiedad);
-            this.Controls.Add(this.labelDireccion);
-            this.Controls.Add(this.textBoxPrecioMensualPropiedad);
-            this.Controls.Add(this.textBoxTipoPropiedadPropiedad);
-            this.Controls.Add(this.textBoxDireccionPropiedad);
-            this.Controls.Add(this.textboxNombrePropiedad);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.dgvPropiedades);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PropiedadesForm";
-            this.Text = "PropiedadesForm";
-            this.Load += new System.EventHandler(this.PropiedadesForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPropiedades)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SkyBlue;
+            ClientSize = new Size(729, 428);
+            Controls.Add(label1);
+            Controls.Add(labelPropiedad);
+            Controls.Add(txtBuscar);
+            Controls.Add(label11);
+            Controls.Add(btnEliminarPropiedad);
+            Controls.Add(btnEditarPropiedad);
+            Controls.Add(btnGuardarPropiedad);
+            Controls.Add(labelPrecioMensual);
+            Controls.Add(labelTipoPropiedad);
+            Controls.Add(labelDireccion);
+            Controls.Add(textBoxPrecioMensualPropiedad);
+            Controls.Add(textBoxTipoPropiedadPropiedad);
+            Controls.Add(textBoxDireccionPropiedad);
+            Controls.Add(textboxNombrePropiedad);
+            Controls.Add(label10);
+            Controls.Add(dgvPropiedades);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "PropiedadesForm";
+            Text = "PropiedadesForm";
+            Load += PropiedadesForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvPropiedades).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
