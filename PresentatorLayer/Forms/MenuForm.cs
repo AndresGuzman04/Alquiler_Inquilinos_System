@@ -37,7 +37,6 @@ namespace PresentatorLayer.Forms
         {
             OpenInquilinnosForm(new inquilinosForm());
         }
-        #endregion
 
         #region Propiedades
         private void OpenPropiedadesForm(Form PropiedadesForm)
