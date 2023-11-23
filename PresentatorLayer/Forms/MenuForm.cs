@@ -16,13 +16,10 @@ namespace PresentatorLayer.Forms
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void closepictureBox_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        #region Inquilinos 
         private void OpenInquilinnosForm(Form inquilinoForm)
         {
             inquilinoForm.TopLevel = false;
@@ -33,12 +30,12 @@ namespace PresentatorLayer.Forms
             inquilinoForm.Show();
         }
 
-        private void inquilinosmenubutton_Click(object sender, EventArgs e)
+        private void inquilinosmenubutton_Click_1(object sender, EventArgs e)
         {
             OpenInquilinnosForm(new inquilinosForm());
         }
 
-        #region Propiedades
+
         private void OpenPropiedadesForm(Form PropiedadesForm)
         {
             PropiedadesForm.TopLevel = false;
@@ -49,10 +46,6 @@ namespace PresentatorLayer.Forms
             PropiedadesForm.Show();
         }
 
-        private void propiedadmenubutton_Click(object sender, EventArgs e)
-        {
-            OpenPropiedadesForm(new PropiedadesForm());
-        }
-        #endregion
+        
     }
 }
