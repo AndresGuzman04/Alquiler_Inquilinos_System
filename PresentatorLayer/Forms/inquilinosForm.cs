@@ -38,7 +38,7 @@ namespace PresentatorLayer.Forms
             inquilinosdataGridView.Columns["InquilinoID"].HeaderText = "ID";
         }
 
-        private void guardarInquilinoButton_Click(object sender, EventArgs e)
+        private void guardarInquilinoButton_Click_1(object sender, EventArgs e)
         {
             InquilinoBusiness inquilinoBusiness = new InquilinoBusiness();
             Inquilino inquilino = new Inquilino();
@@ -79,7 +79,7 @@ namespace PresentatorLayer.Forms
             }
         }
 
-        private void editarInquilinoButton_Click(object sender, EventArgs e)
+        private void editarInquilinoButton_Click_1(object sender, EventArgs e)
         {
             if (inquilinosdataGridView.SelectedRows.Count > 0)
             {
@@ -95,7 +95,7 @@ namespace PresentatorLayer.Forms
             }
         }
 
-        private void eliminarInquilinoButton_Click(object sender, EventArgs e)
+        private void eliminarInquilinoButton_Click_1(object sender, EventArgs e)
         {
             if (inquilinosdataGridView.SelectedRows.Count > 0)
             {
@@ -111,7 +111,6 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show("Debes seleccionar una fila antes de elimniar");
             }
         }
-
-       
     }
 }
+
