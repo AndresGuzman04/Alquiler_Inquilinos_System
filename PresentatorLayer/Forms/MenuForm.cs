@@ -15,6 +15,7 @@ namespace PresentatorLayer.Forms
         public MenuForm()
         {
             InitializeComponent();
+            
         }
         private void closepictureBox_Click(object sender, EventArgs e)
         {
@@ -32,7 +33,7 @@ namespace PresentatorLayer.Forms
 
         private void inquilinosmenubutton_Click_1(object sender, EventArgs e)
         {
-            OpenInquilinnosForm(new inquilinosForm());
+            //OpenInquilinnosForm(new inquilinosForm());
         }
 
 
@@ -45,7 +46,53 @@ namespace PresentatorLayer.Forms
             PropiedadesForm.BringToFront();
             PropiedadesForm.Show();
         }
+        private void propiedadmenubutton_Click(object sender, EventArgs e)
+        {
+            //OpenPropiedadesForm(new PropiedadesForm());
+        }
+        private void OpenContratosForm(Form ContratosForm)
+        {
+            ContratosForm.TopLevel = false;
+            ContratosForm.Dock = DockStyle.Fill;
+            contenidopanel.Controls.Add(ContratosForm);
+            contenidopanel.Tag = ContratosForm;
+            ContratosForm.BringToFront();
+            ContratosForm.Show();
 
-        
+        }
+        private void contratosmenubutton_Click(object sender, EventArgs e)
+        {
+            //OpenContratosForm(new ContratosForm());
+        }
+        private void OpenMantenimientoForm(Form MantenimientoForm)
+        {
+            MantenimientoForm.TopLevel = false;
+            MantenimientoForm.Dock = DockStyle.Fill;
+            contenidopanel.Controls.Add(MantenimientoForm);
+            contenidopanel.Tag = MantenimientoForm;
+            MantenimientoForm.BringToFront();
+            MantenimientoForm.Show();
+
+        }
+
+        private void mantenimientomenubutton_Click(object sender, EventArgs e)
+        {
+            //OpenMantenimientoForm(new MantenimientoForm());
+        }
+
+        private void OpenPagosForm(Form PagosForm)
+        {
+            PagosForm.TopLevel = false;
+            PagosForm.Dock= DockStyle.Fill;
+            contenidopanel.Controls.Add(PagosForm);
+            contenidopanel.Tag = PagosForm; 
+            PagosForm.BringToFront();
+            PagosForm.Show();
+        }
+
+        private void pagosmenubutton_Click(object sender, EventArgs e)
+        {
+            OpenPagosForm(new PagosForm());
+        }
     }
 }

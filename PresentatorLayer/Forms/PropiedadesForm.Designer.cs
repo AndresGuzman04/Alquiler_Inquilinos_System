@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             labelPropiedad = new Label();
-            txtBuscar = new TextBox();
-            label11 = new Label();
             btnEliminarPropiedad = new Button();
             btnEditarPropiedad = new Button();
             btnGuardarPropiedad = new Button();
@@ -59,23 +57,6 @@
             labelPropiedad.TabIndex = 66;
             labelPropiedad.Text = "Lista Propiedades";
             // 
-            // txtBuscar
-            // 
-            txtBuscar.Location = new Point(443, 51);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(186, 27);
-            txtBuscar.TabIndex = 63;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("JetBrains Mono NL", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(443, 19);
-            label11.Name = "label11";
-            label11.Size = new Size(97, 30);
-            label11.TabIndex = 62;
-            label11.Text = "Buscar";
-            // 
             // btnEliminarPropiedad
             // 
             btnEliminarPropiedad.Font = new Font("JetBrains Mono NL", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
@@ -87,6 +68,7 @@
             btnEliminarPropiedad.TabIndex = 61;
             btnEliminarPropiedad.Text = "Eliminar";
             btnEliminarPropiedad.UseVisualStyleBackColor = true;
+            btnEliminarPropiedad.Click += btnEliminarPropiedad_Click;
             // 
             // btnEditarPropiedad
             // 
@@ -99,6 +81,7 @@
             btnEditarPropiedad.TabIndex = 60;
             btnEditarPropiedad.Text = "Editar";
             btnEditarPropiedad.UseVisualStyleBackColor = true;
+            btnEditarPropiedad.Click += btnEditarPropiedad_Click;
             // 
             // btnGuardarPropiedad
             // 
@@ -111,13 +94,14 @@
             btnGuardarPropiedad.TabIndex = 59;
             btnGuardarPropiedad.Text = "Guardar";
             btnGuardarPropiedad.UseVisualStyleBackColor = true;
+            btnGuardarPropiedad.Click += btnGuardarPropiedad_Click_1;
             // 
             // labelPrecioMensual
             // 
             labelPrecioMensual.AutoSize = true;
             labelPrecioMensual.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             labelPrecioMensual.ForeColor = Color.Black;
-            labelPrecioMensual.Location = new Point(443, 297);
+            labelPrecioMensual.Location = new Point(443, 283);
             labelPrecioMensual.Margin = new Padding(5, 0, 5, 0);
             labelPrecioMensual.Name = "labelPrecioMensual";
             labelPrecioMensual.Size = new Size(209, 30);
@@ -129,7 +113,7 @@
             labelTipoPropiedad.AutoSize = true;
             labelTipoPropiedad.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             labelTipoPropiedad.ForeColor = Color.Black;
-            labelTipoPropiedad.Location = new Point(443, 220);
+            labelTipoPropiedad.Location = new Point(443, 202);
             labelTipoPropiedad.Margin = new Padding(5, 0, 5, 0);
             labelTipoPropiedad.Name = "labelTipoPropiedad";
             labelTipoPropiedad.Size = new Size(209, 30);
@@ -141,7 +125,7 @@
             labelDireccion.AutoSize = true;
             labelDireccion.Font = new Font("JetBrains Mono NL", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             labelDireccion.ForeColor = Color.Black;
-            labelDireccion.Location = new Point(443, 145);
+            labelDireccion.Location = new Point(443, 117);
             labelDireccion.Margin = new Padding(5, 0, 5, 0);
             labelDireccion.Name = "labelDireccion";
             labelDireccion.Size = new Size(139, 30);
@@ -150,7 +134,7 @@
             // 
             // textBoxPrecioMensualPropiedad
             // 
-            textBoxPrecioMensualPropiedad.Location = new Point(443, 331);
+            textBoxPrecioMensualPropiedad.Location = new Point(447, 317);
             textBoxPrecioMensualPropiedad.Margin = new Padding(5, 4, 5, 4);
             textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
             textBoxPrecioMensualPropiedad.Size = new Size(186, 27);
@@ -158,7 +142,7 @@
             // 
             // textBoxTipoPropiedadPropiedad
             // 
-            textBoxTipoPropiedadPropiedad.Location = new Point(443, 253);
+            textBoxTipoPropiedadPropiedad.Location = new Point(447, 236);
             textBoxTipoPropiedadPropiedad.Margin = new Padding(5, 4, 5, 4);
             textBoxTipoPropiedadPropiedad.Name = "textBoxTipoPropiedadPropiedad";
             textBoxTipoPropiedadPropiedad.Size = new Size(186, 27);
@@ -166,7 +150,7 @@
             // 
             // textBoxDireccionPropiedad
             // 
-            textBoxDireccionPropiedad.Location = new Point(443, 179);
+            textBoxDireccionPropiedad.Location = new Point(447, 151);
             textBoxDireccionPropiedad.Margin = new Padding(5, 4, 5, 4);
             textBoxDireccionPropiedad.Name = "textBoxDireccionPropiedad";
             textBoxDireccionPropiedad.Size = new Size(186, 27);
@@ -174,7 +158,7 @@
             // 
             // textboxNombrePropiedad
             // 
-            textboxNombrePropiedad.Location = new Point(443, 115);
+            textboxNombrePropiedad.Location = new Point(447, 71);
             textboxNombrePropiedad.Margin = new Padding(5, 4, 5, 4);
             textboxNombrePropiedad.Name = "textboxNombrePropiedad";
             textboxNombrePropiedad.Size = new Size(186, 27);
@@ -185,7 +169,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("JetBrains Mono NL", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(443, 81);
+            label10.Location = new Point(447, 37);
             label10.Margin = new Padding(5, 0, 5, 0);
             label10.Name = "label10";
             label10.Size = new Size(97, 30);
@@ -235,8 +219,6 @@
             Controls.Add(pdfpropiedadesbutton);
             Controls.Add(label1);
             Controls.Add(labelPropiedad);
-            Controls.Add(txtBuscar);
-            Controls.Add(label11);
             Controls.Add(btnEliminarPropiedad);
             Controls.Add(btnEditarPropiedad);
             Controls.Add(btnGuardarPropiedad);
@@ -251,6 +233,7 @@
             Controls.Add(dgvPropiedades);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PropiedadesForm";
+            Opacity = 0.8D;
             Text = "PropiedadesForm";
             ((System.ComponentModel.ISupportInitialize)dgvPropiedades).EndInit();
             ResumeLayout(false);
@@ -260,8 +243,6 @@
         #endregion
 
         private Label labelPropiedad;
-        private TextBox txtBuscar;
-        private Label label11;
         private Button btnEliminarPropiedad;
         private Button btnEditarPropiedad;
         private Button btnGuardarPropiedad;
