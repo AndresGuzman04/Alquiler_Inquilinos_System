@@ -101,5 +101,11 @@ namespace PresentatorLayer.Forms
                 passwordtextBox.ForeColor = Color.DimGray;
             }
         }
+        private void registerLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register registerForm = new Register();
+            registerForm.Show();
+            this.Hide();
+        }
     }
 }
