@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Crud;
 using CommonLayer.Entities;
 using FluentValidation.Results;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
 using PresentatorLayer.Validaciones;
 using System;
 using System.Collections.Generic;
@@ -8,9 +11,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Document = iText.Layout.Document;
 
 namespace PresentatorLayer.Forms
 {
@@ -110,6 +115,17 @@ namespace PresentatorLayer.Forms
             {
                 MessageBox.Show("Debes seleccionar una fila antes de elimniar");
             }
+        }
+
+        private void pdfinquilinosbutton_Click(object sender, EventArgs e)
+        {
+
+            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\managerPdf";
+            var write = new PdfWriter(path);
+            var pdf = new PdfDocument(write);
+            var document = new Document(pdf);
+            document.Add(new Paragraph("Gilber guasalo, dennis cusuco, andres siervo!"));
+            document.Close();
         }
     }
 }
