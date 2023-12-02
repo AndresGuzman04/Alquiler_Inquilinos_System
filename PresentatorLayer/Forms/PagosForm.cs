@@ -2,6 +2,7 @@
 using CommonLayer;
 using CommonLayer.Entities;
 using FluentValidation.Results;
+using PresentatorLayer.PDF;
 using PresentatorLayer.Validaciones;
 using System;
 using System.Collections.Generic;
@@ -70,10 +71,8 @@ namespace PresentatorLayer.Forms
 
             pago.contratoID = (int)contratoComboBox.SelectedValue;
 
-
             PagoValidator pagoValidator = new PagoValidator();
             ValidationResult result = pagoValidator.Validate(pago);
-
 
             if (!result.IsValid)
             {
@@ -92,8 +91,8 @@ namespace PresentatorLayer.Forms
                 }
                 else
                 {
-
-                    pago.id = int.Parse(s: pagosDataGridView.CurrentRow.Cells[0].Value.ToString());
+                    // Corrected the line for parsing the ID
+                    pago.id = int.Parse(pagosDataGridView.CurrentRow.Cells[0].Value.ToString());
 
                     pagoBusiness.UpdatePago(pago);
                     LoadPagosData();
@@ -101,9 +100,9 @@ namespace PresentatorLayer.Forms
                     isEditMode = false;
                     lockedTexbox();
                 }
-
             }
         }
+
 
         private void editarPagoButton_Click(object sender, EventArgs e)
         {
@@ -145,5 +144,29 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show("Debe seleccionar una fila");
             }
         }
+
+        private void pdfpagosbutton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\PagosPDF";
+
+            try
+            {
+                iTextPDF PagosPDF = new iTextPDF();
+
+                var document = PagosPDF.InitializePDF(path);
+
+                document.Add(PagosPDF.GenerateHeaderPDF("Reporte inquilinos"));
+                document.Add(PagosPDF.GenerateTablePDF(5, pagosDataGridView));
+
+                document.Close();
+                MessageBox.Show("PDF se genero correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
-}
+ }
+

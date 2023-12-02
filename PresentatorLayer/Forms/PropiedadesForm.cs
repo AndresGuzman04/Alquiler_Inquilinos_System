@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Crud;
 using CommonLayer;
 using FluentValidation.Results;
+using PresentatorLayer.PDF;
 using PresentatorLayer.Validaciones;
 using System;
 using System.Collections.Generic;
@@ -115,5 +116,29 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show("Debe seleccionar una fila para poder editar");
             }
         }
+
+        private void pdfpropiedadesbutton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\PropiedadesPDF";
+
+            try
+            {
+                iTextPDF PropiedadesPDF = new iTextPDF();
+
+                var document = PropiedadesPDF.InitializePDF(path);
+
+                document.Add(PropiedadesPDF.GenerateHeaderPDF("Reporte inquilinos"));
+                document.Add(PropiedadesPDF.GenerateTablePDF(5,dgvPropiedades));
+
+                document.Close();
+                MessageBox.Show("PDF se genero correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
+    
 }

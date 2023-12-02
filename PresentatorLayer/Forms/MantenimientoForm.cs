@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Crud;
 using CommonLayer.Entities;
 using FluentValidation.Results;
+using PresentatorLayer.PDF;
 using PresentatorLayer.Validaciones;
 using System;
 using System.Collections.Generic;
@@ -133,5 +134,29 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show("Debe seleccionar una fila");
             }
         }
+
+        private void pdfMantenimientobutton_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\MantenimientoPDF";
+
+            try
+            {
+                iTextPDF MantenimientoPDF = new iTextPDF();
+
+                var document = MantenimientoPDF.InitializePDF(path);
+
+                document.Add(MantenimientoPDF.GenerateHeaderPDF("Reporte del mantenimiento"));
+                document.Add(MantenimientoPDF.GenerateTablePDF(5,mantenimientoDataGridView));
+
+                document.Close();
+                MessageBox.Show("PDF se genero correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
+    
 }

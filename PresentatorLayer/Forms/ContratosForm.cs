@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Crud;
 using CommonLayer.Entities;
+using PresentatorLayer.PDF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace PresentatorLayer.Forms
 {
-    
+
     public partial class ContratosForm : Form
     {
         public ContratosForm()
@@ -64,12 +65,38 @@ namespace PresentatorLayer.Forms
             contratos.FechaInicio = fechaSelecionada;
             contratos.FechaFin = fechaSeleccionada2;
             contratos.MontoMensual = montomensualtextBox.Text;
+            
+            contratos.PropiedadId = Convert.ToInt32(propiedadComBo.SelectedValue);
 
-            contratos.PropiedadId = (int)propiedadComBo.SelectedValue;
 
             contratosBusiness.AddContrato(contratos);
             LoadContratosData();
             ClearFormContratos();
         }
+
+        private void pdfcontratosbutton_Click(object sender, EventArgs e)
+        {
+
+            string path = @"C:\Users\Manuel\Documents\Nuevacarpeta\ContratosPDF";
+
+            try
+            {
+                iTextPDF contratosPDF = new iTextPDF();
+
+                var document = contratosPDF.InitializePDF(path);
+
+                document.Add(contratosPDF.GenerateHeaderPDF("Reporte Contratos"));
+                document.Add(contratosPDF.GenerateTablePDF(5,contratosdataGridView));
+
+                document.Close();
+                MessageBox.Show("PDF se genero correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
-}
+    }
+

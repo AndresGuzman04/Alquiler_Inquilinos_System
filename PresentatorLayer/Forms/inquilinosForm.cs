@@ -4,6 +4,7 @@ using FluentValidation.Results;
 using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
+using PresentatorLayer.PDF;
 using PresentatorLayer.Validaciones;
 using System;
 using System.Collections.Generic;
@@ -120,13 +121,27 @@ namespace PresentatorLayer.Forms
         private void pdfinquilinosbutton_Click(object sender, EventArgs e)
         {
 
-            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\managerPdf";
-            var write = new PdfWriter(path);
-            var pdf = new PdfDocument(write);
-            var document = new Document(pdf);
-            document.Add(new Paragraph("Gilber guasalo, dennis cusuco, andres siervo!"));
-            document.Close();
+            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\InquilinosPDF";
+
+            try
+            {
+                iTextPDF inquilinoPDF = new iTextPDF();
+
+                var document = inquilinoPDF.InitializePDF(path);
+
+                document.Add(inquilinoPDF.GenerateHeaderPDF("Reporte inquilinos"));
+                document.Add(inquilinoPDF.GenerateTablePDF(5, inquilinosdataGridView));
+
+                document.Close();
+                MessageBox.Show("PDF se genero correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
+
     }
 }
 

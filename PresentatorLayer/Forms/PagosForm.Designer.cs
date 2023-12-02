@@ -45,40 +45,42 @@
             // 
             // pagoDateTimePicker
             // 
-            pagoDateTimePicker.Location = new Point(420, 213);
+            pagoDateTimePicker.Location = new Point(368, 160);
+            pagoDateTimePicker.Margin = new Padding(3, 2, 3, 2);
             pagoDateTimePicker.Name = "pagoDateTimePicker";
-            pagoDateTimePicker.Size = new Size(257, 27);
+            pagoDateTimePicker.Size = new Size(225, 23);
             pagoDateTimePicker.TabIndex = 34;
             // 
             // contratoComboBox
             // 
             contratoComboBox.FormattingEnabled = true;
-            contratoComboBox.Location = new Point(420, 134);
+            contratoComboBox.Location = new Point(368, 100);
+            contratoComboBox.Margin = new Padding(3, 2, 3, 2);
             contratoComboBox.Name = "contratoComboBox";
-            contratoComboBox.Size = new Size(257, 28);
+            contratoComboBox.Size = new Size(225, 23);
             contratoComboBox.TabIndex = 33;
             // 
             // contratopagolabel
             // 
             contratopagolabel.AutoSize = true;
-            contratopagolabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            contratopagolabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             contratopagolabel.ForeColor = Color.Black;
-            contratopagolabel.Location = new Point(420, 105);
+            contratopagolabel.Location = new Point(368, 79);
             contratopagolabel.Margin = new Padding(4, 0, 4, 0);
             contratopagolabel.Name = "contratopagolabel";
-            contratopagolabel.Size = new Size(120, 26);
+            contratopagolabel.Size = new Size(84, 20);
             contratopagolabel.TabIndex = 32;
             contratopagolabel.Text = "Contrato:";
             // 
             // titulopagoslabel
             // 
             titulopagoslabel.AutoSize = true;
-            titulopagoslabel.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            titulopagoslabel.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             titulopagoslabel.ForeColor = Color.Black;
             titulopagoslabel.Location = new Point(4, -1);
             titulopagoslabel.Margin = new Padding(4, 0, 4, 0);
             titulopagoslabel.Name = "titulopagoslabel";
-            titulopagoslabel.Size = new Size(167, 30);
+            titulopagoslabel.Size = new Size(116, 24);
             titulopagoslabel.TabIndex = 31;
             titulopagoslabel.Text = "Lista Pagos";
             // 
@@ -87,22 +89,22 @@
             pagosDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             pagosDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             pagosDataGridView.GridColor = SystemColors.ButtonShadow;
-            pagosDataGridView.Location = new Point(4, 33);
-            pagosDataGridView.Margin = new Padding(4);
+            pagosDataGridView.Location = new Point(4, 25);
+            pagosDataGridView.Margin = new Padding(4, 3, 4, 3);
             pagosDataGridView.Name = "pagosDataGridView";
             pagosDataGridView.RowHeadersWidth = 51;
             pagosDataGridView.RowTemplate.Height = 29;
-            pagosDataGridView.Size = new Size(408, 325);
+            pagosDataGridView.Size = new Size(357, 244);
             pagosDataGridView.TabIndex = 27;
             // 
             // editarPagoButton
             // 
-            editarPagoButton.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            editarPagoButton.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             editarPagoButton.ForeColor = Color.Black;
-            editarPagoButton.Location = new Point(164, 374);
-            editarPagoButton.Margin = new Padding(4);
+            editarPagoButton.Location = new Point(144, 280);
+            editarPagoButton.Margin = new Padding(4, 3, 4, 3);
             editarPagoButton.Name = "editarPagoButton";
-            editarPagoButton.Size = new Size(143, 41);
+            editarPagoButton.Size = new Size(125, 31);
             editarPagoButton.TabIndex = 28;
             editarPagoButton.Text = "Editar";
             editarPagoButton.UseVisualStyleBackColor = true;
@@ -110,12 +112,12 @@
             // 
             // eliminarPagoButton
             // 
-            eliminarPagoButton.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            eliminarPagoButton.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             eliminarPagoButton.ForeColor = Color.Black;
-            eliminarPagoButton.Location = new Point(315, 374);
-            eliminarPagoButton.Margin = new Padding(4);
+            eliminarPagoButton.Location = new Point(276, 280);
+            eliminarPagoButton.Margin = new Padding(4, 3, 4, 3);
             eliminarPagoButton.Name = "eliminarPagoButton";
-            eliminarPagoButton.Size = new Size(143, 41);
+            eliminarPagoButton.Size = new Size(125, 31);
             eliminarPagoButton.TabIndex = 30;
             eliminarPagoButton.Text = "Eliminar";
             eliminarPagoButton.UseVisualStyleBackColor = true;
@@ -123,12 +125,12 @@
             // 
             // guardarPagoButton
             // 
-            guardarPagoButton.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            guardarPagoButton.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             guardarPagoButton.ForeColor = Color.Black;
-            guardarPagoButton.Location = new Point(13, 374);
-            guardarPagoButton.Margin = new Padding(4);
+            guardarPagoButton.Location = new Point(11, 280);
+            guardarPagoButton.Margin = new Padding(4, 3, 4, 3);
             guardarPagoButton.Name = "guardarPagoButton";
-            guardarPagoButton.Size = new Size(143, 41);
+            guardarPagoButton.Size = new Size(125, 31);
             guardarPagoButton.TabIndex = 29;
             guardarPagoButton.Text = "Guardar";
             guardarPagoButton.UseVisualStyleBackColor = true;
@@ -136,54 +138,55 @@
             // 
             // montoPagoTextBox
             // 
-            montoPagoTextBox.Location = new Point(420, 66);
-            montoPagoTextBox.Margin = new Padding(4);
+            montoPagoTextBox.Location = new Point(368, 50);
+            montoPagoTextBox.Margin = new Padding(4, 3, 4, 3);
             montoPagoTextBox.Name = "montoPagoTextBox";
-            montoPagoTextBox.Size = new Size(257, 27);
+            montoPagoTextBox.Size = new Size(225, 23);
             montoPagoTextBox.TabIndex = 26;
             // 
             // montopagolabel
             // 
             montopagolabel.AutoSize = true;
-            montopagolabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            montopagolabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             montopagolabel.ForeColor = Color.Black;
-            montopagolabel.Location = new Point(420, 36);
+            montopagolabel.Location = new Point(368, 27);
             montopagolabel.Margin = new Padding(4, 0, 4, 0);
             montopagolabel.Name = "montopagolabel";
-            montopagolabel.Size = new Size(180, 26);
+            montopagolabel.Size = new Size(133, 20);
             montopagolabel.TabIndex = 25;
             montopagolabel.Text = "Monto A Pagar:";
             // 
             // fechapagolabel
             // 
             fechapagolabel.AutoSize = true;
-            fechapagolabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            fechapagolabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             fechapagolabel.ForeColor = Color.Black;
-            fechapagolabel.Location = new Point(420, 184);
+            fechapagolabel.Location = new Point(368, 138);
             fechapagolabel.Margin = new Padding(4, 0, 4, 0);
             fechapagolabel.Name = "fechapagolabel";
-            fechapagolabel.Size = new Size(180, 26);
+            fechapagolabel.Size = new Size(138, 20);
             fechapagolabel.TabIndex = 24;
             fechapagolabel.Text = "Fecha De Pago:";
             // 
             // pdfpagosbutton
             // 
-            pdfpagosbutton.Font = new Font("JetBrains Mono NL", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
+            pdfpagosbutton.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
             pdfpagosbutton.ForeColor = Color.Black;
-            pdfpagosbutton.Location = new Point(466, 374);
-            pdfpagosbutton.Margin = new Padding(4);
+            pdfpagosbutton.Location = new Point(408, 280);
+            pdfpagosbutton.Margin = new Padding(4, 3, 4, 3);
             pdfpagosbutton.Name = "pdfpagosbutton";
-            pdfpagosbutton.Size = new Size(143, 41);
+            pdfpagosbutton.Size = new Size(125, 31);
             pdfpagosbutton.TabIndex = 35;
             pdfpagosbutton.Text = "PDF";
             pdfpagosbutton.UseVisualStyleBackColor = true;
+            pdfpagosbutton.Click += pdfpagosbutton_Click;
             // 
             // PagosForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
-            ClientSize = new Size(729, 428);
+            ClientSize = new Size(638, 321);
             Controls.Add(pdfpagosbutton);
             Controls.Add(pagoDateTimePicker);
             Controls.Add(contratoComboBox);
@@ -197,6 +200,7 @@
             Controls.Add(montopagolabel);
             Controls.Add(fechapagolabel);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PagosForm";
             Opacity = 0.8D;
             Text = "PagosForm";
