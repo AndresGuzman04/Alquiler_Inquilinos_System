@@ -11,7 +11,7 @@ namespace DataLayer.Data
     public class Connection
     {
 
-        private SqlConnection _connection = new SqlConnection(@"Data Source=DESKTOP-RTREKKS\SQLEXPRESS;Initial Catalog=Alquiler;Integrated Security=True");
+        private SqlConnection _connection = new SqlConnection(@"Data Source=DESKTOP-U6NIURD;Initial Catalog=Alquiler;Integrated Security=True;Encrypt=False");
 
         public SqlConnection OpenConnection()
         {

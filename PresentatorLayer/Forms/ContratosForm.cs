@@ -19,7 +19,8 @@ namespace PresentatorLayer.Forms
         {
             InitializeComponent();
             LoadContratosData();
-            
+            LoadPropiedadComboBox();
+            LoadInquilinoComboBox();
         }
         private void LoadContratosData()
         {
@@ -35,7 +36,7 @@ namespace PresentatorLayer.Forms
 
 
             propiedadComBo.DisplayMember = "Nombre";
-            propiedadComBo.ValueMember = "InquilinoID";
+            propiedadComBo.ValueMember = "ID";
 
         }
         private void LoadPropiedadComboBox()
@@ -44,13 +45,8 @@ namespace PresentatorLayer.Forms
             PropiedadBusiness propiedadBusiness = new PropiedadBusiness();
             propiedadComBo.DataSource = propiedadBusiness.GetPropiedad();
 
-            propiedadComBo.DataSource = propiedadBusiness.GetPropiedad();
-
             propiedadComBo.DisplayMember = "Nombre";
-            propiedadComBo.ValueMember = "PropiedadID";
-
-            propiedadComBo.DisplayMember = "Nombre";
-            propiedadComBo.ValueMember = "PropiedadID";
+            propiedadComBo.ValueMember = "ID";
 
         }
         private void ClearFormContratos()

@@ -21,7 +21,9 @@ namespace PresentatorLayer.Forms
         {
             InitializeComponent();
             LoadMantenimientosData();
-            
+            LoadPropiedadComboBox();
+
+
         }
         private void LoadMantenimientosData()
         {
@@ -31,18 +33,11 @@ namespace PresentatorLayer.Forms
         }
         private void LoadPropiedadComboBox()
         {
-
             PropiedadBusiness propiedadBusiness = new PropiedadBusiness();
             propiedadComboBox.DataSource = propiedadBusiness.GetPropiedad();
 
-            propiedadComboBox.DataSource = propiedadBusiness.GetPropiedad();
-
             propiedadComboBox.DisplayMember = "Nombre";
-            propiedadComboBox.ValueMember = "PropiedadID";
-
-            propiedadComboBox.DisplayMember = "Nombre";
-            propiedadComboBox.ValueMember = "PropiedadID";
-
+            propiedadComboBox.ValueMember = "ID";
         }
         private void ClearFormMantenimiento()
         {

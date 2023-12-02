@@ -50,47 +50,47 @@
             // titulocontratoslabel
             // 
             titulocontratoslabel.AutoSize = true;
-            titulocontratoslabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            titulocontratoslabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             titulocontratoslabel.ForeColor = Color.Black;
-            titulocontratoslabel.Location = new Point(3, 3);
-            titulocontratoslabel.Margin = new Padding(4, 0, 4, 0);
+            titulocontratoslabel.Location = new Point(4, 4);
+            titulocontratoslabel.Margin = new Padding(5, 0, 5, 0);
             titulocontratoslabel.Name = "titulocontratoslabel";
-            titulocontratoslabel.Size = new Size(228, 26);
+            titulocontratoslabel.Size = new Size(227, 29);
             titulocontratoslabel.TabIndex = 74;
             titulocontratoslabel.Text = "Lista De Contratos";
             // 
             // editarcontratosbutton
             // 
-            editarcontratosbutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            editarcontratosbutton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             editarcontratosbutton.ForeColor = Color.Black;
-            editarcontratosbutton.Location = new Point(152, 330);
-            editarcontratosbutton.Margin = new Padding(4);
+            editarcontratosbutton.Location = new Point(190, 412);
+            editarcontratosbutton.Margin = new Padding(5, 5, 5, 5);
             editarcontratosbutton.Name = "editarcontratosbutton";
-            editarcontratosbutton.Size = new Size(127, 41);
+            editarcontratosbutton.Size = new Size(159, 51);
             editarcontratosbutton.TabIndex = 71;
             editarcontratosbutton.Text = "Editar";
             editarcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // eliminarcontratosbutton
             // 
-            eliminarcontratosbutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            eliminarcontratosbutton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             eliminarcontratosbutton.ForeColor = Color.Black;
-            eliminarcontratosbutton.Location = new Point(287, 330);
-            eliminarcontratosbutton.Margin = new Padding(4);
+            eliminarcontratosbutton.Location = new Point(359, 412);
+            eliminarcontratosbutton.Margin = new Padding(5, 5, 5, 5);
             eliminarcontratosbutton.Name = "eliminarcontratosbutton";
-            eliminarcontratosbutton.Size = new Size(134, 41);
+            eliminarcontratosbutton.Size = new Size(168, 51);
             eliminarcontratosbutton.TabIndex = 73;
             eliminarcontratosbutton.Text = "Eliminar";
             eliminarcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // guardarcontratosbutton
             // 
-            guardarcontratosbutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guardarcontratosbutton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guardarcontratosbutton.ForeColor = Color.Black;
-            guardarcontratosbutton.Location = new Point(3, 330);
-            guardarcontratosbutton.Margin = new Padding(4);
+            guardarcontratosbutton.Location = new Point(4, 412);
+            guardarcontratosbutton.Margin = new Padding(5, 5, 5, 5);
             guardarcontratosbutton.Name = "guardarcontratosbutton";
-            guardarcontratosbutton.Size = new Size(130, 41);
+            guardarcontratosbutton.Size = new Size(162, 51);
             guardarcontratosbutton.TabIndex = 72;
             guardarcontratosbutton.Text = "Guardar";
             guardarcontratosbutton.UseVisualStyleBackColor = true;
@@ -99,81 +99,90 @@
             // InquilinocomboBox
             // 
             InquilinocomboBox.FormattingEnabled = true;
-            InquilinocomboBox.Location = new Point(427, 294);
+            InquilinocomboBox.Location = new Point(534, 368);
+            InquilinocomboBox.Margin = new Padding(4, 4, 4, 4);
             InquilinocomboBox.Name = "InquilinocomboBox";
-            InquilinocomboBox.Size = new Size(250, 28);
+            InquilinocomboBox.Size = new Size(308, 33);
             InquilinocomboBox.TabIndex = 70;
             // 
             // propiedadComBo
             // 
             propiedadComBo.FormattingEnabled = true;
-            propiedadComBo.Location = new Point(424, 235);
+            propiedadComBo.Location = new Point(530, 294);
+            propiedadComBo.Margin = new Padding(4, 4, 4, 4);
             propiedadComBo.Name = "propiedadComBo";
-            propiedadComBo.Size = new Size(250, 28);
+            propiedadComBo.Size = new Size(312, 33);
             propiedadComBo.TabIndex = 69;
             // 
             // inquilinolabel
             // 
             inquilinolabel.AutoSize = true;
-            inquilinolabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            inquilinolabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             inquilinolabel.ForeColor = Color.Black;
-            inquilinolabel.Location = new Point(427, 265);
+            inquilinolabel.Location = new Point(534, 331);
+            inquilinolabel.Margin = new Padding(4, 0, 4, 0);
             inquilinolabel.Name = "inquilinolabel";
-            inquilinolabel.Size = new Size(132, 26);
+            inquilinolabel.Size = new Size(120, 29);
             inquilinolabel.TabIndex = 68;
             inquilinolabel.Text = "Inquilino:";
             // 
             // prpiedadlabel
             // 
             prpiedadlabel.AutoSize = true;
-            prpiedadlabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            prpiedadlabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             prpiedadlabel.ForeColor = Color.Black;
-            prpiedadlabel.Location = new Point(424, 206);
+            prpiedadlabel.Location = new Point(530, 258);
+            prpiedadlabel.Margin = new Padding(4, 0, 4, 0);
             prpiedadlabel.Name = "prpiedadlabel";
-            prpiedadlabel.Size = new Size(120, 26);
+            prpiedadlabel.Size = new Size(135, 29);
             prpiedadlabel.TabIndex = 67;
             prpiedadlabel.Text = "Propiedad";
             // 
             // fechafindateTimePicker
             // 
-            fechafindateTimePicker.Location = new Point(424, 112);
+            fechafindateTimePicker.Location = new Point(530, 140);
+            fechafindateTimePicker.Margin = new Padding(4, 4, 4, 4);
             fechafindateTimePicker.Name = "fechafindateTimePicker";
-            fechafindateTimePicker.Size = new Size(250, 27);
+            fechafindateTimePicker.Size = new Size(312, 31);
             fechafindateTimePicker.TabIndex = 66;
             // 
             // fechainiciodateTimePicker
             // 
-            fechainiciodateTimePicker.Location = new Point(424, 49);
+            fechainiciodateTimePicker.Location = new Point(530, 61);
+            fechainiciodateTimePicker.Margin = new Padding(4, 4, 4, 4);
             fechainiciodateTimePicker.Name = "fechainiciodateTimePicker";
-            fechainiciodateTimePicker.Size = new Size(250, 27);
+            fechainiciodateTimePicker.Size = new Size(312, 31);
             fechainiciodateTimePicker.TabIndex = 65;
             // 
             // fechafincontratoslabel
             // 
             fechafincontratoslabel.AutoSize = true;
-            fechafincontratoslabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            fechafincontratoslabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             fechafincontratoslabel.ForeColor = Color.Black;
-            fechafincontratoslabel.Location = new Point(424, 83);
+            fechafincontratoslabel.Location = new Point(530, 104);
+            fechafincontratoslabel.Margin = new Padding(4, 0, 4, 0);
             fechafincontratoslabel.Name = "fechafincontratoslabel";
-            fechafincontratoslabel.Size = new Size(120, 26);
+            fechafincontratoslabel.Size = new Size(129, 29);
             fechafincontratoslabel.TabIndex = 62;
             fechafincontratoslabel.Text = "Fecha Fin";
             // 
             // montomensualtextBox
             // 
-            montomensualtextBox.Location = new Point(424, 176);
+            montomensualtextBox.Location = new Point(530, 220);
+            montomensualtextBox.Margin = new Padding(4, 4, 4, 4);
             montomensualtextBox.Name = "montomensualtextBox";
-            montomensualtextBox.Size = new Size(250, 27);
+            montomensualtextBox.Size = new Size(312, 31);
             montomensualtextBox.TabIndex = 64;
             // 
             // montocontratoslabel
             // 
             montocontratoslabel.AutoSize = true;
-            montocontratoslabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            montocontratoslabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             montocontratoslabel.ForeColor = Color.Black;
-            montocontratoslabel.Location = new Point(424, 147);
+            montocontratoslabel.Location = new Point(530, 184);
+            montocontratoslabel.Margin = new Padding(4, 0, 4, 0);
             montocontratoslabel.Name = "montocontratoslabel";
-            montocontratoslabel.Size = new Size(168, 26);
+            montocontratoslabel.Size = new Size(190, 29);
             montocontratoslabel.TabIndex = 63;
             montocontratoslabel.Text = "Monto Mensual";
             // 
@@ -181,11 +190,12 @@
             // 
             fechainiciocontratoslabel.AutoSize = true;
             fechainiciocontratoslabel.BackColor = Color.SkyBlue;
-            fechainiciocontratoslabel.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            fechainiciocontratoslabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             fechainiciocontratoslabel.ForeColor = Color.Black;
-            fechainiciocontratoslabel.Location = new Point(424, 20);
+            fechainiciocontratoslabel.Location = new Point(530, 25);
+            fechainiciocontratoslabel.Margin = new Padding(4, 0, 4, 0);
             fechainiciocontratoslabel.Name = "fechainiciocontratoslabel";
-            fechainiciocontratoslabel.Size = new Size(156, 26);
+            fechainiciocontratoslabel.Size = new Size(155, 29);
             fechainiciocontratoslabel.TabIndex = 61;
             fechainiciocontratoslabel.Text = "Fecha Inicio";
             // 
@@ -193,31 +203,32 @@
             // 
             contratosdataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             contratosdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            contratosdataGridView.Location = new Point(3, 32);
+            contratosdataGridView.Location = new Point(4, 40);
+            contratosdataGridView.Margin = new Padding(4, 4, 4, 4);
             contratosdataGridView.Name = "contratosdataGridView";
             contratosdataGridView.RowHeadersWidth = 51;
             contratosdataGridView.RowTemplate.Height = 29;
-            contratosdataGridView.Size = new Size(418, 291);
+            contratosdataGridView.Size = new Size(522, 364);
             contratosdataGridView.TabIndex = 60;
             // 
             // pdfcontratosbutton
             // 
-            pdfcontratosbutton.Font = new Font("JetBrains Mono NL", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            pdfcontratosbutton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             pdfcontratosbutton.ForeColor = Color.Black;
-            pdfcontratosbutton.Location = new Point(429, 327);
-            pdfcontratosbutton.Margin = new Padding(4);
+            pdfcontratosbutton.Location = new Point(536, 409);
+            pdfcontratosbutton.Margin = new Padding(5, 5, 5, 5);
             pdfcontratosbutton.Name = "pdfcontratosbutton";
-            pdfcontratosbutton.Size = new Size(130, 41);
+            pdfcontratosbutton.Size = new Size(162, 51);
             pdfcontratosbutton.TabIndex = 75;
             pdfcontratosbutton.Text = "PDF";
             pdfcontratosbutton.UseVisualStyleBackColor = true;
             // 
             // ContratosForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
-            ClientSize = new Size(711, 381);
+            ClientSize = new Size(889, 476);
             Controls.Add(pdfcontratosbutton);
             Controls.Add(titulocontratoslabel);
             Controls.Add(editarcontratosbutton);
@@ -235,6 +246,7 @@
             Controls.Add(fechainiciocontratoslabel);
             Controls.Add(contratosdataGridView);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "ContratosForm";
             Opacity = 0.8D;
             Text = "ContratosForm";

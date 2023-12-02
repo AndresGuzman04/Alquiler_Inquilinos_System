@@ -20,7 +20,7 @@ namespace DataLayer.Data
         public DataTable GetAllPagos()
         {
             _sqlCommand.Connection = _connection.OpenConnection();
-            _sqlCommand.CommandText = "SELECT Pagos.ContratoID AS ID, Pagos.FechaPago AS Fecha," +
+            _sqlCommand.CommandText = "SELECT Pagos.PagoID AS ID, Pagos.FechaPago AS Fecha," +
                 " Pagos.Monto, Contratos.ContratoID AS Contrato FROM Pagos INNER JOIN Contratos" +
                 " ON Contratos.ContratoID = Pagos.ContratoID;";
             _sqlCommand.CommandType = CommandType.Text;

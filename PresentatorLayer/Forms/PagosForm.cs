@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Crud;
+using CommonLayer;
 using CommonLayer.Entities;
 using FluentValidation.Results;
 using PresentatorLayer.Validaciones;
@@ -21,19 +22,19 @@ namespace PresentatorLayer.Forms
         {
             InitializeComponent();
             LoadPagosData();
+            LoadContratoComboBox();
         }
         private void LoadPagosData()
         {
             PagoBusiness pagoBusiness = new PagoBusiness();
             pagosDataGridView.DataSource = pagoBusiness.GetPagos();
         }
-        private void LoadContratoComboBox()
+        public void LoadContratoComboBox()
         {
-
             ContratosBusiness contratoBusiness = new ContratosBusiness();
             contratoComboBox.DataSource = contratoBusiness.GetContratos();
-            contratoComboBox.DisplayMember = "ContratoID";
-            contratoComboBox.ValueMember = "ContratoID";
+            contratoComboBox.DisplayMember = "ID";
+            contratoComboBox.ValueMember = "ID";
 
         }
         private void ClearFormPago()
