@@ -21,7 +21,14 @@ namespace BusinessLayer.Crud
 
             return contratosTable;
         }
-
+        public int GetPropiedadID(Contratos contratos)
+        {
+            return contratoData.GetPropiedadID(contratos);
+        }
+        public int GetInquilinoID(Contratos contratos)
+        {
+            return contratoData.GetInquilinoID(contratos);
+        }
         public void AddContrato(Contratos contratos)
         {
             contratoData.AddContrato(contratos);

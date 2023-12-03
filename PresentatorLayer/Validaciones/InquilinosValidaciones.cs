@@ -22,13 +22,15 @@ namespace PresentatorLayer.Validaciones
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Direccion))
                 .WithMessage("la direccion no puede estar vacía");
 
-            RuleFor(Inquilino => Inquilino.Email)
-                .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Email))
-                .WithMessage("el email no puede estar vacía");
+            RuleFor(inquilino => inquilino.Email)
+            .NotEmpty().When(inq => string.IsNullOrEmpty(inq.Email))
+            .WithMessage("El correo electrónico no puede estar vacío")
+            .EmailAddress().WithMessage("Formato de correo electrónico no válido");
 
-            RuleFor(Inquilino => Inquilino.Telefono)
-                .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Telefono))
-                .WithMessage("el telefono no puede estar vacía");
+            RuleFor(inquilino => inquilino.Telefono)
+            .NotEmpty().When(inq => string.IsNullOrEmpty(inq.Telefono))
+            .WithMessage("El teléfono no puede estar vacío")
+            .Matches(@"^\d{4}\d{4}$").WithMessage("Formato de teléfono no válido. Utiliza el formato (XXXXXXXX) 8 digitos.");
         }
     }
 }

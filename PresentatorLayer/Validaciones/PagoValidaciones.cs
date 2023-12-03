@@ -16,7 +16,7 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(pago => pago.monto)
                 .NotEmpty().WithMessage("El pago mensual no puede estar vacío")
-                .Matches(@"^\d+$").WithMessage("El monto debe tener solo numeros");
+                .Matches(@"^\d+(\.\d+)?$").WithMessage("El monto debe tener solo números, con un punto opcional para decimales");
 
         }
     }

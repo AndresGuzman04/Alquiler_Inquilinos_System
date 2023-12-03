@@ -24,11 +24,16 @@ namespace BusinessLayer.Crud
             return mantenimientosTable;
         }
 
+
         public void AddMantenimiento(Mantenimiento mantenimiento)
         {
 
             mantenimientoData.AddMantenimiento(mantenimiento);
 
+        }
+
+        public int GetPropiedadID(Mantenimiento mantenimiento) {
+            return mantenimientoData.GetPropiedadID(mantenimiento);
         }
 
         public void Updatemantenimiento(Mantenimiento mantenimiento)

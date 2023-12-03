@@ -164,7 +164,7 @@
             textboxNombrePropiedad.Name = "textboxNombrePropiedad";
             textboxNombrePropiedad.Size = new Size(163, 23);
             textboxNombrePropiedad.TabIndex = 52;
-            textboxNombrePropiedad.KeyPress += textboxNombrePropiedad_KeyPress;
+
             // 
             // label10
             // 

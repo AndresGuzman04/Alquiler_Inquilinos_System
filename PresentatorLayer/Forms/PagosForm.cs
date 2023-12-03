@@ -147,7 +147,7 @@ namespace PresentatorLayer.Forms
 
         private void pdfpagosbutton_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\PagosPDF";
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Pagos.PDF");
 
             try
             {
@@ -159,7 +159,7 @@ namespace PresentatorLayer.Forms
                 document.Add(PagosPDF.GenerateTablePDF(5, pagosDataGridView));
 
                 document.Close();
-                MessageBox.Show("PDF se genero correctamente");
+                MessageBox.Show("PDF se genero correctamente en la carpeta Documentos!!");
             }
             catch (Exception ex)
             {

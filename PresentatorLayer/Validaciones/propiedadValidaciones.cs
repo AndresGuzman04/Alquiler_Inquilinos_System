@@ -29,7 +29,7 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(propiedad => propiedad.PagoMensual)
                 .NotEmpty().WithMessage("El pago mensual no puede estar vacío")
-                .Matches(@"^\d+$").WithMessage("El pago mensual debe contener solo números");
+                .Matches(@"^\d+(\.\d+)?$").WithMessage("El monto debe tener solo números, con un punto opcional para decimales");
         }
     }
 

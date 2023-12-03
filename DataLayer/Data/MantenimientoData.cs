@@ -32,7 +32,29 @@ namespace DataLayer.Data
 
             return mantenimentosTable;
         }
+        public int GetPropiedadID(Mantenimiento mantenimiento) {
+            int propiedadID = 0;  
 
+            _sqlCommand.Connection = _connection.OpenConnection();
+            _sqlCommand.CommandText = "SELECT PropiedadID FROM Mantenimiento WHERE MantenimientoID = @Id;";
+            _sqlCommand.CommandType = CommandType.Text;
+
+            _sqlCommand.Parameters.AddWithValue("@Id", mantenimiento.id);
+
+            object result = _sqlCommand.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out propiedadID))
+            {
+            }
+            else
+            {
+                
+            }
+
+            _connection.CloseConnection();
+
+            return propiedadID;
+        }
         public void AddMantenimiento(Mantenimiento mantenimiento)
         {
 

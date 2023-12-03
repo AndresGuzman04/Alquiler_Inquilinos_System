@@ -123,7 +123,13 @@ namespace PresentatorLayer.Forms
 
                 descripcionTextBox.Text = mantenimientoDataGridView.CurrentRow.Cells[2].Value.ToString();
                 costoTextbox.Text = mantenimientoDataGridView.CurrentRow.Cells[3].Value.ToString();
-                propiedadComboBox.SelectedValue = mantenimientoDataGridView.CurrentRow.Cells[4].Value.ToString();
+
+                MantenimientoBusiness mantenimientoBusiness = new MantenimientoBusiness();
+                Mantenimiento mantenimiento = new Mantenimiento();
+
+                mantenimiento.id = int.Parse(s: mantenimientoDataGridView.CurrentRow.Cells[0].Value.ToString());
+                int PropiedadID = mantenimientoBusiness.GetPropiedadID(mantenimiento);
+                propiedadComboBox.SelectedValue = PropiedadID;
 
                 isEditMode = true;
 
@@ -137,7 +143,7 @@ namespace PresentatorLayer.Forms
 
         private void pdfMantenimientobutton_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\MantenimientoPDF";
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Mantenimientos.PDF");
 
             try
             {
@@ -149,7 +155,7 @@ namespace PresentatorLayer.Forms
                 document.Add(MantenimientoPDF.GenerateTablePDF(5, mantenimientoDataGridView));
 
                 document.Close();
-                MessageBox.Show("PDF se genero correctamente");
+                MessageBox.Show("PDF se genero correctamente en la carpeta Documentos!!");
             }
             catch (Exception ex)
             {

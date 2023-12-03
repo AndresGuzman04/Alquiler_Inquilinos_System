@@ -23,7 +23,6 @@ namespace DataLayer.Data
             _connection.CloseConnection();
             return PropiedadTable;
         }
-
         public DataTable SearchPropiedad(string search)
         {
             _cmd.Connection = _connection.OpenConnection();

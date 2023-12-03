@@ -22,7 +22,7 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(mantenimiento => mantenimiento.costo)
                 .NotEmpty().WithMessage("El costo  no puede estar vacío")
-                .Matches(@"^\d+$").WithMessage("El costo debe tener solo números");
+                .Matches(@"^\d+(\.\d+)?$").WithMessage("El monto debe tener solo números, con un punto opcional para decimales");
         }
     }
 }

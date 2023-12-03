@@ -26,7 +26,8 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(Contratos => Contratos.MontoMensual)
                 .NotEmpty().When(Contratos => string.IsNullOrEmpty(Contratos.MontoMensual))
-                .WithMessage("El monto no puede estar vacio");
+                .WithMessage("El monto no puede estar vacio")
+                .Matches(@"^\d+(\.\d+)?$").WithMessage("El monto debe tener solo números, con un punto opcional para decimales");
 
             RuleFor(contrato => contrato.PropiedadId)
                 .NotEmpty().WithMessage("Por favor, seleccione una propiedad")

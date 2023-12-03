@@ -35,6 +35,54 @@ namespace DataLayer.Data
 
             return contratosTable;
         }
+        public int GetInquilinoID(Contratos contratos)
+        {
+            int inquilinoID = 0;
+
+            _sqlcommand.Connection = _connection.OpenConnection();
+            _sqlcommand.CommandText = "SELECT InquilinoID FROM Contratos WHERE ContratoID = @contratoId;";
+            _sqlcommand.CommandType = CommandType.Text;
+
+            _sqlcommand.Parameters.AddWithValue("@contratoId", contratos.Id);
+
+            object result = _sqlcommand.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out inquilinoID))
+            {
+            }
+            else
+            {
+
+            }
+
+            _connection.CloseConnection();
+
+            return inquilinoID;
+        }
+        public int GetPropiedadID(Contratos contratos)
+        {
+            int propiedadID = 0;
+
+            _sqlcommand.Connection = _connection.OpenConnection();
+            _sqlcommand.CommandText = "SELECT PropiedadID FROM Contratos WHERE ContratoID = @contratosId;";
+            _sqlcommand.CommandType = CommandType.Text;
+
+            _sqlcommand.Parameters.AddWithValue("@contratosId", contratos.Id);
+
+            object result = _sqlcommand.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out propiedadID))
+            {
+            }
+            else
+            {
+
+            }
+
+            _connection.CloseConnection();
+
+            return propiedadID;
+        }
         public void AddContrato(Contratos contratos)
         {
             _sqlcommand.Connection = _connection.OpenConnection();
@@ -64,7 +112,7 @@ namespace DataLayer.Data
             _sqlcommand.Parameters.AddWithValue("@MontoMensual", contratos.MontoMensual);
             _sqlcommand.Parameters.AddWithValue("@PropiedadID", contratos.PropiedadId);
             _sqlcommand.Parameters.AddWithValue("@InquilinoID", contratos.InquilinoId);
-            _sqlcommand.Parameters.AddWithValue("@ContratoID", contratos.Id);
+            _sqlcommand.Parameters.AddWithValue("@Id", contratos.Id);
 
             _sqlcommand.ExecuteNonQuery();
             _sqlcommand.Parameters.Clear();
@@ -74,7 +122,7 @@ namespace DataLayer.Data
         public void DeleteContrato(Contratos contratos)
         {
             _sqlcommand.Connection = _connection.OpenConnection();
-            _sqlcommand.CommandText = "DELETE FROM Contratos WHERE Id = @Id";
+            _sqlcommand.CommandText = "DELETE FROM Contratos WHERE ContratoID = @Id";
             _sqlcommand.CommandType = CommandType.Text;
 
             _sqlcommand.Parameters.AddWithValue("@Id", contratos.Id);

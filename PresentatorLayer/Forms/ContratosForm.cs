@@ -39,8 +39,8 @@ namespace PresentatorLayer.Forms
             InquilinocomboBox.DataSource = inquilinoBusiness.GetInquilinos();
 
 
-            propiedadComBo.DisplayMember = "Nombre";
-            propiedadComBo.ValueMember = "ID";
+            InquilinocomboBox.DisplayMember = "Nombre";
+            InquilinocomboBox.ValueMember = "InquilinoId";
 
         }
         private void LoadPropiedadComboBox()
@@ -70,7 +70,7 @@ namespace PresentatorLayer.Forms
 
 
             contratos.PropiedadId = (int)propiedadComBo.SelectedValue;
-            contratos.InquilinoId = (int)InquilinocomboBox.SelectedIndex;
+            contratos.InquilinoId = (int)InquilinocomboBox.SelectedValue;
 
             contratosValidator mantenimientoValidator = new contratosValidator();
             ValidationResult result = mantenimientoValidator.Validate(contratos);
@@ -110,8 +110,7 @@ namespace PresentatorLayer.Forms
 
         private void pdfcontratosbutton_Click(object sender, EventArgs e)
         {
-
-            string path = @"C:\Users\Manuel\Documents\Nuevacarpeta\ContratosPDF";
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Contratos.PDF");
 
             try
             {
@@ -123,7 +122,7 @@ namespace PresentatorLayer.Forms
                 document.Add(contratosPDF.GenerateTablePDF(5, contratosdataGridView));
 
                 document.Close();
-                MessageBox.Show("PDF se genero correctamente");
+                MessageBox.Show("PDF se genero correctamente en la carpeta Documentos!!");
             }
             catch (Exception ex)
             {
@@ -141,10 +140,16 @@ namespace PresentatorLayer.Forms
                 fechainiciodateTimePicker.Value = fechaSeleccionada;
                 fechafindateTimePicker.Value = fechaSeleccionada;
 
-                montomensualtextBox.Text = contratosdataGridView.CurrentRow.Cells[2].Value.ToString();
+                montomensualtextBox.Text = contratosdataGridView.CurrentRow.Cells[3].Value.ToString();
 
-                propiedadComBo.SelectedValue = contratosdataGridView.CurrentRow.Cells[4].Value.ToString();
-                InquilinocomboBox.SelectedValue = contratosdataGridView.CurrentRow.Cells[5].Value.ToString();
+                ContratosBusiness contratosBusiness = new ContratosBusiness();
+                Contratos contratos = new Contratos();
+
+                contratos.Id = int.Parse(contratosdataGridView.CurrentRow.Cells[0].Value.ToString());
+                int propiedadID = contratosBusiness.GetPropiedadID(contratos);
+                propiedadComBo.SelectedValue = propiedadID;
+                int inquilinoID = contratosBusiness.GetInquilinoID(contratos);
+                InquilinocomboBox.SelectedValue = inquilinoID;
 
                 isEditMode = true;
 

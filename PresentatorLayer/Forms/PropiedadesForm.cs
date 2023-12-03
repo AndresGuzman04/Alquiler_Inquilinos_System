@@ -119,7 +119,7 @@ namespace PresentatorLayer.Forms
 
         private void pdfpropiedadesbutton_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Manuel\Documents\Nueva carpeta\PropiedadesPDF";
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Propiedades.PDF");
 
             try
             {
@@ -131,22 +131,12 @@ namespace PresentatorLayer.Forms
                 document.Add(PropiedadesPDF.GenerateTablePDF(5, dgvPropiedades));
 
                 document.Close();
-                MessageBox.Show("PDF se genero correctamente");
+                MessageBox.Show("PDF se genero correctamente en la carpeta Documentos!!");
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void textboxNombrePropiedad_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Solo letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
             }
         }
 
