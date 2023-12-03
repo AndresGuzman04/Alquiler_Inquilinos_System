@@ -26,7 +26,7 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(Contratos => Contratos.MontoMensual)
                 .NotEmpty().When(Contratos => string.IsNullOrEmpty(Contratos.MontoMensual))
-                .WithMessage("La la descripción no puede estar vacía");
+                .WithMessage("El monto no puede estar vacio");
 
             RuleFor(contrato => contrato.PropiedadId)
                 .NotEmpty().WithMessage("Por favor, seleccione una propiedad")

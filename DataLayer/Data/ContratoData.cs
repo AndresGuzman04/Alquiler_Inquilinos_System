@@ -21,10 +21,10 @@ namespace DataLayer.Data
         {
             _sqlcommand.Connection = _connection.OpenConnection();
             _sqlcommand.CommandText =   "SELECT Contratos.ContratoID AS ID, Contratos.FechaInicio AS Inicio, " +
-                                        "Contratos.FechaFin AS Fin, Contratos.MontoMensual AS MontoMes, " +
-                                        "Propiedades.Nombre AS Propiedad, Inquilinos.Nombre AS Inquilino " +
-                                        "FROM Contratos INNER JOIN Inquilinos ON Inquilinos.InquilinoID = Contratos.InquilinoID " +
-                                        "INNER JOIN Propiedades ON Propiedades.PropiedadID = Contratos.PropiedadID;";
+                                        " Contratos.FechaFin AS Fin, Contratos.MontoMensual AS MontoMes, " +
+                                        " Propiedades.Nombre AS Propiedad, Inquilinos.Nombre AS Inquilino " +
+                                        " FROM Contratos INNER JOIN Inquilinos ON Inquilinos.InquilinoID = Contratos.InquilinoID " +
+                                        " INNER JOIN Propiedades ON Propiedades.PropiedadID = Contratos.PropiedadID;";
             _sqlcommand.CommandType = CommandType.Text;
 
 
@@ -44,8 +44,8 @@ namespace DataLayer.Data
             _sqlcommand.Parameters.AddWithValue("@FechaInicio", contratos.FechaInicio);
             _sqlcommand.Parameters.AddWithValue("@FechaFin", contratos.FechaFin);
             _sqlcommand.Parameters.AddWithValue("@MontoMensual", contratos.MontoMensual);
-            _sqlcommand.Parameters.AddWithValue("@PropiedadId", contratos.PropiedadId);
-            _sqlcommand.Parameters.AddWithValue("@InquilinoId", contratos.InquilinoId);
+            _sqlcommand.Parameters.AddWithValue("@PropiedadID", contratos.PropiedadId);
+            _sqlcommand.Parameters.AddWithValue("@InquilinoID", contratos.InquilinoId);
 
             _sqlcommand.ExecuteNonQuery();
             _sqlcommand.Parameters.Clear();
