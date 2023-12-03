@@ -139,6 +139,7 @@
             textBoxPrecioMensualPropiedad.Name = "textBoxPrecioMensualPropiedad";
             textBoxPrecioMensualPropiedad.Size = new Size(163, 23);
             textBoxPrecioMensualPropiedad.TabIndex = 55;
+            textBoxPrecioMensualPropiedad.KeyPress += textBoxPrecioMensualPropiedad_KeyPress;
             // 
             // textBoxTipoPropiedadPropiedad
             // 
@@ -163,6 +164,7 @@
             textboxNombrePropiedad.Name = "textboxNombrePropiedad";
             textboxNombrePropiedad.Size = new Size(163, 23);
             textboxNombrePropiedad.TabIndex = 52;
+            textboxNombrePropiedad.KeyPress += textboxNombrePropiedad_KeyPress;
             // 
             // label10
             // 

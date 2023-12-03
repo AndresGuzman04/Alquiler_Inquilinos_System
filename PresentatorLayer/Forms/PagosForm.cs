@@ -167,6 +167,24 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void montoPagoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+            if (Char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+
+            }
+        }
     }
- }
+}
 

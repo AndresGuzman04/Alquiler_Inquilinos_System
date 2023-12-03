@@ -109,6 +109,7 @@
             telefonoTextbox.Name = "telefonoTextbox";
             telefonoTextbox.Size = new Size(188, 23);
             telefonoTextbox.TabIndex = 68;
+            telefonoTextbox.KeyPress += telefonoTextbox_KeyPress;
             // 
             // emailTextBox
             // 
@@ -162,6 +163,7 @@
             nombreTextBox.Name = "nombreTextBox";
             nombreTextBox.Size = new Size(188, 23);
             nombreTextBox.TabIndex = 63;
+            nombreTextBox.KeyPress += nombreTextBox_KeyPress;
             // 
             // nombrelabel
             // 

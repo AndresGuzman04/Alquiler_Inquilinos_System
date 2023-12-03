@@ -16,19 +16,19 @@ namespace PresentatorLayer.Validaciones
 
             RuleFor(Inquilino => Inquilino.Nombre)
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Nombre))
-                .WithMessage("La la descripción no puede estar vacía");
+                .WithMessage("el nombre no puede estar vacía");
 
             RuleFor(Inquilino => Inquilino.Direccion)
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Direccion))
-                .WithMessage("La la descripción no puede estar vacía");
+                .WithMessage("la direccion no puede estar vacía");
 
             RuleFor(Inquilino => Inquilino.Email)
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Email))
-                .WithMessage("La la descripción no puede estar vacía");
+                .WithMessage("el email no puede estar vacía");
 
             RuleFor(Inquilino => Inquilino.Telefono)
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Telefono))
-                .WithMessage("La la descripción no puede estar vacía");
+                .WithMessage("el telefono no puede estar vacía");
         }
     }
 }

@@ -60,6 +60,7 @@
             costoTextbox.Name = "costoTextbox";
             costoTextbox.Size = new Size(238, 23);
             costoTextbox.TabIndex = 48;
+            costoTextbox.KeyPress += costoTextbox_KeyPress;
             // 
             // label9
             // 
@@ -164,6 +165,7 @@
             descripcionTextBox.Name = "descripcionTextBox";
             descripcionTextBox.Size = new Size(239, 23);
             descripcionTextBox.TabIndex = 39;
+            descripcionTextBox.KeyPress += descripcionTextBox_KeyPress;
             // 
             // label7
             // 

@@ -146,7 +146,7 @@ namespace PresentatorLayer.Forms
                 var document = MantenimientoPDF.InitializePDF(path);
 
                 document.Add(MantenimientoPDF.GenerateHeaderPDF("Reporte del mantenimiento"));
-                document.Add(MantenimientoPDF.GenerateTablePDF(5,mantenimientoDataGridView));
+                document.Add(MantenimientoPDF.GenerateTablePDF(5, mantenimientoDataGridView));
 
                 document.Close();
                 MessageBox.Show("PDF se genero correctamente");
@@ -157,6 +157,34 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void descripcionTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void costoTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+            if (Char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+
+            }
+        }
     }
-    
+
 }

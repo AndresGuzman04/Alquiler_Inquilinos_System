@@ -67,7 +67,7 @@ namespace PresentatorLayer.Forms
             contratos.FechaInicio = fechaSeleccionada;
             contratos.FechaFin = fechaSeleccionada;
             contratos.MontoMensual = montomensualtextBox.Text;
-            
+
 
             contratos.PropiedadId = (int)propiedadComBo.SelectedValue;
             contratos.InquilinoId = (int)InquilinocomboBox.SelectedIndex;
@@ -157,7 +157,7 @@ namespace PresentatorLayer.Forms
 
         private void eliminarcontratosbutton_Click(object sender, EventArgs e)
         {
-            if(contratosdataGridView.SelectedRows.Count > 0)
+            if (contratosdataGridView.SelectedRows.Count > 0)
             {
                 ContratosBusiness contratosBusiness = new ContratosBusiness();
                 Contratos contratos = new Contratos();
@@ -172,6 +172,23 @@ namespace PresentatorLayer.Forms
 
         }
 
+        private void montomensualtextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+            if (Char.IsLetter(e.KeyChar))
+            {
+                MessageBox.Show("Solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+
+            }
+        }
     }
 }
 

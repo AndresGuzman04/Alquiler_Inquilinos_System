@@ -143,6 +143,7 @@
             montoPagoTextBox.Name = "montoPagoTextBox";
             montoPagoTextBox.Size = new Size(225, 23);
             montoPagoTextBox.TabIndex = 26;
+            montoPagoTextBox.KeyPress += montoPagoTextBox_KeyPress;
             // 
             // montopagolabel
             // 
