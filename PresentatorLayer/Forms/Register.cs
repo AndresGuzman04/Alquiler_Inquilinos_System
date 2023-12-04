@@ -55,9 +55,7 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show($"Error durante el registro: {ex.Message}");
             }
 
-            var mail = new SendMailService();
-            string body = "Bienvenido" + emailRegister.Text + "\n Gracias por preferirnos";
-            mail.SendMail("Bienvenido a alquiler Cheros", body, emailRegister.Text, "Cliente");
+           
         }
 
         private void ShowValidationErrors(List<string> errors)
@@ -92,8 +90,6 @@ namespace PresentatorLayer.Forms
 
             return true;
         }
-
-        // Función para validar el formato de la dirección de correo electrónico
         private bool IsValidEmail(string email)
         {
             try

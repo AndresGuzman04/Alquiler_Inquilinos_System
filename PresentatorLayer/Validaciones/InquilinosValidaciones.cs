@@ -12,15 +12,19 @@ namespace PresentatorLayer.Validaciones
     {
         public inquilinosValidator()
         {
-            CascadeMode = CascadeMode.StopOnFirstFailure;
+            CascadeMode = CascadeMode.Continue;
+
+
 
             RuleFor(Inquilino => Inquilino.Nombre)
+
                 .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Nombre))
                 .WithMessage("el nombre no puede estar vacía");
 
             RuleFor(Inquilino => Inquilino.Direccion)
-                .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Direccion))
-                .WithMessage("la direccion no puede estar vacía");
+            .NotEmpty().When(mantenimiento => string.IsNullOrEmpty(mantenimiento.Direccion))
+            .WithMessage("la direccion no puede estar vacía");
+
 
             RuleFor(inquilino => inquilino.Email)
             .NotEmpty().When(inq => string.IsNullOrEmpty(inq.Email))
