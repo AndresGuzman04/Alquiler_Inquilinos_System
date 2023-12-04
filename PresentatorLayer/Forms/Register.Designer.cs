@@ -49,10 +49,10 @@
             // close
             // 
             close.Image = (Image)resources.GetObject("close.Image");
-            close.Location = new Point(977, 0);
-            close.Margin = new Padding(4);
+            close.Location = new Point(684, 0);
+            close.Margin = new Padding(3, 2, 3, 2);
             close.Name = "close";
-            close.Size = new Size(31, 31);
+            close.Size = new Size(22, 19);
             close.SizeMode = PictureBoxSizeMode.Zoom;
             close.TabIndex = 20;
             close.TabStop = false;
@@ -63,10 +63,9 @@
             loginLabel.ActiveLinkColor = Color.SteelBlue;
             loginLabel.AutoSize = true;
             loginLabel.LinkColor = Color.DimGray;
-            loginLabel.Location = new Point(595, 484);
-            loginLabel.Margin = new Padding(4, 0, 4, 0);
+            loginLabel.Location = new Point(416, 290);
             loginLabel.Name = "loginLabel";
-            loginLabel.Size = new Size(136, 25);
+            loginLabel.Size = new Size(89, 15);
             loginLabel.TabIndex = 12;
             loginLabel.TabStop = true;
             loginLabel.Text = "Inicio de Sesion";
@@ -75,19 +74,17 @@
             // label3
             // 
             label3.BackColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(370, 245);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(259, 147);
             label3.Name = "label3";
-            label3.Size = new Size(556, 1);
+            label3.Size = new Size(389, 1);
             label3.TabIndex = 19;
             // 
             // label2
             // 
             label2.BackColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(370, 162);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(259, 97);
             label2.Name = "label2";
-            label2.Size = new Size(556, 1);
+            label2.Size = new Size(389, 1);
             label2.TabIndex = 18;
             // 
             // label1
@@ -96,10 +93,9 @@
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Microsoft JhengHei", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(589, 39);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(412, 23);
             label1.Name = "label1";
-            label1.Size = new Size(150, 35);
+            label1.Size = new Size(100, 24);
             label1.TabIndex = 17;
             label1.Text = "REGISTRO";
             // 
@@ -109,18 +105,18 @@
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(312, 630);
+            panel1.Size = new Size(218, 378);
             panel1.TabIndex = 16;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(321, 630);
+            pictureBox2.Size = new Size(225, 378);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
@@ -134,13 +130,14 @@
             registerbutton.FlatStyle = FlatStyle.Flat;
             registerbutton.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             registerbutton.ForeColor = Color.Gray;
-            registerbutton.Location = new Point(370, 356);
-            registerbutton.Margin = new Padding(4);
+            registerbutton.Location = new Point(259, 214);
+            registerbutton.Margin = new Padding(3, 2, 3, 2);
             registerbutton.Name = "registerbutton";
-            registerbutton.Size = new Size(556, 59);
+            registerbutton.Size = new Size(389, 35);
             registerbutton.TabIndex = 15;
             registerbutton.Text = "REGISTRARSE";
             registerbutton.UseVisualStyleBackColor = false;
+            registerbutton.Click += registerbutton_Click;
             // 
             // passwordRegister
             // 
@@ -148,10 +145,10 @@
             passwordRegister.BorderStyle = BorderStyle.None;
             passwordRegister.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             passwordRegister.ForeColor = Color.Gray;
-            passwordRegister.Location = new Point(370, 206);
-            passwordRegister.Margin = new Padding(4);
+            passwordRegister.Location = new Point(259, 124);
+            passwordRegister.Margin = new Padding(3, 2, 3, 2);
             passwordRegister.Name = "passwordRegister";
-            passwordRegister.Size = new Size(556, 34);
+            passwordRegister.Size = new Size(389, 23);
             passwordRegister.TabIndex = 14;
             passwordRegister.Text = "CONTRASEÑA";
             // 
@@ -161,20 +158,19 @@
             usernameRegister.BorderStyle = BorderStyle.None;
             usernameRegister.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             usernameRegister.ForeColor = Color.Gray;
-            usernameRegister.Location = new Point(370, 122);
-            usernameRegister.Margin = new Padding(4);
+            usernameRegister.Location = new Point(259, 73);
+            usernameRegister.Margin = new Padding(3, 2, 3, 2);
             usernameRegister.Name = "usernameRegister";
-            usernameRegister.Size = new Size(556, 34);
+            usernameRegister.Size = new Size(389, 23);
             usernameRegister.TabIndex = 13;
             usernameRegister.Text = "USUARIO";
             // 
             // label4
             // 
             label4.BackColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(370, 334);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(259, 200);
             label4.Name = "label4";
-            label4.Size = new Size(556, 1);
+            label4.Size = new Size(389, 1);
             label4.TabIndex = 22;
             // 
             // emailRegister
@@ -183,19 +179,19 @@
             emailRegister.BorderStyle = BorderStyle.None;
             emailRegister.Font = new Font("MingLiU_HKSCS-ExtB", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             emailRegister.ForeColor = Color.Gray;
-            emailRegister.Location = new Point(370, 295);
-            emailRegister.Margin = new Padding(4);
+            emailRegister.Location = new Point(259, 177);
+            emailRegister.Margin = new Padding(3, 2, 3, 2);
             emailRegister.Name = "emailRegister";
-            emailRegister.Size = new Size(556, 34);
+            emailRegister.Size = new Size(389, 23);
             emailRegister.TabIndex = 21;
             emailRegister.Text = "EMAIL";
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1008, 630);
+            ClientSize = new Size(706, 378);
             Controls.Add(label4);
             Controls.Add(emailRegister);
             Controls.Add(close);
@@ -208,6 +204,7 @@
             Controls.Add(passwordRegister);
             Controls.Add(usernameRegister);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Register";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Register";

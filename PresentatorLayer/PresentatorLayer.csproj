@@ -12,6 +12,7 @@
     <PackageReference Include="FluentValidation" Version="11.8.0" />
     <PackageReference Include="itext7" Version="8.0.2" />
     <PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.2" />
+    <PackageReference Include="MailKit" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

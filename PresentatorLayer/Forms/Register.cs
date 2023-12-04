@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmailDemo.MailServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,15 @@ namespace PresentatorLayer.Forms
         private void close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void registerbutton_Click(object sender, EventArgs e)
+        {
+            var mail = new SendMailService();
+
+            string body= "Bienvenido" + emailRegister.Text + "\n Gracias pro preferirnos" ;
+
+            mail.SendMail("Bienvenido al registro",body,emailRegister.Text,"siuu");
         }
     }
 }
