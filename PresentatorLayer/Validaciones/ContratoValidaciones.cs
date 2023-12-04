@@ -25,7 +25,6 @@ namespace PresentatorLayer.Validaciones
                 .GreaterThanOrEqualTo(contrato => contrato.FechaInicio)
                 .WithMessage("La fecha de fin debe ser mayor o igual a la fecha de inicio");
 
-
             RuleFor(Contratos => Contratos.MontoMensual)
                 .NotEmpty().When(Contratos => string.IsNullOrEmpty(Contratos.MontoMensual))
                 .WithMessage("El monto no puede estar vacio")
