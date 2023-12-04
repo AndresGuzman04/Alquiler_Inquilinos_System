@@ -12,10 +12,10 @@ namespace EmailDemo.MailServices
     {
         public SendMailService()
         {
-            Host = "smtp.mailtrap.io";
+            Host = "sandbox.smtp.mailtrap.io";
             Port = 2525;
-            Username = "8E987FD3A303C6";
-            Password = "d957c5611f6e3e";
+            Username = "980651363f240c";
+            Password = "70335204d77786";
             Sender = "librarystar@gmail.com";
             Ssl = false;
 

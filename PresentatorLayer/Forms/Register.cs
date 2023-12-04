@@ -43,10 +43,13 @@ namespace PresentatorLayer.Forms
 
                     if (rowsAffected > 0)
                     {
+                        var mail = new SendMailService();
+                        string body = "Bienvenido" + emailRegister.Text + "\n Gracias por preferirnos";
+                        mail.SendMail("Bienvenido a alquiler Cheros", body, emailRegister.Text, "Cliente");
                         MessageBox.Show("Registrado con Éxito!!");
                         Login login = new Login();
                         login.Show();
-                        this.Hide();
+                        this.Hide(); 
                     }
                 }
             }
@@ -55,9 +58,7 @@ namespace PresentatorLayer.Forms
                 MessageBox.Show($"Error durante el registro: {ex.Message}");
             }
 
-            var mail = new SendMailService();
-            string body = "Bienvenido" + emailRegister.Text + "\n Gracias por preferirnos";
-            mail.SendMail("Bienvenido a alquiler Cheros", body, emailRegister.Text, "Cliente");
+            
         }
 
         private void ShowValidationErrors(List<string> errors)

@@ -16,7 +16,9 @@ namespace PresentatorLayer.Validaciones
             CascadeMode = CascadeMode.StopOnFirstFailure;
 
             RuleFor(contrato => contrato.FechaInicio)
-                .NotEmpty().WithMessage("La fecha de inicio no puede estar vacía");
+                .NotEmpty().WithMessage("La fecha de inicio no puede estar vacía")
+                .GreaterThanOrEqualTo(DateTime.Now.Date)
+                .WithMessage("La fecha de inicio no puede ser anterior a la fecha actual");
 
             RuleFor(contrato => contrato.FechaFin)
                 .NotEmpty().WithMessage("La fecha de fin no puede estar vacía")
