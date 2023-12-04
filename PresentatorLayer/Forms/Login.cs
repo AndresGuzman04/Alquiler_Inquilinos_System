@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.Crud;
+using Org.BouncyCastle.Crypto.Generators;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PresentatorLayer.Forms
 {
@@ -33,31 +36,48 @@ namespace PresentatorLayer.Forms
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
-            if (usernametextBox.Text == "Univo" && passwordtextBox.Text == "2023")
+            if (string.IsNullOrWhiteSpace(usernametextBox.Text) || usernametextBox.Text != "USUARIO" && 
+                string.IsNullOrWhiteSpace(passwordtextBox.Text) || passwordtextBox.Text != "CONTRASEÑA")
             {
-                MenuForm menuForm = new MenuForm();
-                this.Hide();
-                menuForm.Show();
+                AuthBussines authBusiness = new AuthBussines();
 
+                string hashedPassword = authBusiness.GetPasswordByUserName(usernametextBox.Text);
 
+                if (!string.IsNullOrEmpty(hashedPassword))
+                {
+                    bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(passwordtextBox.Text, hashedPassword);
+
+                    if (isPasswordCorrect)
+                    {
+                        var credentials = authBusiness.LoginUser(usernametextBox.Text, hashedPassword);
+
+                        if (credentials)
+                        {
+                            MenuForm menuForm = new MenuForm();
+                            menuForm.Show();
+                            menuForm.FormClosed += Logout;
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Credenciales incorrectas");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Credenciales incorrectas");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Credenciales incorrectas");
+                }
             }
-
-
-            else if (usernametextBox.Text != "Univo")
-            {
-                MessageBox.Show("El nombre de usuario incorrecto");
-                usernametextBox.Clear();
-
-
-            }
-
             else
             {
-                MessageBox.Show("Contraseña incorrecta");
-
-                passwordtextBox.Clear();
-
+                MessageBox.Show("Los campos son obligatorios");
             }
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -106,6 +126,12 @@ namespace PresentatorLayer.Forms
             Register registerForm = new Register();
             registerForm.Show();
             this.Hide();
+        }
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            usernametextBox.Clear();
+            passwordtextBox.Clear();
+            this.Show();
         }
     }
 }
