@@ -32,14 +32,14 @@ namespace EmailDemo.MailServices
             SmtpClient.Authenticate(Username, Password);
         }
 
-        public void SendMail(string subject, string body, string destinationEmail, string username)
+        public void SendMail(string subject, string body, string destinationEmail, string Username)
         {
             var message = new MimeMessage();
 
             try
             {
-                message.From.Add(new MailboxAddress("Alquiler Cheros", Sender));
-                message.To.Add(new MailboxAddress(username, destinationEmail));
+                message.From.Add(new MailboxAddress("Programacion Eventos", Sender));
+                message.To.Add(new MailboxAddress(Username, destinationEmail));
                 message.Subject = subject;
                 message.Body = new TextPart("plain")
                 {
