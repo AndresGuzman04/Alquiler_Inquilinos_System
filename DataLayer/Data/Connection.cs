@@ -21,6 +21,7 @@ namespace DataLayer.Data
             return _connection;
         }
 
+        //recordando momentos 2024 ciclo II//
         public SqlConnection CloseConnection()
         {
             if (_connection.State == ConnectionState.Open)
